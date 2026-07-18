@@ -1,0 +1,52 @@
+{
+  "licence": {
+    "title": "Licence in Urban Sciences",
+    "duration": "3 years (6 semesters)",
+    "system": "LMD System",
+    "admission": [
+      "Baccalauréat (scientific, mathematics or technical-math streams recommended)",
+      "Admission through the national university orientation platform",
+      "Minimum average threshold set yearly by the Ministry of Higher Education",
+      "Basic proficiency in French for technical coursework"
+    ],
+    "objectives": [
+      "Build foundational knowledge in urban geography, planning and engineering",
+      "Develop cartographic, analytical and technical drawing skills",
+      "Introduce GIS and digital tools used in urban professions",
+      "Prepare students for specialization at the Master's level"
+    ],
+    "curriculum": [
+      { "semester": "S1", "courses": ["Introduction to Urban Sciences", "Mathematics", "Geography", "Technical Drawing", "English/French"] },
+      { "semester": "S2", "courses": ["Urban History", "Statistics", "Cartography", "Construction Basics", "Computer Science"] },
+      { "semester": "S3", "courses": ["Urban Geography", "Land Law", "GIS Fundamentals", "Surveying", "Urban Sociology"] },
+      { "semester": "S4", "courses": ["Urban Planning Theory", "Structures", "Demography", "Environmental Science", "Methodology"] },
+      { "semester": "S5", "courses": ["Master Plans (PDAU/POS)", "Urban Networks (VRD)", "Urban Economics", "GIS Applications"] },
+      { "semester": "S6", "courses": ["Urban Project Studio", "Internship", "Graduation Project", "Professional Ethics"] }
+    ],
+    "careerPaths": ["Junior Urban Planner", "Technical Draftsman", "GIS Technician", "Municipal Assistant"]
+  },
+  "master": {
+    "title": "Master in Urban Management & Techniques",
+    "duration": "2 years (4 semesters)",
+    "system": "LMD System",
+    "admission": [
+      "Licence in Urbanisme, Génie Urbain, Architecture, Geography or related field",
+      "Ranking based on Licence average and specialty compatibility",
+      "Faculty interview or file review depending on track",
+      "Available specialties: Urbanisme, Gestion des Villes, Génie Urbain"
+    ],
+    "objectives": [
+      "Deepen expertise in a chosen urban specialty",
+      "Conduct independent applied research on real territorial issues",
+      "Master professional-grade software (GIS, CAD, BIM)",
+      "Produce a defensible thesis with practical relevance to Algerian cities"
+    ],
+    "curriculum": [
+      { "semester": "M1-S1", "courses": ["Advanced Planning Theory", "Research Methodology", "Specialty Core Module", "GIS/BIM Workshop"] },
+      { "semester": "M1-S2", "courses": ["Territorial Diagnosis", "Urban Governance", "Specialty Studio", "Elective"] },
+      { "semester": "M2-S3", "courses": ["Specialized Seminar", "Thesis Research", "Professional Internship", "Scientific Writing"] },
+      { "semester": "M2-S4", "courses": ["Thesis Completion", "Public Defense", "Portfolio & Career Preparation"] }
+    ],
+    "careerPaths": ["Urban Planner", "GIS Analyst", "Urban Designer", "City Manager", "Planning Consultant", "Infrastructure Planner"]
+  }
+}

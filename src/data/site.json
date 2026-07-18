@@ -1,0 +1,221 @@
+{
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Programs",
+      "href": "/specialties"
+    },
+    {
+      "label": "Formation Offers",
+      "href": "/resources"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Years of Excellence",
+      "value": 15,
+      "suffix": "+"
+    },
+    {
+      "label": "Students Enrolled",
+      "value": 1200,
+      "suffix": "+"
+    },
+    {
+      "label": "Graduates",
+      "value": 3400,
+      "suffix": "+"
+    },
+    {
+      "label": "Partner Institutions",
+      "value": 12,
+      "suffix": ""
+    }
+  ],
+  "features": [
+    {
+      "title": "Three Specialized Tracks",
+      "description": "Urbanisme, Gestion des Villes and Génie Urbain, each with a dedicated curriculum and studio.",
+      "icon": "LayoutGrid"
+    },
+    {
+      "title": "GIS & Digital Tools",
+      "description": "Hands-on training in ArcGIS, QGIS, AutoCAD and BIM from the second year onward.",
+      "icon": "MapPinned"
+    },
+    {
+      "title": "Real Urban Projects",
+      "description": "Studios work on live case studies from M'Sila and surrounding wilayas.",
+      "icon": "Building2"
+    },
+    {
+      "title": "Career-Focused Curriculum",
+      "description": "Programs aligned with the skills employers and public agencies actually look for.",
+      "icon": "Briefcase"
+    },
+    {
+      "title": "Active Student Life",
+      "description": "The Urban Pioneers Club runs workshops, field trips and civic-tech projects year-round.",
+      "icon": "Users"
+    },
+    {
+      "title": "Open Resource Library",
+      "description": "Lecture notes, GIS files and past exams available to every enrolled student.",
+      "icon": "Library"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Amel K.",
+      "role": "Master 2, Urbanisme",
+      "quote": "The studio projects made me think about M'Sila differently — every plan we drew was for a real street I walk on."
+    },
+    {
+      "name": "Yacine B.",
+      "role": "Graduate, Gestion des Villes",
+      "quote": "The governance and smart-city courses prepared me directly for my role at the municipal planning office."
+    },
+    {
+      "name": "Sarah M.",
+      "role": "Master 1, Génie Urbain",
+      "quote": "I came in knowing structural math, and left knowing how a whole neighborhood's infrastructure fits together."
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2009",
+      "event": "IGTU founded as a specialized institute within Université Mohamed Boudiaf, M'Sila."
+    },
+    {
+      "year": "2013",
+      "event": "Génie Urbain specialty introduced alongside the founding Urbanisme track."
+    },
+    {
+      "year": "2017",
+      "event": "GIS laboratory established, equipping students with ArcGIS and QGIS training."
+    },
+    {
+      "year": "2020",
+      "event": "Gestion des Villes specialty launched to meet growing demand for urban administrators."
+    },
+    {
+      "year": "2022",
+      "event": "Urban Pioneers Club founded by students to extend learning beyond the classroom."
+    },
+    {
+      "year": "2025",
+      "event": "First civic-tech student project, UrbanFix DZ, deployed for public use in M'Sila."
+    }
+  ],
+  "facilities": [
+    {
+      "name": "GIS & Cartography Lab",
+      "description": "Dedicated computer lab equipped with licensed ArcGIS and QGIS workstations."
+    },
+    {
+      "name": "Urban Design Studio",
+      "description": "Open studio space for model-making, drafting and collaborative design reviews."
+    },
+    {
+      "name": "Documentation Center",
+      "description": "Institute library holding planning texts, theses, and technical reports."
+    },
+    {
+      "name": "Conference Hall",
+      "description": "Venue for seminars, thesis defenses and guest lectures."
+    }
+  ],
+  "faqGeneral": [
+    {
+      "q": "Where is IGTU located?",
+      "a": "IGTU is located within Université Mohamed Boudiaf, M'Sila, Algeria."
+    },
+    {
+      "q": "What specialties does IGTU offer?",
+      "a": "Three specialties: Urbanisme, Gestion des Villes, and Génie Urbain, available from the Licence's third year and throughout the Master's program."
+    },
+    {
+      "q": "How do I apply for a Licence or Master program?",
+      "a": "Applications go through the national university orientation platform for Licence, and through the faculty's Master admission process based on your Licence average and specialty compatibility."
+    },
+    {
+      "q": "Are internships mandatory?",
+      "a": "Yes, both Licence and Master programs include mandatory internships in their final semesters."
+    },
+    {
+      "q": "Does IGTU have a student club?",
+      "a": "Yes, the Urban Pioneers Club (نادي رواد العمارة) organizes workshops, field trips and civic-tech projects for students."
+    },
+    {
+      "q": "Can I access course resources online?",
+      "a": "Yes, the Resources page hosts lecture notes, TD/TP files, past exams and GIS project files organized by specialty."
+    }
+  ],
+  "contact": {
+    "address": "Institut de Gestion et Techniques Urbaines, Université Mohamed Boudiaf, M'Sila, Algeria",
+    "mapEmbedQuery": "Universit%C3%A9%20Mohamed%20Boudiaf%20M%27Sila",
+    "social": [
+      {
+        "platform": "Instagram",
+        "handle": "@igtu.explorer",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "Telegram",
+        "handle": "IGTU M'Sila",
+        "url": "https://t.me"
+      }
+    ]
+  },
+  "research": [
+    {
+      "title": "Urban Resilience & Climate Adaptation",
+      "description": "Applied studies on how M'Sila's neighborhoods can adapt to heat and flood risk."
+    },
+    {
+      "title": "GIS-Based Land Monitoring",
+      "description": "Satellite and cadastral data used to track informal growth and land-use change."
+    },
+    {
+      "title": "Smart Infrastructure Systems",
+      "description": "Sensor and dashboard prototypes for water, traffic and energy networks."
+    }
+  ],
+  "studentLife": [
+    {
+      "title": "Urban Pioneers Club",
+      "description": "Workshops, field trips and civic-tech builds run entirely by students."
+    },
+    {
+      "title": "Design Studio Culture",
+      "description": "Open studio critiques where every year's cohort reviews each other's work."
+    },
+    {
+      "title": "Field Trips & Site Visits",
+      "description": "Regular visits to active planning sites across M'Sila and neighboring wilayas."
+    }
+  ],
+  "partners": [
+    "Wilaya de M'Sila",
+    "APC M'Sila",
+    "Direction de l'Urbanisme",
+    "Agence Foncière Urbaine",
+    "Université Mohamed Boudiaf",
+    "Ordre des Urbanistes"
+  ]
+}

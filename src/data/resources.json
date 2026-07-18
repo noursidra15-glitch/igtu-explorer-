@@ -1,0 +1,14 @@
+[
+  { "id": "r1", "title": "Introduction to Urban Planning — Full Course Notes", "category": "Lecture Notes", "type": "PDF", "size": "3.2 MB", "specialty": "Urbanisme", "level": "Licence 2" },
+  { "id": "r2", "title": "GIS Fundamentals — TP Series 1 to 6", "category": "TP", "type": "PDF", "size": "5.8 MB", "specialty": "Urbanisme", "level": "Licence 3" },
+  { "id": "r3", "title": "Urban Economics — TD Exercises", "category": "TD", "type": "PDF", "size": "1.4 MB", "specialty": "Gestion des Villes", "level": "Licence 2" },
+  { "id": "r4", "title": "Structural Mechanics — Past Exams (2020–2024)", "category": "Exams", "type": "PDF", "size": "4.1 MB", "specialty": "Génie Urbain", "level": "Licence 2" },
+  { "id": "r5", "title": "M'Sila Cadastral Layers", "category": "GIS Files", "type": "SHP", "size": "18 MB", "specialty": "Urbanisme", "level": "All Levels" },
+  { "id": "r6", "title": "PDAU Land-Use Analysis Project", "category": "ArcGIS Projects", "type": "ArcGIS", "size": "42 MB", "specialty": "Urbanisme", "level": "Master 1" },
+  { "id": "r7", "title": "Wadi Corridor Hydrology Model", "category": "QGIS Projects", "type": "QGIS", "size": "27 MB", "specialty": "Urbanisme", "level": "Master 2" },
+  { "id": "r8", "title": "Residential Zone Road Network", "category": "AutoCAD Drawings", "type": "DWG", "size": "9.6 MB", "specialty": "Génie Urbain", "level": "Licence 3" },
+  { "id": "r9", "title": "City Management Textbook — Chapters 1–5", "category": "Books", "type": "PDF", "size": "12 MB", "specialty": "Gestion des Villes", "level": "Master 1" },
+  { "id": "r10", "title": "Annual Urban Diagnosis Report — M'Sila 2024", "category": "Urban Planning Reports", "type": "PDF", "size": "6.7 MB", "specialty": "Gestion des Villes", "level": "All Levels" },
+  { "id": "r11", "title": "Surveying Fundamentals — Lecture Slides", "category": "Lecture Notes", "type": "PDF", "size": "2.9 MB", "specialty": "Génie Urbain", "level": "Licence 1" },
+  { "id": "r12", "title": "Urban Sociology — TD Case Studies", "category": "TD", "type": "PDF", "size": "1.9 MB", "specialty": "Urbanisme", "level": "Licence 2" }
+]

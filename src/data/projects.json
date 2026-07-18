@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "title": "Rehabilitation of the M'Sila Urban Wadi Corridor",
+    "author": "Master 2 Urbanisme Studio",
+    "category": "Urbanisme",
+    "year": "2025",
+    "cover": "wadi-corridor",
+    "summary": "A master's thesis project proposing ecological and public-space rehabilitation of M'Sila's urban waterway network, reconnecting neighborhoods to the wadi.",
+    "tags": ["Thesis", "GIS", "Public Space"]
+  },
+  {
+    "id": "p2",
+    "title": "Smart Mobility Dashboard for M'Sila",
+    "author": "Gestion des Villes Studio",
+    "category": "Gestion des Villes",
+    "year": "2025",
+    "cover": "smart-mobility",
+    "summary": "An interactive dashboard concept tracking traffic flow and public transport coverage across the city, designed for the municipal planning office.",
+    "tags": ["Smart City", "Data", "Governance"]
+  },
+  {
+    "id": "p3",
+    "title": "VRD Network Design for a New Residential Zone",
+    "author": "Génie Urbain Studio",
+    "category": "Génie Urbain",
+    "year": "2024",
+    "cover": "vrd-network",
+    "summary": "Complete road, water and sanitation network design for a proposed residential extension, developed in Civil 3D.",
+    "tags": ["Infrastructure", "Civil 3D", "VRD"]
+  },
+  {
+    "id": "p4",
+    "title": "PDAU Revision Simulation — Central District",
+    "author": "Licence 3 Urbanisme",
+    "category": "Urbanisme",
+    "year": "2024",
+    "cover": "pdau-central",
+    "summary": "A student simulation of a master-plan revision exercise for the city's central district, applied through GIS land-use layers.",
+    "tags": ["PDAU", "GIS", "Studio"]
+  },
+  {
+    "id": "p5",
+    "title": "UrbanFix DZ — Civic Risk Reporting App",
+    "author": "Urban Pioneers Club",
+    "category": "Gestion des Villes",
+    "year": "2025",
+    "cover": "urbanfix",
+    "summary": "A civic-tech web application letting M'Sila residents report urban risks (potholes, flooding, unsafe structures) directly to planning authorities.",
+    "tags": ["Civic Tech", "Web App", "Club Project"]
+  },
+  {
+    "id": "p6",
+    "title": "Green Corridor Concept for the University District",
+    "author": "Master 1 Urbanisme",
+    "category": "Urbanisme",
+    "year": "2024",
+    "cover": "green-corridor",
+    "summary": "A landscape-led urban design proposal linking IGTU's campus to nearby residential areas through shaded pedestrian corridors.",
+    "tags": ["Landscape", "Design Studio", "Sustainability"]
+  }
+]

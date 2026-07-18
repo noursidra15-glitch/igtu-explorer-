@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Urban Planner",
+    "icon": "Map",
+    "sector": "Public / Private",
+    "description": "Designs land-use and master plans that guide how cities grow, balancing housing, mobility, and green space.",
+    "skills": ["PDAU/POS drafting", "GIS analysis", "Public consultation"]
+  },
+  {
+    "title": "GIS Analyst",
+    "icon": "MapPinned",
+    "sector": "Public / Private",
+    "description": "Builds and maintains spatial databases, turning satellite and field data into maps that inform planning decisions.",
+    "skills": ["ArcGIS / QGIS", "Remote sensing", "Spatial statistics"]
+  },
+  {
+    "title": "Urban Designer",
+    "icon": "PenTool",
+    "sector": "Private / Consulting",
+    "description": "Shapes the physical form of streets, blocks and public spaces at human scale.",
+    "skills": ["3D modeling", "Design studio", "Urban aesthetics"]
+  },
+  {
+    "title": "City Manager",
+    "icon": "Landmark",
+    "sector": "Public Administration",
+    "description": "Oversees municipal operations and services, coordinating departments to keep a city running smoothly.",
+    "skills": ["Governance", "Budgeting", "Team leadership"]
+  },
+  {
+    "title": "Planning Consultant",
+    "icon": "Briefcase",
+    "sector": "Private Consulting",
+    "description": "Advises developers, agencies and municipalities on planning strategy and regulatory compliance.",
+    "skills": ["Regulatory analysis", "Client management", "Report writing"]
+  },
+  {
+    "title": "Infrastructure Planner",
+    "icon": "HardHat",
+    "sector": "Public / Engineering Firms",
+    "description": "Plans roads, utility networks and technical systems that support urban growth.",
+    "skills": ["VRD networks", "Civil 3D", "Cost estimation"]
+  },
+  {
+    "title": "Government Planner",
+    "icon": "Landmark",
+    "sector": "Public Administration",
+    "description": "Works within wilaya or ministry planning departments to implement national urban policy.",
+    "skills": ["Policy analysis", "Land law", "Territorial diagnosis"]
+  },
+  {
+    "title": "Private Consulting",
+    "icon": "Handshake",
+    "sector": "Private Sector",
+    "description": "Delivers planning and GIS services to private developers, NGOs and international agencies.",
+    "skills": ["Business development", "Multi-disciplinary teams", "Deliverable design"]
+  }
+]

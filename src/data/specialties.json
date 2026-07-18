@@ -1,0 +1,264 @@
+[
+  {
+    "slug": "socle-commun",
+    "name": "Socle Commun GTU",
+    "nameEn": "Common Core",
+    "tagline": "Foundation of urban and territorial studies",
+    "icon": "BookOpen",
+    "color": "slate",
+    "formationOffer": {
+      "licence": "/files/licence/SOCLE-COMMUN-CANEVAS-GTU-1.pdf"
+    },
+    "overview": "Common Core provides students with the fundamental knowledge of urban planning and urban techniques before specialization.",
+    "duration": "Licence 1",
+    "subjects": [
+      "Urban Geography",
+      "Cartography",
+      "Technical Drawing",
+      "Introduction to Urban Planning",
+      "Computer Science"
+    ],
+    "skills": [
+      "Basic territorial analysis",
+      "Cartographic representation",
+      "Understanding urban systems"
+    ],
+    "software": [
+      "AutoCAD",
+      "QGIS",
+      "Office"
+    ],
+    "careers": [
+      "Future Urban Planner",
+      "Territorial Analyst"
+    ],
+    "faqs": [
+      {
+        "q": "What is the Common Core?",
+        "a": "It is the first year before choosing a GTU specialization."
+      }
+    ]
+  },
+
+  {
+    "slug": "urbanisme",
+    "name": "Urbanisme",
+    "nameEn": "Urban Planning",
+    "tagline": "Designing sustainable cities",
+    "icon": "Building2",
+    "color": "emerald",
+    "formationOffer": {
+      "licence": "/files/licence/Canevas-LICENCE-Urbanisme-2025-2026.pdf",
+      "master": "/files/master/Canevas-MASTER-Urbanisme-2025-2026-1-1.pdf"
+    },
+    "overview": "Urban Planning trains specialists in territorial analysis, urban projects and sustainable development.",
+    "duration": "3 years Licence + 2 years Master",
+    "subjects": [
+      "Urban Geography",
+      "Territorial Analysis",
+      "Urban Design",
+      "Urban Legislation",
+      "GIS",
+      "Remote Sensing",
+      "Urban Mobility"
+    ],
+    "skills": [
+      "Urban diagnosis",
+      "GIS mapping",
+      "Urban project development",
+      "PDAU/POS analysis"
+    ],
+    "software": [
+      "ArcGIS",
+      "QGIS",
+      "AutoCAD",
+      "SketchUp"
+    ],
+    "careers": [
+      "Urban Planner",
+      "Territorial Analyst",
+      "Planning Consultant"
+    ],
+    "faqs": [
+      {
+        "q": "Which software is used?",
+        "a": "GIS, CAD and 3D modelling tools are commonly used."
+      }
+    ]
+  },
+
+  {
+    "slug": "gestion-des-villes",
+    "name": "Gestion des Villes",
+    "nameEn": "City Management",
+    "tagline": "Managing urban systems and governance",
+    "icon": "Landmark",
+    "color": "blue",
+    "formationOffer": {
+      "licence": "/files/licence/GV-Msila-Canevas-de-Mise-en-Conformite-LICENCE-2025-2026.pdf",
+      "master": "/files/master/GV-Msila-Canevas-de-Mise-en-Conformite-MASTER-2025-2026.pdf"
+    },
+    "overview": "City Management focuses on urban governance, services and territorial management.",
+    "duration": "3 years Licence + 2 years Master",
+    "subjects": [
+      "Urban Governance",
+      "Public Management",
+      "Urban Economics",
+      "Local Administration",
+      "Project Management"
+    ],
+    "skills": [
+      "Urban management",
+      "Project coordination",
+      "Decision support"
+    ],
+    "software": [
+      "ArcGIS",
+      "QGIS",
+      "Power BI",
+      "Excel"
+    ],
+    "careers": [
+      "City Manager",
+      "Urban Development Officer",
+      "Local Administration Officer"
+    ],
+    "faqs": [
+      {
+        "q": "What is City Management?",
+        "a": "It focuses on managing urban services and territorial development."
+      }
+    ]
+  }
+  ,
+  {
+    "slug": "genie-urbain",
+    "name": "Génie Urbain",
+    "nameEn": "Urban Engineering",
+    "tagline": "Engineering urban infrastructure and technical systems",
+    "icon": "HardHat",
+    "color": "orange",
+    "formationOffer": {
+      "licence": "/files/licence/GU-Msila-Canevas-de-Mise-en-Conformite-LICENCE-2025-2026-1.pdf",
+      "master": "/files/master/GU-Msila-Canevas-de-Mise-en-Conformite-MASTER-2025-2026-1.pdf"
+    },
+    "overview": "Urban Engineering focuses on the design and management of urban networks, infrastructure and technical systems.",
+    "duration": "3 years Licence + 2 years Master",
+    "subjects": [
+      "Urban Networks VRD",
+      "Road Engineering",
+      "Hydraulics",
+      "Construction Materials",
+      "Geotechnics",
+      "BIM"
+    ],
+    "skills": [
+      "Infrastructure design",
+      "Technical studies",
+      "Network analysis",
+      "Construction monitoring"
+    ],
+    "software": [
+      "AutoCAD",
+      "Civil 3D",
+      "Revit",
+      "ArcGIS"
+    ],
+    "careers": [
+      "Urban Engineer",
+      "Infrastructure Engineer",
+      "Technical Consultant"
+    ],
+    "faqs": [
+      {
+        "q": "What does Urban Engineering focus on?",
+        "a": "It focuses on urban infrastructure, networks and technical solutions."
+      }
+    ]
+  },
+  {
+    "slug": "management-conduite-projet",
+    "name": "Management et Conduite de Projet",
+    "nameEn": "Construction Project Management",
+    "tagline": "Managing construction and urban projects",
+    "icon": "HardHat",
+    "color": "purple",
+    "formationOffer": {
+      "licence": "/files/licence/Canevas-LICENCE-MCP-2025-2026.pdf",
+      "master": "/files/master/Canevas-Master-MPC-2025-2026.pdf"
+    },
+    "overview": "This specialty prepares students to plan, organize and manage construction projects.",
+    "duration": "3 years Licence + 2 years Master",
+    "subjects": [
+      "Project Management",
+      "Construction Methods",
+      "Cost Estimation",
+      "Planning",
+      "Construction Law"
+    ],
+    "skills": [
+      "Project scheduling",
+      "Cost control",
+      "Team coordination",
+      "Construction monitoring"
+    ],
+    "software": [
+      "MS Project",
+      "Primavera",
+      "AutoCAD",
+      "Excel"
+    ],
+    "careers": [
+      "Project Manager",
+      "Construction Coordinator",
+      "Planning Engineer"
+    ],
+    "faqs": [
+      {
+        "q": "What is this specialty about?",
+        "a": "It focuses on managing construction and development projects."
+      }
+    ]
+  },
+  {
+    "slug": "architecture",
+    "name": "Architecture",
+    "nameEn": "Architecture",
+    "tagline": "Designing spaces and built environments",
+    "icon": "Building2",
+    "color": "rose",
+    "formationOffer": {
+      "ingeniorat": "/files/OF-Ingeniorat-ARCHI-GTU2024-Msila.pdf"
+    },
+    "overview": "Architecture combines design, construction knowledge and spatial organization.",
+    "duration": "Engineering Architecture Program",
+    "subjects": [
+      "Architectural Design",
+      "Construction Technology",
+      "Building Materials",
+      "Urban Design"
+    ],
+    "skills": [
+      "Architectural conception",
+      "Technical representation",
+      "3D modelling"
+    ],
+    "software": [
+      "AutoCAD",
+      "Revit",
+      "SketchUp",
+      "Lumion"
+    ],
+    "careers": [
+      "Architect",
+      "Architectural Designer",
+      "Project Consultant"
+    ],
+    "faqs": [
+      {
+        "q": "What does Architecture study?",
+        "a": "It studies the design and development of buildings and spaces."
+      }
+    ]
+  }
+  ]
