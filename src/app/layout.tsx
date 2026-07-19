@@ -8,7 +8,7 @@ import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { LoadingScreen } from "@/components/layout/LoadingScreen";
 
-const siteUrl = "https://igtu-explorer.example.dz";
+const siteUrl = "https://igtu-explorer-v2.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

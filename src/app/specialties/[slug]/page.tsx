@@ -67,19 +67,27 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
         </div>
 
         {/* Overview + Duration */}
-        <Reveal className="mt-14 grid gap-5 lg:grid-cols-3">
-          <GlassCard className="lg:col-span-2">
-            <h2 className="text-lg font-semibold">Overview</h2>
-            <p className="mt-3 text-sm leading-relaxed text-foreground/65">{specialty.overview}</p>
-          </GlassCard>
-          <GlassCard>
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-brand/10 text-emerald-brand">
-              <Clock size={17} />
-            </span>
-            <h2 className="mt-4 text-sm font-semibold text-foreground/50">Duration</h2>
-            <p className="mt-1 text-base font-semibold">{specialty.duration}</p>
-          </GlassCard>
-        </Reveal>
+<Reveal className="mt-14 grid gap-5 lg:grid-cols-3">
+  <GlassCard className="lg:col-span-2">
+    <h2 className="text-lg font-semibold">Overview</h2>
+    <p className="mt-3 text-sm leading-relaxed text-foreground/65">
+      {specialty.overview}
+    </p>
+  </GlassCard>
+
+  <GlassCard>
+    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-brand/10 text-emerald-brand">
+      <Clock size={17} />
+    </span>
+    <h2 className="mt-4 text-sm font-semibold text-foreground/50">
+      Duration
+    </h2>
+    <p className="mt-1 text-base font-semibold">
+      {specialty.duration}
+    </p>
+  </GlassCard>
+</Reveal>
+    
         {/* Quick Facts */}
 <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
 
@@ -126,6 +134,17 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
 </GlassCard>
 
 </section>
+<GlassCard>
+  <h3 className="text-lg font-semibold">
+    Admission Requirements
+  </h3>
+
+  <p className="mt-3 text-sm text-foreground/60">
+    {specialty.admission}
+  </p>
+</GlassCard>
+ 
+
         {/* Formation Offer */}
 {specialty.formationOffer && (
   <section className="mt-16">
@@ -242,6 +261,80 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
           </div>
         </section>
 
+        {/* Higher Studies & Workplaces */}
+<section className="mt-20 grid gap-6 lg:grid-cols-2">
+
+<GlassCard>
+  <h2 className="text-xl font-semibold">
+    🎓 Higher Studies
+  </h2>
+
+  <ul className="mt-5 space-y-3">
+    {(specialty.higherStudies ?? []).map((study) => (
+      <li
+        key={study}
+        className="flex items-center gap-3"
+      >
+        <span className="text-emerald-brand">✔</span>
+        <span>{study}</span>
+      </li>
+    ))}
+  </ul>
+</GlassCard>
+
+<GlassCard>
+  <h2 className="text-xl font-semibold">
+    💼 Workplaces
+  </h2>
+
+  <ul className="mt-5 space-y-3">
+    {(specialty.workplaces ?? []).map((place) => (
+      <li
+        key={place}
+        className="flex items-center gap-3"
+      >
+        <span className="text-blue-brand">📍</span>
+        <span>{place}</span>
+      </li>
+    ))}
+  </ul>
+</GlassCard>
+
+</section>
+  
+        {/* Official Website */}
+<section className="mt-20">
+  <SectionHeading
+    eyebrow="Official Information"
+    title="Institute Website"
+    align="left"
+    className="mx-0 text-left"
+  />
+
+  <GlassCard className="mt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <div>
+      <h3 className="text-lg font-semibold">
+        Institute of Management and Urban Techniques
+      </h3>
+
+      <p className="mt-2 text-sm text-foreground/60">
+        Visit the official website of the Institute to access the latest
+        announcements, registration information, academic news and official
+        documents.
+      </p>
+    </div>
+
+    <a
+      href="https://www.univ-msila.dz/site/gtu-ar/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl bg-emerald-brand px-6 py-3 font-semibold text-white transition hover:opacity-90"
+    >
+      Visit Website
+    </a>
+  </GlassCard>
+</section>
+
         {/* FAQs */}
         <section className="mt-20">
           <SectionHeading eyebrow="Questions" title="Frequently asked" align="left" className="mx-0 text-left" />
@@ -249,7 +342,26 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
             <Accordion items={specialty.faqs ?? []} />
           </div>
         </section>
+        {/* Learning Outcomes */}
+<section className="mt-20">
+  <SectionHeading
+    eyebrow="Learning Outcomes"
+    title="What You'll Learn"
+    align="left"
+    className="mx-0 text-left"
+  />
 
+  <div className="mt-8 grid gap-4 md:grid-cols-2">
+    {(specialty.learningOutcomes ?? []).map((item) => (
+      <GlassCard key={item}>
+        <div className="flex gap-3">
+          <span className="text-emerald-brand">✔</span>
+          <p>{item}</p>
+        </div>
+      </GlassCard>
+    ))}
+  </div>
+</section>
         {/* Related resources */}
         {relatedResources.length > 0 && (
           <section className="mt-20">
