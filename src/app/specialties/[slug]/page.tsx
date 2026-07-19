@@ -38,6 +38,16 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
   const Icon = icons[specialty.icon] ?? Building2;
   const relatedResources = resources.filter((r) => r.specialty === specialty.name).slice(0, 4);
 
+  type StudyPlanItem = {
+    year: string;
+    focus: string;
+  };
+  
+  const studyPlan =
+    "studyPlan" in specialty
+      ? (specialty.studyPlan as StudyPlanItem[])
+      : [];
+
   return (
     <div className="pb-24 pt-32">
       <Container>
@@ -173,8 +183,13 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
         <section className="mt-20">
           <SectionHeading eyebrow="Curriculum" title="Study plan" align="left" className="mx-0 text-left" />
           <div className="mt-10 space-y-4">
-          {"studyPlan" in specialty && specialty.studyPlan.length > 0 ? (
-            specialty.studyPlan.map((step: any, i: number) => (
+          {"studyPlan" in specialty &&
+           Array.isArray((specialty as { studyPlan?: { year: string; focus: string }[] }).studyPlan) &&
+          (specialty as { studyPlan?: { year: string; focus: string }[] }).studyPlan!.length > 0 ? (
+
+             (specialty as { studyPlan: { year: string; focus: string }[] }).studyPlan.map(
+               (step, i) => (
+            
               <Reveal key={step.year} delay={i * 0.06}>
                <div className="flex items-start gap-5 rounded-2xl border border-border-soft bg-surface p-5">
                   <span className="flex h-10 w-16 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-brand/15 to-blue-brand/15 text-sm font-bold text-emerald-brand">
