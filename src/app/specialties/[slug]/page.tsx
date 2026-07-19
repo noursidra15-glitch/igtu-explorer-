@@ -179,38 +179,7 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
     </div>
   </section>
 )}
-        {/* Study Plan */}
-        <section className="mt-20">
-          <SectionHeading eyebrow="Curriculum" title="Study plan" align="left" className="mx-0 text-left" />
-          <div className="mt-10 space-y-4">
-          {"studyPlan" in specialty &&
-           Array.isArray((specialty as { studyPlan?: { year: string; focus: string }[] }).studyPlan) &&
-          (specialty as { studyPlan?: { year: string; focus: string }[] }).studyPlan!.length > 0 ? (
-
-             (specialty as { studyPlan: { year: string; focus: string }[] }).studyPlan.map(
-               (step, i) => (
-            
-              <Reveal key={step.year} delay={i * 0.06}>
-               <div className="flex items-start gap-5 rounded-2xl border border-border-soft bg-surface p-5">
-                  <span className="flex h-10 w-16 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-brand/15 to-blue-brand/15 text-sm font-bold text-emerald-brand">
-                     {step.year}
-                  </span>
-                  <p className="mt-1.5 text-sm leading-relaxed text-foreground/65">
-                     {step.focus}
-                  </p>
-               </div>
-    </Reveal>
-  ))
-) : (
-  <GlassCard>
-    <p className="text-sm text-foreground/60">
-    The detailed study plan will be available soon.
-    </p>
-  </GlassCard>
-)}
-          </div>
-        </section>
-
+        
         {/* Subjects / Skills / Software */}
         <section className="mt-20 grid gap-5 lg:grid-cols-3">
           <Reveal>

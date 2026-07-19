@@ -12,8 +12,6 @@ export default function HomePage() {
       <Hero />
       <AboutTeaser />
       <SpecialtiesPreview />
- 
-
       <Stats />
       <FAQPreview />
       <CTASection />
