@@ -75,25 +75,7 @@ export function Footer() {
               })}
             </div>
 
-            <h3 className="mt-8 text-sm font-semibold text-foreground">{t.footer.newsletter}</h3>
-            <p className="mt-2 text-xs text-foreground/50">{t.footer.newsletterHint}</p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="mt-3 flex overflow-hidden rounded-full border border-border-soft bg-surface"
-            >
-              <input
-                type="email"
-                required
-                placeholder="you@email.com"
-                className="focus-ring w-full bg-transparent px-4 py-2 text-xs outline-none placeholder:text-foreground/40"
-              />
-              <button
-                type="submit"
-                className="shrink-0 bg-gradient-to-r from-blue-brand to-emerald-brand px-4 py-2 text-xs font-semibold text-white"
-              >
-                {t.footer.subscribe}
-              </button>
-            </form>
+            
           </div>
         </div>
 
