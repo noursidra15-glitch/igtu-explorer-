@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { LoadingScreen } from "@/components/layout/LoadingScreen";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const siteUrl = "https://igtu-explorer-v2.netlify.app";
 
@@ -71,6 +72,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className="antialiased">
+        <GoogleAnalytics />
+        
         <ThemeProvider>
           <LanguageProvider>
             <LoadingScreen />
