@@ -5,6 +5,7 @@ import { Stats } from "@/components/home/Stats";
 import { FAQPreview } from "@/components/home/FAQPreview";
 import { CTASection } from "@/components/home/CTASection";
 import { LocationMap } from "@/components/home/LocationMap";
+import { FormationOffersHome } from "@/components/home/FormationOffersHome";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,9 @@ export default function HomePage() {
       <Hero />
       <AboutTeaser />
       <SpecialtiesPreview />
+ 
+      <FormationOffersHome />
+
       <Stats />
       <FAQPreview />
       <CTASection />

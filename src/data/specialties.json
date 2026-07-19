@@ -10,6 +10,14 @@
       "licence": "/files/licence/SOCLE-COMMUN-CANEVAS-GTU-1.pdf"
     },
     "overview": "Common Core provides students with the fundamental knowledge of urban planning and urban techniques before specialization.",
+  
+    "whyChoose": [
+      "Build a strong foundation in urban sciences.",
+      "Discover the different GTU specializations.",
+      "Develop essential technical and analytical skills.",
+      "Prepare for successful academic specialization."
+    ],
+  
     "duration": "Licence 1",
     "subjects": [
       "Urban Geography",
@@ -17,6 +25,13 @@
       "Technical Drawing",
       "Introduction to Urban Planning",
       "Computer Science"
+    ],
+    "learningOutcomes": [
+      "Acquire fundamental urban knowledge.",
+      "Understand the basics of planning.",
+      "Develop technical drawing skills.",
+      "Build analytical thinking.",
+      "Prepare for specialization."
     ],
     "skills": [
       "Basic territorial analysis",
@@ -28,10 +43,24 @@
       "QGIS",
       "Office"
     ],
+    "higherStudies": [
+      "Continue to GTU Specializations"
+    ],
     "careers": [
       "Future Urban Planner",
       "Territorial Analyst"
     ],
+    "workplaces": [
+      "Foundation Year"
+    ],
+    "degree": "Common Core",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "First-year university program before specialization."
     "faqs": [
       {
         "q": "What is the Common Core?",
@@ -52,6 +81,14 @@
       "master": "/files/master/Canevas-MASTER-Urbanisme-2025-2026-1-1.pdf"
     },
     "overview": "Urban Planning trains specialists in territorial analysis, urban projects and sustainable development.",
+
+    "whyChoose": [
+      "Learn how to design sustainable and resilient cities.",
+      "Develop expertise in GIS and spatial planning.",
+      "Participate in practical urban planning projects.",
+      "Prepare for careers in public and private planning organizations."
+    ],
+
     "duration": "3 years Licence + 2 years Master",
     "subjects": [
       "Urban Geography",
@@ -61,6 +98,13 @@
       "GIS",
       "Remote Sensing",
       "Urban Mobility"
+    ],
+    "learningOutcomes": [
+      "Understand urban planning principles.",
+      "Analyze territories using GIS.",
+      "Develop sustainable urban projects.",
+      "Prepare urban planning documents.",
+      "Evaluate environmental impacts."
     ],
     "skills": [
       "Urban diagnosis",
@@ -74,11 +118,31 @@
       "AutoCAD",
       "SketchUp"
     ],
+    "higherStudies": [
+      "Master in Urban Planning",
+      "Doctorate in Urban Studies",
+      "Research in Sustainable Development"
+    ],
     "careers": [
       "Urban Planner",
       "Territorial Analyst",
       "Planning Consultant"
     ],
+    "workplaces": [
+      "Municipalities",
+      "Urban Planning Offices",
+      "Government Agencies",
+      "Consulting Firms",
+      "Research Centers"
+    ],
+    "degree": "Licence + Master",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "Admission through the national higher education orientation system."
     "faqs": [
       {
         "q": "Which software is used?",
@@ -99,6 +163,14 @@
       "master": "/files/master/GV-Msila-Canevas-de-Mise-en-Conformite-MASTER-2025-2026.pdf"
     },
     "overview": "City Management focuses on urban governance, services and territorial management.",
+    
+    "whyChoose": [
+      "Develop leadership and management skills.",
+      "Learn how modern cities are managed.",
+      "Focus on sustainable urban governance.",
+      "Prepare for careers in local administration."
+    ], 
+    
     "duration": "3 years Licence + 2 years Master",
     "subjects": [
       "Urban Governance",
@@ -106,6 +178,13 @@
       "Urban Economics",
       "Local Administration",
       "Project Management"
+    ],
+    "learningOutcomes": [
+      "Manage urban services efficiently.",
+      "Develop decision-making skills.",
+      "Understand local governance.",
+      "Coordinate urban development projects.",
+      "Analyze urban policies."
     ],
     "skills": [
       "Urban management",
@@ -118,11 +197,31 @@
       "Power BI",
       "Excel"
     ],
+    "higherStudies": [
+      "Master in City Management",
+      "Doctorate",
+      "Urban Governance Research"
+    ],
     "careers": [
       "City Manager",
       "Urban Development Officer",
       "Local Administration Officer"
     ],
+    "workplaces": [
+      "Municipalities",
+      "Wilaya Administration",
+      "Public Institutions",
+      "Urban Agencies",
+      "Consulting Companies"
+    ],
+    "degree": "Licence + Master",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "Admission through the national higher education orientation system."
     "faqs": [
       {
         "q": "What is City Management?",
@@ -143,6 +242,14 @@
       "master": "/files/master/GU-Msila-Canevas-de-Mise-en-Conformite-MASTER-2025-2026-1.pdf"
     },
     "overview": "Urban Engineering focuses on the design and management of urban networks, infrastructure and technical systems.",
+   
+    "whyChoose": [
+      "Specialize in urban infrastructure and technical networks.",
+      "Gain practical engineering skills.",
+      "Work on real-world infrastructure projects.",
+      "Excellent career opportunities in public and private sectors."
+    ],
+   
     "duration": "3 years Licence + 2 years Master",
     "subjects": [
       "Urban Networks VRD",
@@ -151,6 +258,13 @@
       "Construction Materials",
       "Geotechnics",
       "BIM"
+    ],
+    "learningOutcomes": [
+      "Design urban infrastructure.",
+      "Analyze technical networks.",
+      "Manage construction projects.",
+      "Apply engineering standards.",
+      "Develop technical solutions."
     ],
     "skills": [
       "Infrastructure design",
@@ -164,11 +278,31 @@
       "Revit",
       "ArcGIS"
     ],
+    "higherStudies": [
+      "Master in Urban Engineering",
+      "Doctorate",
+      "Infrastructure Research"
+    ],
     "careers": [
       "Urban Engineer",
       "Infrastructure Engineer",
       "Technical Consultant"
     ],
+    "workplaces": [
+      "Engineering Offices",
+      "Construction Companies",
+      "Municipalities",
+      "Public Works",
+      "Infrastructure Agencies"
+    ],
+    "degree": "Licence + Master",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "Admission through the national higher education orientation system."
     "faqs": [
       {
         "q": "What does Urban Engineering focus on?",
@@ -188,6 +322,14 @@
       "master": "/files/master/Canevas-Master-MPC-2025-2026.pdf"
     },
     "overview": "This specialty prepares students to plan, organize and manage construction projects.",
+   
+    "whyChoose": [
+      "Master construction project planning and management.",
+      "Develop leadership and organizational skills.",
+      "Learn international project management practices.",
+      "High demand in the construction industry."
+    ],
+   
     "duration": "3 years Licence + 2 years Master",
     "subjects": [
       "Project Management",
@@ -195,6 +337,13 @@
       "Cost Estimation",
       "Planning",
       "Construction Law"
+    ],
+    "learningOutcomes": [
+      "Plan construction projects.",
+      "Manage project schedules.",
+      "Estimate project costs.",
+      "Coordinate multidisciplinary teams.",
+      "Monitor project execution."
     ],
     "skills": [
       "Project scheduling",
@@ -208,11 +357,31 @@
       "AutoCAD",
       "Excel"
     ],
+    "higherStudies": [
+      "Master in Project Management",
+      "Doctorate",
+      "Construction Research"
+    ],
     "careers": [
       "Project Manager",
       "Construction Coordinator",
       "Planning Engineer"
     ],
+    "workplaces": [
+      "Construction Companies",
+      "Project Management Offices",
+      "Engineering Firms",
+      "Government Agencies",
+      "Private Companies"
+    ],
+    "degree": "Licence + Master",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "Admission through the national higher education orientation system."
     "faqs": [
       {
         "q": "What is this specialty about?",
@@ -231,12 +400,27 @@
       "ingeniorat": "/files/OF-Ingeniorat-ARCHI-GTU2024-Msila.pdf"
     },
     "overview": "Architecture combines design, construction knowledge and spatial organization.",
+    
+    "whyChoose": [
+      "Creative and technical education.",
+      "Hands-on architectural design studios.",
+      "Professional software training.",
+      "Strong career opportunities in architecture and urban design."
+    ],
+    
     "duration": "Engineering Architecture Program",
     "subjects": [
       "Architectural Design",
       "Construction Technology",
       "Building Materials",
       "Urban Design"
+    ],
+    "learningOutcomes": [
+      "Design architectural projects.",
+      "Develop technical drawings.",
+      "Master 3D architectural modeling.",
+      "Understand construction systems.",
+      "Integrate sustainability into design."
     ],
     "skills": [
       "Architectural conception",
@@ -249,11 +433,31 @@
       "SketchUp",
       "Lumion"
     ],
+    "higherStudies": [
+      "Specialized Master's Degree",
+      "Doctorate in Architecture",
+      "Architectural Research"
+    ],
     "careers": [
       "Architect",
       "Architectural Designer",
       "Project Consultant"
     ],
+    "workplaces": [
+      "Architectural Firms",
+      "Design Studios",
+      "Construction Companies",
+      "Public Institutions",
+      "Private Practice"
+    ],
+    "degree": "Engineering Degree",
+
+"language": [
+  "Arabic",
+  "French"
+],
+
+"admission": "Admission through the national higher education orientation system."
     "faqs": [
       {
         "q": "What does Architecture study?",

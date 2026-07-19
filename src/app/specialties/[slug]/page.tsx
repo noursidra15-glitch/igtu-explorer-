@@ -70,6 +70,52 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
             <p className="mt-1 text-base font-semibold">{specialty.duration}</p>
           </GlassCard>
         </Reveal>
+        {/* Quick Facts */}
+<section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+
+<GlassCard>
+  <h3 className="text-xs font-semibold text-foreground/50 uppercase">
+    Degree
+  </h3>
+  <p className="mt-2 font-semibold">{specialty.degree}</p>
+</GlassCard>
+
+<GlassCard>
+  <h3 className="text-xs font-semibold text-foreground/50 uppercase">
+    Duration
+  </h3>
+  <p className="mt-2 font-semibold">{specialty.duration}</p>
+</GlassCard>
+
+<GlassCard>
+  <h3 className="text-xs font-semibold text-foreground/50 uppercase">
+    Languages
+  </h3>
+  <p className="mt-2 font-semibold">
+    {specialty.language.join(", ")}
+  </p>
+</GlassCard>
+
+<GlassCard>
+  <h3 className="text-xs font-semibold text-foreground/50 uppercase">
+    Admission
+  </h3>
+  <p className="mt-2 text-sm">
+    {specialty.admission}
+  </p>
+</GlassCard>
+
+<GlassCard>
+  <h3 className="text-xs font-semibold text-foreground/50 uppercase">
+    Higher Studies
+  </h3>
+  <p className="mt-2 text-sm">
+    {specialty.higherStudies.length}
+    {" "}Options
+  </p>
+</GlassCard>
+
+</section>
         {/* Formation Offer */}
 {specialty.formationOffer && (
   <section className="mt-16">
