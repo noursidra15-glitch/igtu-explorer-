@@ -13,10 +13,6 @@
       "href": "/specialties"
     },
     {
-      "label": "Formation Offers",
-      "href": "/resources"
-    },
-    {
       "label": "Student Guide",
       "href": "/student-guide"
     },
@@ -85,17 +81,17 @@
   ],
   "testimonials": [
     {
-      "name": "Amel K.",
+      "name": "nour selsabil.",
       "role": "Master 2, Urbanisme",
       "quote": "The studio projects made me think about M'Sila differently — every plan we drew was for a real street I walk on."
     },
     {
-      "name": "Yacine B.",
+      "name": "Dhiaa.",
       "role": "Graduate, Gestion des Villes",
       "quote": "The governance and smart-city courses prepared me directly for my role at the municipal planning office."
     },
     {
-      "name": "Sarah M.",
+      "name": "Ahlem.",
       "role": "Master 1, Génie Urbain",
       "quote": "I came in knowing structural math, and left knowing how a whole neighborhood's infrastructure fits together."
     }

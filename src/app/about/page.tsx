@@ -101,24 +101,4 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Gallery */}
-      <section className="mt-24">
-        <Container>
-          <SectionHeading eyebrow="Gallery" title="Campus & studio life" />
-          <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <Reveal key={i} delay={i * 0.05}>
-                <div className="group relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-brand/15 to-blue-brand/15">
-                  <div className="topo-grid absolute inset-0 opacity-60" aria-hidden />
-                  <div className="absolute inset-0 flex items-center justify-center text-xs font-medium text-foreground/40">
-                    Studio photo {i + 1}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </section>
-    </div>
-  );
-}
+      

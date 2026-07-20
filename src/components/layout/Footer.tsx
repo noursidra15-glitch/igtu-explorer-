@@ -28,7 +28,10 @@ export function Footer() {
                 IGTU <span className="gradient-text">Explorer</span>
               </span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground/60">{t.footer.tagline}</p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground/60">
+               Independent academic platform helping students explore the Institute of
+               Management and Urban Techniques (IGTU), Mohamed Boudiaf University – M&apos;Sila.
+          </p>
           </div>
 
           <div>
@@ -75,13 +78,31 @@ export function Footer() {
               })}
             </div>
 
-            
+            <div className="mt-6 space-y-2">
+  <a
+    href="https://www.univ-msila.dz/site/gtu-ar/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-lg bg-emerald-brand px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"  >
+    Official IGTU Website
+  </a>
+
+  <p className="text-xs text-foreground/60">
+    Mohamed Boudiaf University – M&apos;Sila
+  </p>
+</div> 
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-border-soft pt-6 sm:flex-row">
           <p className="whitespace-pre-line text-center text-xs leading-relaxed text-foreground/50 sm:text-left">
-            {t.copyright}
+          © 2026 IGTU Explorer
+
+Independent academic platform for students of the
+Institute of Management and Urban Techniques.
+
+Developed by Urban Planner
+Hachemi Nour Selsabil
           </p>
           <button
             type="button"
