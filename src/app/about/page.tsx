@@ -100,5 +100,7 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
-
+     </div>
+  );  
+}
       
