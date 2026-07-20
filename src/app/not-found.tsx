@@ -12,8 +12,7 @@ export default function NotFound() {
       </h2>
 
       <p className="mt-3 text-gray-500 max-w-md">
-        The page you are looking for doesn't exist.
-      </p>
+      The page you&apos;re looking for doesn&apos;t exist.      </p>
 
       <Link
         href="/"

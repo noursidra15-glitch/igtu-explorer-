@@ -31,7 +31,7 @@ export default function PrivacyPage() {
 
         <p>
           This website provides educational information about the Institute of
-          Management and Urban Techniques (IGTU), University of M'Sila.
+          Management and Urban Techniques (IGTU), University of M&apos;Sila.
         </p>
 
       </div>
