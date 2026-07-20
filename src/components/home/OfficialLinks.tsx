@@ -3,8 +3,9 @@ import {
   Globe,
   GraduationCap,
   Send,
-  Instagram,
 } from "lucide-react";
+
+import { InstagramIcon } from "@/components/ui/BrandIcons";
 
 const links = [
   {
@@ -29,7 +30,7 @@ const links = [
     title: "Instagram",
     description: "Follow for updates.",
     href: "https://instagram.com/ns_designer20?utm_source=qr&igsh=YXoxdnl1dDVnc2Zs",
-    icon: Instagram,
+    icon: InstagramIcon,
   },
 ];
 
