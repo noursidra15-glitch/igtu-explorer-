@@ -8,20 +8,22 @@ interface PageProps {
     const { slug } = await params;
   
     return (
-      <main className="mx-auto flex min-h-screen max-w-5xl items-center justify-center px-6">
-        <div className="rounded-3xl border p-10 text-center shadow-sm">
-          <h1 className="text-4xl font-bold">Student Guide</h1>
+      <main className="mx-auto flex min-h-screen max-w-5xl items-center justify-center px-6 py-20">
+        <div className="rounded-3xl border bg-white p-10 shadow-lg text-center">
+          <h1 className="text-4xl font-bold text-emerald-600">
+            Student Guide
+          </h1>
   
           <p className="mt-4 text-gray-500">
-            Guide for:
+            Guide for specialization
           </p>
   
-          <p className="mt-2 text-xl font-semibold text-emerald-600">
+          <h2 className="mt-2 text-2xl font-semibold">
             {slug}
-          </p>
+          </h2>
   
           <p className="mt-6 text-gray-400">
-            This page is under development.
+            This guide will be available soon.
           </p>
         </div>
       </main>
