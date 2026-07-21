@@ -1,3 +1,7 @@
+"use client";
+
+import { useLanguage } from "@/components/layout/LanguageProvider";
+
 import {
     GraduationCap,
     Globe,
@@ -9,48 +13,42 @@ import {
     const items = [
       {
         icon: GraduationCap,
-        title: "Official Information",
-        description:
-          "Access organized information about IGTU programs and academic pathways.",
+        title: t.whyChoose.officialTitle,
+        description: t.whyChoose.officialDesc,
       },
       {
         icon: Search,
-        title: "Easy Navigation",
-        description:
-          "Find specialties, resources and important pages quickly.",
+        title: t.whyChoose.navigationTitle,
+        description: t.whyChoose.navigationDesc,
       },
       {
         icon: Smartphone,
-        title: "Mobile Friendly",
-        description:
-          "Designed to work perfectly on phones, tablets and computers.",
+        title: t.whyChoose.mobileTitle,
+        description: t.whyChoose.mobileDesc,
       },
       {
         icon: Globe,
-        title: "Free Access",
-        description:
-          "Available anytime with no registration required.",
+        title: t.whyChoose.freeTitle,
+        description: t.whyChoose.freeDesc,
       },
     ];
-  
+
     return (
       <section className="py-20 bg-surface-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
   
           <div className="text-center">
             <span className="text-emerald-brand font-semibold uppercase tracking-wider">
-              Why IGTU Explorer
+              {t.whyChoose.badge}
             </span>
   
             <h2 className="mt-3 text-4xl font-bold">
-              Everything You Need in
-              <span className="gradient-text"> One Place</span>
+              {t.whyChoose.title}
+             <span className="gradient-text"> One Place</span>
             </h2>
   
             <p className="mx-auto mt-5 max-w-2xl text-foreground/60">
-              IGTU Explorer helps students discover programs, academic
-              information and useful resources through a fast and modern
-              experience.
+            {t.whyChoose.subtitle}
             </p>
           </div>
   

@@ -15,9 +15,13 @@ import { cn } from "@/lib/utils";
 const specialtyIcons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
 
 // Maps a nav href to its i18n key in dictionary.nav, since site.json labels stay English-only.
-const navKeyByHref: Record<string, "home" | "about" | "programs" | "formationOffers" | "faq" | "contact"> = {
+const navKeyByHref: const navKeyByHref: Record<
+string,
+"home" | "about" | "programs" | "formationOffers" | "studentGuides" | "faq" | "contact"
+> = {
   "/": "home",
   "/about": "about",
+  "/student-guides": "studentGuides",
   "/specialties": "programs",
   "/resources": "formationOffers",
   "/faq": "faq",
@@ -74,7 +78,10 @@ export function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-1 lg:flex">
-          {siteData.nav.map((item) => {
+        {[
+           ...siteData.nav,
+            { href: "/student-guides", label: "Student Guides" },
+          ].map((item) => {
             const isPrograms = item.href === "/specialties";
             const isActive = pathname === item.href;
             const label = t.nav[navKeyByHref[item.href] ?? "home"];
@@ -207,7 +214,10 @@ export function Navbar() {
             className="glass overflow-hidden border-t lg:hidden"
           >
             <div className="flex flex-col gap-1 px-4 py-4">
-              {siteData.nav.map((item) => (
+            {[
+                ...siteData.nav,
+               { href: "/student-guides", label: "Student Guides" },
+            ].map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

@@ -53,20 +53,25 @@ export function StudentGuides() {
   const { t } = useLanguage();
   return (
     <section className="py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mb-12 text-center">
 
-        <div className="text-center">
-          <span className="rounded-full bg-emerald-500/10 px-4 py-1 text-sm font-semibold text-emerald-600">
-          {t.guides.title}
-          </span>
+      <div className="mx-auto mt-10 max-w-xl">
+        <input
+          type="text"
+          placeholder="🔍 Search a guide..."
+          className="w-full rounded-2xl border border-gray-200 bg-white px-6 py-4 text-lg shadow-sm transition focus:border-emerald-500 focus:outline-none focus:ring-4 focus:ring-emerald-100"
+        />
+      </div>
+      
+        <h2 className="text-4xl font-bold">
+          Available Guides
+        </h2>
 
-          <h2 className="mt-4 text-4xl font-bold">
-          {t.guides.title}
-          </h2>
+         <p className="mt-3 text-gray-500">
+          Choose your specialization to access the official student guide.
+        </p>
 
-          <p className="mt-3 text-gray-500">
-          {t.guides.subtitle}          </p>
-        </div>
+      </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {guides.map((guide) => {

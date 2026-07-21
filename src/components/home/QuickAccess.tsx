@@ -1,3 +1,6 @@
+"use client";
+
+import { useLanguage } from "@/components/layout/LanguageProvider";
 import Link from "next/link";
 import {
   GraduationCap,
@@ -8,26 +11,26 @@ import {
 
 const cards = [
   {
-    title: "Specialties",
-    description: "Explore all academic programs.",
+    title: t.quickAccess.specialtiesTitle,
+    description: t.quickAccess.specialtiesDesc,
     href: "/specialties",
     icon: GraduationCap,
   },
   {
-    title: "Student Guide",
-    description: "Everything new students need.",
-    href: "/student-guide",
+    title: t.quickAccess.guideTitle,
+    description: t.quickAccess.guideDesc,
+    href: "/student-guides",
     icon: BookOpen,
   },
   {
-    title: "About IGTU",
-    description: "Learn about the institute.",
+    title: t.quickAccess.aboutTitle,
+    description: t.quickAccess.aboutDesc,
     href: "/about",
     icon: Info,
   },
   {
-    title: "Contact",
-    description: "Reach us easily.",
+    title: t.quickAccess.contactTitle,
+    description: t.quickAccess.contactDesc,
     href: "/contact",
     icon: Phone,
   },
@@ -40,12 +43,11 @@ export function QuickAccess() {
 
         <div className="text-center">
           <h2 className="text-4xl font-bold">
-            Quick Access
+          {t.quickAccess.title}
           </h2>
 
           <p className="mt-4 text-foreground/60">
-            Navigate to the most important sections instantly.
-          </p>
+          {t.quickAccess.subtitle}          </p>
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">

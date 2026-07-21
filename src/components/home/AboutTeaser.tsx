@@ -1,3 +1,6 @@
+"use client";
+
+import { useLanguage } from "@/components/layout/LanguageProvider";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -9,22 +12,18 @@ export function AboutTeaser() {
       <Container className="grid items-center gap-10 lg:grid-cols-2">
         <Reveal>
           <span className="mb-3 inline-block rounded-full border border-border-soft bg-surface-muted px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-brand">
-            About the Institute
+          {t.aboutTeaser.badge}
           </span>
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Training urban leaders since day one
-          </h2>
+          {t.aboutTeaser.title}          </h2>
           <p className="mt-5 text-base leading-relaxed text-foreground/60">
-            The Institute of Management and Urban Techniques (IGTU), part of Mohamed Boudiaf
-            University in M&apos;Sila, trains the planners, administrators and engineers who will
-            manage Algeria&apos;s growing cities — combining rigorous academics with hands-on
-            studio work on real municipal challenges.
+          {t.aboutTeaser.description}
           </p>
           <Link
             href="/about"
-            className="focus-ring mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand"
-          >
-            Learn more about IGTU <ArrowRight size={15} />
+            className="focus-ring mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand" >
+            {t.aboutTeaser.button}
+           <ArrowRight size={15} />
           </Link>
         </Reveal>
 
