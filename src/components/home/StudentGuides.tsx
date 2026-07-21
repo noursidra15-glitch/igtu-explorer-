@@ -44,8 +44,8 @@ const guides = [
     title: "Construction Project Management",
     description: "First Official Guide Available",
     icon: HardHat,
-    read: "/guides/mpc/index.html",
-    pdf: "/guides/mpc/MPC_Student_Guide.pdf",
+    read: "/guides/MPC/mpc_student_guide_2026_2027_printable.html",
+    pdf: "/guides/MPC/mpc_student_guide_2026_2027_printable.html.pdf",
   },
 ];
 
