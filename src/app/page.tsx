@@ -8,6 +8,7 @@ import { LocationMap } from "@/components/home/LocationMap";
 import { WhyChoose } from "@/components/home/WhyChoose";
 import { QuickAccess } from "@/components/home/QuickAccess";
 import { OfficialLinks } from "@/components/home/OfficialLinks";
+import { UsefulPlatforms } from "@/components/home/UsefulPlatforms";
 
 export default function HomePage() {
   return (
@@ -29,6 +30,8 @@ export default function HomePage() {
       <FAQPreview />
 
       <CTASection />
+    
+      <UsefulPlatforms />
 
       <LocationMap />
     </>
