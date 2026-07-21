@@ -32,6 +32,15 @@ interface TranslationDict {
     subscribe: string;
     backToTop: string;
   };
+  guides: {
+    title: string;
+    subtitle: string;
+  };
+  
+  platforms: {
+    title: string;
+    subtitle: string;
+  };
   copyright: string;
 }
 
@@ -55,7 +64,16 @@ export const dictionary: Record<Locale, TranslationDict> = {
       subscribe: "Subscribe",
       backToTop: "Back to top",
     },
-    copyright: "© 2026 All Rights Reserved.\nDesigned & Developed by Urban Planner Hachemi Nour Selsabil.",
+    guides: {
+      title: "Student Guides",
+      subtitle: "Comprehensive guides for every specialization.",
+    },
+    
+    platforms: {
+      title: "Official Student Platforms",
+      subtitle: "Access all official university platforms from one place.",
+    },
+        copyright: "© 2026 All Rights Reserved.\nDesigned & Developed by Urban Planner Hachemi Nour Selsabil.",
   },
   fr: {
     nav: { home: "Accueil", about: "À propos", programs: "Programmes", formationOffers: "Offres de Formation", faq: "FAQ", contact: "Contact" },
@@ -75,6 +93,15 @@ export const dictionary: Record<Locale, TranslationDict> = {
       newsletterHint: "Actualités occasionnelles de l'institut — sans spam.",
       subscribe: "S'abonner",
       backToTop: "Retour en haut",
+    },
+    guides: {
+      title: "Guides Étudiants",
+      subtitle: "Guides complets pour chaque spécialité.",
+    },
+    
+    platforms: {
+      title: "Plateformes Étudiantes",
+      subtitle: "Accédez à toutes les plateformes officielles.",
     },
     copyright: "© 2026 Tous droits réservés.\nConçu et développé par l'Urbaniste Hachemi Nour Selsabil.",
   },
@@ -96,6 +123,15 @@ export const dictionary: Record<Locale, TranslationDict> = {
       newsletterHint: "تحديثات دورية من المعهد — بدون رسائل مزعجة.",
       subscribe: "اشتراك",
       backToTop: "العودة للأعلى",
+    },
+    guides: {
+      title: "أدلة الطلبة",
+      subtitle: "أدلة شاملة لجميع التخصصات.",
+    },
+    
+    platforms: {
+      title: "المنصات الرسمية للطلبة",
+      subtitle: "الوصول إلى جميع المنصات الجامعية الرسمية من مكان واحد.",
     },
     copyright: "© 2026 جميع الحقوق محفوظة.\nتم التصميم والتطوير بواسطة المهندسة العمرانية هاشمي نور سلسبيل.",
   },

@@ -1,20 +1,43 @@
-export const en = {
-    navbar: {
-      home: "Home",
-      specialties: "Specialties",
-      resources: "Resources",
-      studentGuide: "Student Guide",
-      about: "About",
-      contact: "Contact"
+const en = {
+  common: {
+    readMore: "Read More",
+    learnMore: "Learn More",
+    comingSoon: "Coming Soon",
+    download: "Download",
+    open: "Open",
+    visit: "Visit",
+  },
+
+  navbar: {
+    home: "Home",
+    about: "About",
+    specialties: "Specialties",
+    resources: "Resources",
+    guides: "Student Guides",
+    faq: "FAQ",
+    contact: "Contact",
+  },
+
+  home: {
+    hero: {
+      badge: "Official Student Platform",
+      title: "Your Gateway to the Institute of Management and Urban Techniques",
+      subtitle:
+        "Explore programs, student guides, academic resources and official platforms from one place.",
     },
-  
-    home: {
-      heroTitle: "Explore the Institute of Management and Urban Techniques",
-      heroSubtitle: "Discover academic programs, resources and student guidance."
+
+    platforms: {
+      title: "Official Student Platforms",
+      subtitle:
+        "Access all official university platforms from one place.",
     },
-  
-    footer: {
-      follow: "Follow Us",
-      quickLinks: "Quick Links"
-    }
-  };
+
+    guides: {
+      title: "Student Guides",
+      subtitle:
+        "Comprehensive guides for every specialization.",
+    },
+  },
+};
+
+export default en;

@@ -9,6 +9,7 @@ import { WhyChoose } from "@/components/home/WhyChoose";
 import { QuickAccess } from "@/components/home/QuickAccess";
 import { OfficialLinks } from "@/components/home/OfficialLinks";
 import { UsefulPlatforms } from "@/components/home/UsefulPlatforms";
+import { StudentGuides } from "@/components/home/StudentGuides";
 
 export default function HomePage() {
   return (
@@ -32,6 +33,8 @@ export default function HomePage() {
       <CTASection />
     
       <UsefulPlatforms />
+
+      <StudentGuides />
 
       <LocationMap />
     </>

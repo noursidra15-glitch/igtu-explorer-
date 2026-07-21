@@ -1,78 +1,43 @@
-export const ar = {
-    navbar: {
-      home: "الرئيسية",
-      specialties: "التخصصات",
-      degrees: "التكوينات",
-      resources: "الموارد",
-      studentGuide: "دليل الطالب",
-      careers: "الآفاق المهنية",
-      projects: "المشاريع",
-      faq: "الأسئلة الشائعة",
-      about: "حول الموقع",
-      contact: "اتصل بنا",
+const ar = {
+  common: {
+    readMore: "اقرأ المزيد",
+    learnMore: "اعرف المزيد",
+    comingSoon: "قريبًا",
+    download: "تحميل",
+    open: "فتح",
+    visit: "زيارة",
+  },
+
+  navbar: {
+    home: "الرئيسية",
+    about: "حول المعهد",
+    specialties: "التخصصات",
+    resources: "الموارد",
+    guides: "أدلة الطلبة",
+    faq: "الأسئلة الشائعة",
+    contact: "اتصل بنا",
+  },
+
+  home: {
+    hero: {
+      badge: "المنصة الرسمية للطلبة",
+      title: "بوابتك إلى معهد تسيير التقنيات الحضرية",
+      subtitle:
+        "اكتشف التخصصات، أدلة الطلبة، الموارد الأكاديمية والمنصات الرسمية في مكان واحد.",
     },
-  
-    home: {
-      heroTitle: "اكتشف معهد تسيير التقنيات الحضرية",
-      heroSubtitle:
-        "منصة حديثة لاستكشاف التخصصات، عروض التكوين، الموارد الأكاديمية، ودليل الطالب.",
-      explore: "استكشف التخصصات",
-      resources: "الموارد",
+
+    platforms: {
+      title: "المنصات الرسمية للطلبة",
+      subtitle:
+        "الوصول إلى جميع المنصات الجامعية الرسمية من مكان واحد.",
     },
-  
-    about: {
-      title: "حول IGTU Explorer",
-      description:
-        "منصة رقمية تساعد الطلبة على اكتشاف تخصصات معهد تسيير التقنيات الحضرية بجامعة المسيلة والوصول إلى الموارد الأكاديمية بسهولة.",
+
+    guides: {
+      title: "أدلة الطلبة",
+      subtitle:
+        "أدلة شاملة لجميع التخصصات.",
     },
-  
-    specialties: {
-      title: "التخصصات",
-      overview: "نظرة عامة",
-      duration: "مدة الدراسة",
-      curriculum: "الخطة الدراسية",
-      subjects: "المواد الأساسية",
-      skills: "المهارات المكتسبة",
-      software: "البرامج المستخدمة",
-      careers: "فرص العمل",
-      faq: "الأسئلة الشائعة",
-      formationOffer: "عرض التكوين",
-      download: "تحميل",
-      whyChoose: "لماذا تختار هذا التخصص؟",
-      learningOutcomes: "مخرجات التكوين",
-      workplaces: "أماكن العمل",
-      higherStudies: "الدراسات العليا",
-    },
-  
-    resources: {
-      title: "الموارد",
-      download: "تحميل الملف",
-    },
-  
-    studentGuide: {
-      title: "دليل الطالب",
-      compare: "مقارنة التخصصات",
-      choose: "كيف تختار تخصصك؟",
-      usefulLinks: "روابط مفيدة",
-    },
-  
-    contact: {
-      title: "اتصل بنا",
-      send: "إرسال",
-    },
-  
-    footer: {
-      programs: "التخصصات",
-      quickLinks: "روابط سريعة",
-      follow: "تابعنا",
-      newsletter: "النشرة البريدية",
-      newsletterHint: "اشترك لتصلك آخر التحديثات.",
-      subscribe: "اشتراك",
-      backToTop: "العودة للأعلى",
-      tagline:
-        "دليلك الرقمي لمعهد تسيير التقنيات الحضرية بجامعة المسيلة.",
-    },
-  
-    copyright:
-      "© 2026 IGTU Explorer\nجميع الحقوق محفوظة.\nتطوير: المهندسة العمرانية هاشمي نور سلسبيل",
-  };
+  },
+};
+
+export default ar;

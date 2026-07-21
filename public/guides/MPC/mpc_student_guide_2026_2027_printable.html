@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<style>
+
+:root {
+  --color-brand-primary: #232425;
+  --color-brand-secondary: #0F7FFF;
+  --color-bg-page: #FFFFFF;
+  --color-bg-surface: #FAFAFA;
+  --color-bg-subtle: #F5F5F5;
+  --color-text-primary: #232425;
+  --color-text-secondary: #606366;
+  --color-text-tertiary: #909499;
+  --color-text-disabled: #C4C7CC;
+  --color-text-link: #0F7FFF;
+  --color-text-on-brand: #FFFFFF;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  --color-border-default: #EAEAEA;
+  --color-border-strong: #D0D3D8;
+  --color-border-subtle: #F2F2F2;
+  --color-border-brand: #0F7FFF;
+  --color-border-error: #EF4444;
+  --color-border-success: #10B981;
+  --space-4: 4px; --space-8: 8px; --space-12: 12px; --space-16: 16px;
+  --space-20: 20px; --space-24: 24px; --space-32: 32px; --space-48: 48px;
+  --text-h1: 36px; --text-h2: 28px; --text-h3: 22px; --text-h4: 18px;
+  --text-body: 16px; --text-small: 14px; --text-caption: 12px;
+  --radius-4: 4px; --radius-8: 8px; --radius-12: 12px;
+  --border-width-1: 1px; --border-width-2: 2px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+
+  /* Categorical color ramps (mirror of design-tokens.css) */
+  --color-cat-blue-50:#EBF3FE;--color-cat-blue-100:#C5DDFC;--color-cat-blue-200:#92BEF8;--color-cat-blue-400:#0F7FFF;--color-cat-blue-600:#0561C5;--color-cat-blue-800:#053F7C;--color-cat-blue-900:#06294F;
+  --color-cat-green-50:#E5F8F1;--color-cat-green-100:#B7EFD8;--color-cat-green-200:#7DE0BA;--color-cat-green-400:#10B981;--color-cat-green-600:#088762;--color-cat-green-800:#045A41;--color-cat-green-900:#023A29;
+  --color-cat-amber-50:#FEF3D9;--color-cat-amber-100:#FCE0A0;--color-cat-amber-200:#FAC865;--color-cat-amber-400:#F59E0B;--color-cat-amber-600:#B16E03;--color-cat-amber-800:#6E4500;--color-cat-amber-900:#422900;
+  --color-cat-red-50:#FDE9E9;--color-cat-red-100:#F9C2C2;--color-cat-red-200:#F49595;--color-cat-red-400:#EF4444;--color-cat-red-600:#C41B1B;--color-cat-red-800:#821212;--color-cat-red-900:#520B0B;
+  --color-cat-purple-50:#F0EAFE;--color-cat-purple-100:#D5C2FB;--color-cat-purple-200:#B59AF8;--color-cat-purple-400:#8B5CF6;--color-cat-purple-600:#6431D2;--color-cat-purple-800:#441E8E;--color-cat-purple-900:#2A1259;
+  --color-cat-teal-50:#DEF7F4;--color-cat-teal-100:#A6EBE2;--color-cat-teal-200:#6BDCCD;--color-cat-teal-400:#14B8A6;--color-cat-teal-600:#0D8779;--color-cat-teal-800:#075A50;--color-cat-teal-900:#043934;
+  --color-cat-coral-50:#FEE7EB;--color-cat-coral-100:#FCC0CA;--color-cat-coral-200:#FA98A8;--color-cat-coral-400:#FB7185;--color-cat-coral-600:#D14258;--color-cat-coral-800:#8C2336;--color-cat-coral-900:#5A111F;
+  --color-cat-pink-50:#FCE4F1;--color-cat-pink-100:#F7BAD9;--color-cat-pink-200:#F18BBE;--color-cat-pink-400:#EC4899;--color-cat-pink-600:#B81F75;--color-cat-pink-800:#7B0F4D;--color-cat-pink-900:#4D0530;
+  --color-cat-gray-50:#F3F4F6;--color-cat-gray-100:#E5E7EB;--color-cat-gray-200:#CBD0D7;--color-cat-gray-400:#6B7280;--color-cat-gray-600:#4A4F58;--color-cat-gray-800:#2A2D33;--color-cat-gray-900:#16181B;
+}
+.c-blue   { fill: var(--color-cat-blue-50);   stroke: var(--color-cat-blue-600);   color: var(--color-cat-blue-800);   background-color: var(--color-cat-blue-50);   border-color: var(--color-cat-blue-600); }
+.c-green  { fill: var(--color-cat-green-50);  stroke: var(--color-cat-green-600);  color: var(--color-cat-green-800);  background-color: var(--color-cat-green-50);  border-color: var(--color-cat-green-600); }
+.c-amber  { fill: var(--color-cat-amber-50);  stroke: var(--color-cat-amber-600);  color: var(--color-cat-amber-800);  background-color: var(--color-cat-amber-50);  border-color: var(--color-cat-amber-600); }
+.c-red    { fill: var(--color-cat-red-50);    stroke: var(--color-cat-red-600);    color: var(--color-cat-red-800);    background-color: var(--color-cat-red-50);    border-color: var(--color-cat-red-600); }
+.c-purple { fill: var(--color-cat-purple-50); stroke: var(--color-cat-purple-600); color: var(--color-cat-purple-800); background-color: var(--color-cat-purple-50); border-color: var(--color-cat-purple-600); }
+.c-teal   { fill: var(--color-cat-teal-50);   stroke: var(--color-cat-teal-600);   color: var(--color-cat-teal-800);   background-color: var(--color-cat-teal-50);   border-color: var(--color-cat-teal-600); }
+.c-coral  { fill: var(--color-cat-coral-50);  stroke: var(--color-cat-coral-600);  color: var(--color-cat-coral-800);  background-color: var(--color-cat-coral-50);  border-color: var(--color-cat-coral-600); }
+.c-pink   { fill: var(--color-cat-pink-50);   stroke: var(--color-cat-pink-600);   color: var(--color-cat-pink-800);   background-color: var(--color-cat-pink-50);   border-color: var(--color-cat-pink-600); }
+.c-gray   { fill: var(--color-cat-gray-50);   stroke: var(--color-cat-gray-600);   color: var(--color-cat-gray-800);   background-color: var(--color-cat-gray-50);   border-color: var(--color-cat-gray-600); }
+.c-blue text, .c-green text, .c-amber text, .c-red text,
+.c-purple text, .c-teal text, .c-coral text, .c-pink text, .c-gray text { fill: currentColor; stroke: none; }
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-brand-primary: #E8E9EA;
+  --color-brand-secondary: #4a9eff;
+  --color-bg-page: #1A1B1C;
+  --color-bg-surface: #232425;
+  --color-bg-subtle: #2A2B2C;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B8BBBF;
+  --color-text-tertiary: #868B92;
+  --color-text-disabled: #4A4C4F;
+  --color-text-link: #8bb8ff;
+  --color-text-on-brand: #1A1B1C;
+  --color-border-default: #3A3B3C;
+  --color-border-strong: #4A4C4F;
+  --color-border-subtle: #2E2F30;
+  --color-border-brand: #4a9eff;
+  --color-border-error: #f87171;
+  --color-border-success: #34d399;
+  }
+  .c-blue { fill: var(--color-cat-blue-800); stroke: var(--color-cat-blue-200); color: var(--color-cat-blue-100); background-color: var(--color-cat-blue-800); border-color: var(--color-cat-blue-200); }
+  .c-green { fill: var(--color-cat-green-800); stroke: var(--color-cat-green-200); color: var(--color-cat-green-100); background-color: var(--color-cat-green-800); border-color: var(--color-cat-green-200); }
+  .c-amber { fill: var(--color-cat-amber-800); stroke: var(--color-cat-amber-200); color: var(--color-cat-amber-100); background-color: var(--color-cat-amber-800); border-color: var(--color-cat-amber-200); }
+  .c-red { fill: var(--color-cat-red-800); stroke: var(--color-cat-red-200); color: var(--color-cat-red-100); background-color: var(--color-cat-red-800); border-color: var(--color-cat-red-200); }
+  .c-purple { fill: var(--color-cat-purple-800); stroke: var(--color-cat-purple-200); color: var(--color-cat-purple-100); background-color: var(--color-cat-purple-800); border-color: var(--color-cat-purple-200); }
+  .c-teal { fill: var(--color-cat-teal-800); stroke: var(--color-cat-teal-200); color: var(--color-cat-teal-100); background-color: var(--color-cat-teal-800); border-color: var(--color-cat-teal-200); }
+  .c-coral { fill: var(--color-cat-coral-800); stroke: var(--color-cat-coral-200); color: var(--color-cat-coral-100); background-color: var(--color-cat-coral-800); border-color: var(--color-cat-coral-200); }
+  .c-pink { fill: var(--color-cat-pink-800); stroke: var(--color-cat-pink-200); color: var(--color-cat-pink-100); background-color: var(--color-cat-pink-800); border-color: var(--color-cat-pink-200); }
+  .c-gray { fill: var(--color-cat-gray-800); stroke: var(--color-cat-gray-200); color: var(--color-cat-gray-100); background-color: var(--color-cat-gray-800); border-color: var(--color-cat-gray-200); }
+}
+html[data-theme="dark"] {
+  --color-brand-primary: #E8E9EA;
+  --color-brand-secondary: #4a9eff;
+  --color-bg-page: #1A1B1C;
+  --color-bg-surface: #232425;
+  --color-bg-subtle: #2A2B2C;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B8BBBF;
+  --color-text-tertiary: #868B92;
+  --color-text-disabled: #4A4C4F;
+  --color-text-link: #8bb8ff;
+  --color-text-on-brand: #1A1B1C;
+  --color-border-default: #3A3B3C;
+  --color-border-strong: #4A4C4F;
+  --color-border-subtle: #2E2F30;
+  --color-border-brand: #4a9eff;
+  --color-border-error: #f87171;
+  --color-border-success: #34d399;
+}
+html[data-theme="dark"] .c-blue { fill: var(--color-cat-blue-800); stroke: var(--color-cat-blue-200); color: var(--color-cat-blue-100); background-color: var(--color-cat-blue-800); border-color: var(--color-cat-blue-200); }
+html[data-theme="dark"] .c-green { fill: var(--color-cat-green-800); stroke: var(--color-cat-green-200); color: var(--color-cat-green-100); background-color: var(--color-cat-green-800); border-color: var(--color-cat-green-200); }
+html[data-theme="dark"] .c-amber { fill: var(--color-cat-amber-800); stroke: var(--color-cat-amber-200); color: var(--color-cat-amber-100); background-color: var(--color-cat-amber-800); border-color: var(--color-cat-amber-200); }
+html[data-theme="dark"] .c-red { fill: var(--color-cat-red-800); stroke: var(--color-cat-red-200); color: var(--color-cat-red-100); background-color: var(--color-cat-red-800); border-color: var(--color-cat-red-200); }
+html[data-theme="dark"] .c-purple { fill: var(--color-cat-purple-800); stroke: var(--color-cat-purple-200); color: var(--color-cat-purple-100); background-color: var(--color-cat-purple-800); border-color: var(--color-cat-purple-200); }
+html[data-theme="dark"] .c-teal { fill: var(--color-cat-teal-800); stroke: var(--color-cat-teal-200); color: var(--color-cat-teal-100); background-color: var(--color-cat-teal-800); border-color: var(--color-cat-teal-200); }
+html[data-theme="dark"] .c-coral { fill: var(--color-cat-coral-800); stroke: var(--color-cat-coral-200); color: var(--color-cat-coral-100); background-color: var(--color-cat-coral-800); border-color: var(--color-cat-coral-200); }
+html[data-theme="dark"] .c-pink { fill: var(--color-cat-pink-800); stroke: var(--color-cat-pink-200); color: var(--color-cat-pink-100); background-color: var(--color-cat-pink-800); border-color: var(--color-cat-pink-200); }
+html[data-theme="dark"] .c-gray { fill: var(--color-cat-gray-800); stroke: var(--color-cat-gray-200); color: var(--color-cat-gray-100); background-color: var(--color-cat-gray-800); border-color: var(--color-cat-gray-200); }
+:root { color-scheme: light; }
+html, body { margin: 0; padding: 0; background: transparent !important; box-sizing: border-box;
+             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+*, *::before, *::after { box-sizing: inherit; }
+svg, svg text, svg tspan { font-family: inherit; }
+</style>
+<script>
+function sendPrompt(text) {
+  window.parent.postMessage(
+    { type: 'genspark_visualize_send_prompt', text: String(text) }, '*'
+  );
+}
+function _reportHeight() {
+  var h = Math.max(
+    document.body ? document.body.scrollHeight : 0,
+    document.documentElement ? document.documentElement.scrollHeight : 0,
+    100
+  );
+  window.parent.postMessage({ type: 'genspark_visualize_height', height: h }, '*');
+}
+window.addEventListener('load', function() {
+  _reportHeight();
+  if (window.ResizeObserver) {
+    new ResizeObserver(_reportHeight).observe(document.body);
+  }
+});
+window.addEventListener('resize', _reportHeight);
+
+// ── PNG export (rasterize the rendered widget inside the iframe) ─────────────
+// Runs here because sandbox="allow-scripts" (no allow-same-origin) makes the
+// iframe DOM unreachable from the parent. Clone <body>, swap each <canvas>
+// (Chart.js) for a snapshot <img>, inline the document styles with dark-scheme
+// rules stripped for a deterministic light export, wrap in <svg><foreignObject>,
+// and rasterize via a data: URL (a Blob URL would taint the canvas in Chromium).
+function _gsExportFont() { return "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'"; }
+function _gsCollectStyles() {
+  var out = '';
+  var s = document.querySelectorAll('style');
+  for (var i = 0; i < s.length; i++) { out += (s[i].textContent || '') + '\n'; }
+  return out;
+}
+function _gsStripDarkMedia(css) {
+  var marker = '@media (prefers-color-scheme: dark)';
+  var idx = css.indexOf(marker);
+  while (idx !== -1) {
+    var brace = css.indexOf('{', idx);
+    if (brace === -1) { css = css.slice(0, idx); break; }
+    var depth = 1, j = brace + 1;
+    while (j < css.length && depth > 0) {
+      var ch = css.charAt(j);
+      if (ch === '{') depth++; else if (ch === '}') depth--;
+      j++;
+    }
+    css = css.slice(0, idx) + css.slice(j);
+    idx = css.indexOf(marker);
+  }
+  return css;
+}
+function _gsCleanup(node) {
+  var scripts = node.querySelectorAll('script');
+  for (var i = 0; i < scripts.length; i++) {
+    if (scripts[i].parentNode) scripts[i].parentNode.removeChild(scripts[i]);
+  }
+  var nameRe = /^[A-Za-z_:][A-Za-z0-9_:.-]*$/;
+  var els = node.querySelectorAll('*');
+  for (var k = 0; k < els.length; k++) {
+    var attrs = els[k].attributes;
+    for (var a = attrs.length - 1; a >= 0; a--) {
+      if (!nameRe.test(attrs[a].name)) els[k].removeAttribute(attrs[a].name);
+    }
+  }
+}
+function _gsSubstituteCanvases(live, clone) {
+  var lc = live.querySelectorAll('canvas');
+  var cc = clone.querySelectorAll('canvas');
+  for (var i = 0; i < lc.length && i < cc.length; i++) {
+    var data = lc[i].toDataURL('image/png');
+    var img = document.createElement('img');
+    img.setAttribute('src', data);
+    img.setAttribute('style', (cc[i].getAttribute('style') || '') +
+      ';width:' + lc[i].offsetWidth + 'px;height:' + lc[i].offsetHeight + 'px');
+    if (cc[i].parentNode) cc[i].parentNode.replaceChild(img, cc[i]);
+  }
+}
+function _gsPostPng(id, dataUrl, error) {
+  window.parent.postMessage(
+    { type: 'genspark_visualize_png', id: id, dataUrl: dataUrl || null, error: error || null },
+    '*'
+  );
+}
+function _gsRasterize(id, scale) {
+  try {
+    scale = scale || 2;
+    var PAD = 16;  // breathing room so content never sits flush against the edge
+    var W = Math.max(document.documentElement.scrollWidth, document.body.scrollWidth, 1);
+    var H = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight, 1);
+    var bodyClone = document.body.cloneNode(true);
+    _gsSubstituteCanvases(document.body, bodyClone);
+    _gsCleanup(bodyClone);
+    var wrapper = document.createElement('div');
+    wrapper.setAttribute('style',
+      'font-family:' + _gsExportFont() + ';box-sizing:border-box;width:' + W + 'px');
+    while (bodyClone.firstChild) { wrapper.appendChild(bodyClone.firstChild); }
+    var inner = new XMLSerializer().serializeToString(wrapper);
+    var styleTag = '<style>' + _gsStripDarkMedia(_gsCollectStyles()) +
+      ' svg, svg text, svg tspan { font-family:' + _gsExportFont() + '; }</style>';
+    var CW = W + PAD * 2, CH = H + PAD * 2;
+    var SW = Math.round(CW * scale), SH = Math.round(CH * scale);
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + SW +
+      '" height="' + SH + '" viewBox="0 0 ' + CW + ' ' + CH + '">' +
+      '<foreignObject x="' + PAD + '" y="' + PAD + '" width="' + W + '" height="' + H + '">' +
+      '<div xmlns="http://www.w3.org/1999/xhtml">' + styleTag + inner + '</div>' +
+      '</foreignObject></svg>';
+    var img = new Image();
+    img.onload = function() {
+      try {
+        var cv = document.createElement('canvas');
+        cv.width = SW; cv.height = SH;
+        var ctx = cv.getContext('2d');
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0, 0, SW, SH);
+        ctx.drawImage(img, 0, 0);
+        _gsPostPng(id, cv.toDataURL('image/png'), null);
+      } catch (e) { _gsPostPng(id, null, 'tainted'); }
+    };
+    img.onerror = function() { _gsPostPng(id, null, 'image_error'); };
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  } catch (e) {
+    _gsPostPng(id, null,
+      (e && e.name === 'SecurityError') ? 'tainted' : String((e && e.message) || e));
+  }
+}
+window.addEventListener('message', function(ev) {
+  var d = ev.data || {};
+  if (!d || d.type !== 'genspark_visualize_request_png') return;
+  var run = function() { _gsRasterize(d.id, d.scale); };
+  if (document.fonts && document.fonts.ready && document.fonts.ready.then) {
+    document.fonts.ready.then(function() {
+      if (window.requestAnimationFrame) window.requestAnimationFrame(run);
+      else window.setTimeout(run, 0);
+    });
+  } else if (window.requestAnimationFrame) {
+    window.requestAnimationFrame(run);
+  } else {
+    window.setTimeout(run, 0);
+  }
+});
+</script>
+</head>
+<body><style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap');
+
+  .mpc-guide { direction: rtl; font-family: 'Cairo', 'Tajawal', sans-serif; color: #1E3A5F; line-height: 1.7; }
+  .mpc-guide * { box-sizing: border-box; }
+
+  /* Print button */
+  .print-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: linear-gradient(135deg, #1E3A5F, #2C5282);
+    color: #fff; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;
+    border-radius: 8px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .print-bar h4 { margin: 0; font-size: 15px; font-weight: 600; }
+  .print-btn {
+    background: #D4A017; color: #1E3A5F; border: none; padding: 10px 22px;
+    border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 14px;
+    font-family: inherit; transition: all 0.2s;
+  }
+  .print-btn:hover { background: #E8B62E; transform: translateY(-1px); }
+
+  /* Page structure */
+  .page {
+    width: 100%; max-width: 758px; margin: 0 auto 20px;
+    background: #FFFFFF; padding: 40px 36px; position: relative;
+    border: 1px solid #E5E7EB; border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); page-break-after: always;
+    min-height: 1000px;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* Cover page */
+  .cover {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2C5282 60%, #1E3A5F 100%);
+    color: #fff; text-align: center; padding: 50px 30px;
+    position: relative; overflow: hidden;
+  }
+  .cover::before {
+    content: ''; position: absolute; top: -80px; left: -80px; width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(212,160,23,0.25), transparent 70%);
+    border-radius: 50%;
+  }
+  .cover::after {
+    content: ''; position: absolute; bottom: -100px; right: -100px; width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(212,160,23,0.18), transparent 70%);
+    border-radius: 50%;
+  }
+  .cover-inner { position: relative; z-index: 2; }
+  .cover-univ {
+    font-size: 15px; letter-spacing: 1px; font-weight: 600;
+    border-bottom: 1px solid rgba(212,160,23,0.6); padding-bottom: 12px; margin-bottom: 8px;
+  }
+  .cover-institute { font-size: 13px; color: #F0D48C; margin-bottom: 40px; }
+  .cover-crane {
+    font-size: 56px; color: #D4A017; margin: 20px 0; text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .cover-title {
+    font-size: 52px; font-weight: 900; color: #fff;
+    line-height: 1.2; margin: 20px 0 10px; letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  }
+  .cover-subtitle {
+    font-size: 22px; font-weight: 600; color: #D4A017; margin-bottom: 6px;
+  }
+  .cover-degree {
+    font-size: 15px; color: #E5E7EB; margin-bottom: 40px;
+    background: rgba(255,255,255,0.08); padding: 10px 20px; display: inline-block;
+    border-radius: 30px; border: 1px solid rgba(212,160,23,0.4);
+  }
+  .cover-slogan-box {
+    background: rgba(212,160,23,0.12); border-right: 4px solid #D4A017;
+    padding: 18px 24px; margin: 30px auto; max-width: 480px; text-align: right;
+  }
+  .cover-slogan-ar { font-size: 20px; font-weight: 700; color: #fff; }
+  .cover-slogan-fr { font-size: 13px; color: #F0D48C; font-style: italic; margin-top: 6px; direction: ltr; text-align: left; }
+  .cover-year {
+    margin-top: 30px; padding: 12px 30px; background: #D4A017; color: #1E3A5F;
+    display: inline-block; font-size: 18px; font-weight: 900; letter-spacing: 3px;
+    border-radius: 4px;
+  }
+
+  /* Section headers */
+  .section-header {
+    background: linear-gradient(90deg, #1E3A5F, #2C5282);
+    color: #fff; padding: 14px 20px; margin: 24px 0 18px;
+    border-right: 6px solid #D4A017; border-radius: 4px;
+    display: flex; align-items: center; gap: 12px;
+    box-shadow: 0 2px 6px rgba(30,58,95,0.15);
+  }
+  .section-header .icon {
+    font-size: 22px; background: #D4A017; color: #1E3A5F;
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; flex-shrink: 0;
+  }
+  .section-header h2 {
+    margin: 0; font-size: 20px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header .num {
+    background: #fff; color: #1E3A5F; padding: 2px 10px; border-radius: 4px;
+    font-size: 13px; font-weight: 700; margin-right: auto;
+  }
+
+  /* Sub headers */
+  .sub-header {
+    color: #1E3A5F; font-size: 17px; font-weight: 700;
+    padding: 8px 14px; margin: 18px 0 12px;
+    background: linear-gradient(90deg, rgba(212,160,23,0.15), transparent);
+    border-right: 4px solid #D4A017; border-radius: 3px;
+  }
+
+  /* Text */
+  .body-text {
+    font-size: 14.5px; line-height: 1.9; color: #2D3748;
+    text-align: justify; margin-bottom: 12px;
+  }
+  .lead-text {
+    font-size: 15px; line-height: 2; color: #1E3A5F;
+    text-align: justify; background: #FDF6E3;
+    padding: 18px 22px; border-radius: 8px;
+    border-right: 4px solid #D4A017; margin: 14px 0;
+  }
+
+  /* Cards grid */
+  .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0; }
+  .card {
+    background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px;
+    padding: 14px; display: flex; gap: 12px; align-items: flex-start;
+    transition: all 0.2s;
+  }
+  .card-icon {
+    font-size: 20px; color: #fff; background: #1E3A5F;
+    min-width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; flex-shrink: 0;
+  }
+  .card-icon.gold { background: #D4A017; color: #1E3A5F; }
+  .card-icon.green { background: #556B2F; }
+  .card-text { font-size: 13.5px; line-height: 1.6; color: #2D3748; }
+  .card-text b { color: #1E3A5F; display: block; margin-bottom: 3px; font-size: 14px; }
+
+  /* Info table */
+  .info-table {
+    width: 100%; border-collapse: collapse; margin: 14px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-radius: 6px; overflow: hidden;
+  }
+  .info-table thead {
+    background: linear-gradient(90deg, #1E3A5F, #2C5282); color: #fff;
+  }
+  .info-table th {
+    padding: 12px 14px; text-align: right; font-size: 14px; font-weight: 700;
+    border-left: 1px solid rgba(255,255,255,0.15);
+  }
+  .info-table td {
+    padding: 11px 14px; font-size: 13.5px; border-bottom: 1px solid #E5E7EB;
+    color: #2D3748;
+  }
+  .info-table tbody tr:nth-child(even) { background: #F8FAFC; }
+  .info-table tbody tr:hover { background: #FDF6E3; }
+  .info-table td:first-child {
+    font-weight: 700; color: #1E3A5F; background: rgba(212,160,23,0.06);
+    width: 40%;
+  }
+
+  /* Semester tables */
+  .semester-wrap { margin: 14px 0; }
+  .semester-title {
+    background: #D4A017; color: #1E3A5F; padding: 8px 16px;
+    font-size: 15px; font-weight: 800; border-radius: 6px 6px 0 0;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .semester-title .semester-badge {
+    background: #1E3A5F; color: #D4A017; padding: 3px 10px; border-radius: 20px;
+    font-size: 12px; font-weight: 700;
+  }
+  .semester-table {
+    width: 100%; border-collapse: collapse;
+    border: 1px solid #D4A017; border-top: none; border-radius: 0 0 6px 6px; overflow: hidden;
+  }
+  .semester-table td {
+    padding: 8px 12px; font-size: 13px; border-bottom: 1px solid #EDE7D3;
+  }
+  .semester-table tr:last-child td { border-bottom: none; }
+  .semester-table tr:nth-child(even) { background: #FDF9EE; }
+  .semester-table .num-cell {
+    width: 34px; text-align: center; font-weight: 700; color: #1E3A5F;
+    background: rgba(212,160,23,0.15);
+  }
+  .semester-table .ar-cell { font-weight: 600; color: #1E3A5F; }
+  .semester-table .fr-cell { color: #64748B; font-size: 12px; direction: ltr; text-align: left; }
+
+  /* Two-column layout for semesters */
+  .semesters-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+
+  /* Skills / tools grid */
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0;
+  }
+  .skill-item {
+    background: #fff; border: 1.5px solid #E2E8F0; border-radius: 10px;
+    padding: 14px 10px; text-align: center; transition: all 0.2s;
+  }
+  .skill-item .skill-icon {
+    font-size: 26px; color: #D4A017; margin-bottom: 6px;
+    background: rgba(212,160,23,0.12); width: 52px; height: 52px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; margin: 0 auto 8px;
+  }
+  .skill-item .skill-label {
+    font-size: 13px; font-weight: 700; color: #1E3A5F;
+  }
+  .skill-item .skill-fr {
+    font-size: 11px; color: #64748B; margin-top: 3px; direction: ltr;
+  }
+
+  /* Tools */
+  .tools-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0;
+  }
+  .tool-item {
+    background: linear-gradient(135deg, #1E3A5F, #2C5282);
+    color: #fff; padding: 14px 8px; text-align: center;
+    border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  .tool-icon { font-size: 24px; color: #D4A017; margin-bottom: 6px; }
+  .tool-name { font-size: 12px; font-weight: 700; }
+
+  /* Bulleted lists */
+  .styled-list {
+    list-style: none; padding: 0; margin: 12px 0;
+  }
+  .styled-list li {
+    padding: 9px 42px 9px 14px; margin: 6px 0;
+    background: #F8FAFC; border-radius: 6px; position: relative;
+    font-size: 13.5px; color: #2D3748; border-right: 3px solid #D4A017;
+  }
+  .styled-list li::before {
+    content: '✓'; position: absolute; right: 12px; top: 50%;
+    transform: translateY(-50%); color: #D4A017; font-weight: 900; font-size: 15px;
+  }
+
+  /* Contact card */
+  .contact-card {
+    background: linear-gradient(135deg, #1E3A5F, #2C5282);
+    color: #fff; padding: 20px; border-radius: 10px; margin: 12px 0;
+    border-right: 5px solid #D4A017;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .contact-avatar {
+    width: 60px; height: 60px; background: #D4A017; color: #1E3A5F;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 26px; flex-shrink: 0;
+  }
+  .contact-info { flex: 1; }
+  .contact-role { font-size: 12px; color: #F0D48C; margin-bottom: 3px; }
+  .contact-name { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
+  .contact-email { font-size: 13px; color: #E5E7EB; direction: ltr; text-align: right; }
+
+  /* TOC */
+  .toc-list { list-style: none; padding: 0; }
+  .toc-list li {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 14px; margin: 6px 0; background: #F8FAFC;
+    border-radius: 6px; border-right: 3px solid #D4A017;
+    font-size: 14px; font-weight: 600; color: #1E3A5F;
+  }
+  .toc-list li .toc-num {
+    background: #1E3A5F; color: #D4A017; padding: 2px 10px;
+    border-radius: 4px; font-size: 12px; font-weight: 700;
+  }
+  .toc-list li .toc-page {
+    color: #64748B; font-size: 12px;
+  }
+
+  /* Footer */
+  .page-footer {
+    position: relative; margin-top: 40px; padding-top: 12px;
+    border-top: 2px solid #D4A017; display: flex;
+    justify-content: space-between; align-items: center;
+    font-size: 11px; color: #64748B;
+  }
+  .page-footer .brand-mark {
+    color: #1E3A5F; font-weight: 700;
+  }
+
+  /* Highlight boxes */
+  .highlight-box {
+    background: linear-gradient(135deg, #FDF6E3, #FEF9E7);
+    border: 1.5px dashed #D4A017; padding: 16px 20px;
+    border-radius: 10px; margin: 14px 0;
+  }
+  .highlight-box h4 {
+    color: #1E3A5F; font-size: 15px; margin: 0 0 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .highlight-box p { margin: 0; font-size: 13.5px; color: #2D3748; line-height: 1.8; }
+
+  /* Stats boxes */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .stat-box {
+    background: #fff; border: 1.5px solid #D4A017; border-radius: 10px;
+    padding: 14px 8px; text-align: center;
+  }
+  .stat-num { font-size: 26px; font-weight: 900; color: #D4A017; line-height: 1; }
+  .stat-label { font-size: 11px; color: #1E3A5F; margin-top: 6px; font-weight: 600; }
+
+  /* Final page */
+  .final-page {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2C5282 100%);
+    color: #fff; text-align: center; padding: 80px 40px;
+  }
+  .final-slogan-ar {
+    font-size: 32px; font-weight: 900; color: #D4A017;
+    margin: 30px 0 10px; line-height: 1.4;
+  }
+  .final-slogan-fr {
+    font-size: 16px; color: #E5E7EB; font-style: italic;
+    direction: ltr; margin-bottom: 40px;
+  }
+  .final-tagline {
+    background: rgba(212,160,23,0.15); border: 1px solid #D4A017;
+    padding: 20px; border-radius: 10px; display: inline-block;
+    margin-top: 30px;
+  }
+  .final-tagline .ar { font-size: 22px; font-weight: 800; color: #fff; }
+  .final-tagline .sub { font-size: 12px; color: #F0D48C; margin-top: 6px; }
+
+  /* Print styles */
+  @media print {
+    .print-bar { display: none !important; }
+    .page {
+      box-shadow: none; border: none; margin: 0; page-break-after: always;
+      padding: 20mm 15mm;
+    }
+    body { background: #fff !important; }
+    .mpc-guide { background: #fff; }
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+</style>
+
+<div class="mpc-guide">
+
+  <div class="print-bar">
+    <h4>📘 دليل الطالب MPC — نسخة نهائية جاهزة للطباعة (A4)</h4>
+    <button class="print-btn" onclick="window.print()">🖨️ طباعة / حفظ PDF</button>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- COVER PAGE -->
+  <!-- =========================================== -->
+  <div class="page cover">
+    <div class="cover-inner">
+      <div class="cover-univ">الجمهورية الجزائرية الديمقراطية الشعبية</div>
+      <div class="cover-univ" style="border: none; padding: 0;">جامعة محمد بوضياف — المسيلة</div>
+      <div class="cover-institute">معهد تسيير التقنيات الحضرية (GTU)</div>
+
+      <div class="cover-crane">🏗️</div>
+
+      <div style="font-size: 14px; color: #D4A017; letter-spacing: 4px; font-weight: 700;">STUDENT GUIDE</div>
+      <div class="cover-title">دليل الطالب</div>
+      <div class="cover-subtitle">إدارة مشاريع البناء</div>
+      <div style="font-size: 14px; color: #F0D48C; direction: ltr; margin-bottom: 24px;">MANAGEMENT DES PROJETS DE CONSTRUCTION</div>
+
+      <div class="cover-degree">
+        شهادة ليسانس مهني — MPC
+      </div>
+
+      <div class="cover-slogan-box">
+        <div class="cover-slogan-ar">نبني الحاضر… لنشكل مستقبلاً مستداماً</div>
+        <div class="cover-slogan-fr">Planifiez aujourd'hui… Construisez un meilleur avenir</div>
+      </div>
+
+      <div style="font-size: 13px; color: #E5E7EB; margin-top: 30px;">السنة الجامعية</div>
+      <div class="cover-year">2026 — 2027</div>
+
+      <div style="margin-top: 40px; font-size: 12px; color: #B0C4DE; letter-spacing: 2px;">
+        ★  ★  ★
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- TABLE OF CONTENTS -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">📑</div>
+      <h2>فهرس المحتويات</h2>
+      <div class="num">TOC</div>
+    </div>
+
+    <ul class="toc-list">
+      <li><span><span class="toc-num">01</span>&nbsp; كلمة ترحيب</span><span class="toc-page">ص. 03</span></li>
+      <li><span><span class="toc-num">02</span>&nbsp; ما هو تخصص إدارة مشاريع البناء ؟</span><span class="toc-page">ص. 04</span></li>
+      <li><span><span class="toc-num">03</span>&nbsp; لماذا هذا التخصص ؟ ورؤيتنا</span><span class="toc-page">ص. 05</span></li>
+      <li><span><span class="toc-num">04</span>&nbsp; المهام الأساسية والمهارات المطلوبة</span><span class="toc-page">ص. 06</span></li>
+      <li><span><span class="toc-num">05</span>&nbsp; معلومات البرنامج الأساسية</span><span class="toc-page">ص. 07</span></li>
+      <li><span><span class="toc-num">06</span>&nbsp; هيكل وحدات التدريس</span><span class="toc-page">ص. 08</span></li>
+      <li><span><span class="toc-num">07</span>&nbsp; برنامج التكوين — ليسانس 1</span><span class="toc-page">ص. 09</span></li>
+      <li><span><span class="toc-num">08</span>&nbsp; برنامج التكوين — ليسانس 2</span><span class="toc-page">ص. 10</span></li>
+      <li><span><span class="toc-num">09</span>&nbsp; برنامج التكوين — ليسانس 3</span><span class="toc-page">ص. 11</span></li>
+      <li><span><span class="toc-num">10</span>&nbsp; برنامج الماستر (Master 1 &amp; 2)</span><span class="toc-page">ص. 12</span></li>
+      <li><span><span class="toc-num">11</span>&nbsp; المهارات المكتسبة</span><span class="toc-page">ص. 13</span></li>
+      <li><span><span class="toc-num">12</span>&nbsp; الأدوات والبرامج المستعملة</span><span class="toc-page">ص. 14</span></li>
+      <li><span><span class="toc-num">13</span>&nbsp; مجالات العمل وجهات التوظيف</span><span class="toc-page">ص. 15</span></li>
+      <li><span><span class="toc-num">14</span>&nbsp; طرق التقييم</span><span class="toc-page">ص. 16</span></li>
+      <li><span><span class="toc-num">15</span>&nbsp; الشراكات وشروط القبول</span><span class="toc-page">ص. 17</span></li>
+      <li><span><span class="toc-num">16</span>&nbsp; معلومات الاتصال</span><span class="toc-page">ص. 18</span></li>
+    </ul>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>02</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 1. WELCOME -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">✉️</div>
+      <h2>كلمة ترحيب</h2>
+      <div class="num">01</div>
+    </div>
+
+    <div class="lead-text">
+      <b style="font-size: 16px; color: #1E3A5F;">عزيزي الطالب المستجد،</b><br><br>
+      نرحّب بك في أحد أكثر البرامج نضجاً وتوجّهاً مهنياً المقدَّمة في <b>جامعة محمد بوضياف بالمسيلة</b>؛ برنامج يُشكّل مزيجاً استراتيجياً تحتاجه صناعة البناء في الجزائر وخارجها بشكل عاجل، حيث يجمع بين <b>الخبرة التقنية</b> و<b>القيادة الإدارية</b> في قالب أكاديمي متكامل.
+    </div>
+
+    <div class="body-text">
+      لقد اخترتَ مجالاً يقع في صميم التحوّلات الكبرى التي يعيشها قطاع البناء والأشغال العمومية والري (BTPH)، إذ تتزايد يوماً بعد يوم تعقيدات المشاريع وحجمها، ويتصاعد الطلب على كوادر قادرة على تنظيم العمل، وضبط الجودة، والتحكّم في التكاليف والآجال والمخاطر، باستخدام أحدث الأدوات والبرمجيات.
+    </div>
+
+    <div class="body-text">
+      هذا الدليل مُعَدّ خصيصاً لجميع طلاب <b>السنة الأولى</b> الملتحقين ببرنامج إدارة مشاريع البناء. احتفظ به معك طوال فترة دراستك، فهو <b>خارطة طريقك للسنوات الثلاث القادمة</b> من تكوينك الجامعي.
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎯 ما يميّز برنامجنا</h4>
+      <p>
+        هذا البرنامج ليس مجرد تلقين نظري، بل هو إعداد حقيقي للحياة المهنية الميدانية: من قاعة المحاضرات إلى الورشة، ومن الرسم الهندسي إلى إدارة المواقع، ومن الحسابات إلى القرار الاستراتيجي.
+      </p>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num">03</div>
+        <div class="stat-label">سنوات دراسية</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">06</div>
+        <div class="stat-label">فصول دراسية</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">180</div>
+        <div class="stat-label">رصيد جامعي</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">60</div>
+        <div class="stat-label">مقعد سنوياً</div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>03</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 2. WHAT IS MPC -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">💡</div>
+      <h2>ما هو تخصص إدارة مشاريع البناء ؟</h2>
+      <div class="num">02</div>
+    </div>
+
+    <div class="lead-text">
+      هو تخصص يجمع بين <b>المعرفة التقنية والهندسية</b> و<b>المهارات الإدارية</b>، لتنظيم وتخطيط وتنفيذ ومراقبة مشاريع البناء من الفكرة إلى التسليم النهائي، مع تحقيق أهداف <b>الجودة</b>، و<b>الوقت</b>، و<b>التكلفة</b>.
+    </div>
+
+    <div class="sub-header">🌟 أهداف التكوين</div>
+
+    <div class="body-text">
+      يهدف هذا التخصص إلى إعداد إطارات قادرة على تخطيط وتنظيم ومراقبة مشاريع البناء الإنشائية، مع التحكّم في الجودة، والتكلفة، والوقت، والمخاطر، باستخدام أحدث الأدوات والبرمجيات.
+    </div>
+
+    <div class="body-text">
+      يُخرّج هذا البرنامج <b>كوادر قادرة على تخطيط، وتنظيم، ومتابعة، ومراقبة</b> مشاريع البناء، مع الحفاظ على معايير الجودة، والتكاليف، والآجال، والمخاطر، وذلك اعتماداً على أحدث الأدوات والبرمجيات.
+    </div>
+
+    <div class="sub-header">🏛️ رؤيتنا</div>
+
+    <div class="highlight-box" style="text-align: center;">
+      <p style="font-size: 16px; font-weight: 600; color: #1E3A5F; line-height: 1.9;">
+        « إدارة فعّالة لمشاريع البناء تحقّق <b style="color: #D4A017;">الجودة</b>، و<b style="color: #D4A017;">الوقت</b>، و<b style="color: #D4A017;">التكلفة</b>،<br>
+        من أجل بيئة مبنيّة بكفاءة واستدامة. »
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>04</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 3. WHY THIS SPECIALTY -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🎯</div>
+      <h2>لماذا هذا التخصص ؟</h2>
+      <div class="num">03</div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon gold">📈</div>
+        <div class="card-text">
+          <b>طلب متزايد على الكفاءات</b>
+          طلب متزايد على مديري مشاريع أكفاء في قطاع البناء داخلياً وخارجياً.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <div class="card-text">
+          <b>مشاريع ذات تأثير مستدام</b>
+          يُساهم في إنجاز مشاريع ذات تأثير عمراني واقتصادي مستدام.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🧠</div>
+        <div class="card-text">
+          <b>الإبداع مع الاستراتيجية</b>
+          يجمع بين الإبداع الهندسي والتفكير الاستراتيجي.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon gold">🚀</div>
+        <div class="card-text">
+          <b>آفاق مهنية واسعة</b>
+          يفتح آفاقاً واسعة للتطور المهني والقيادي محلياً ودولياً.
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-header">📌 السياق الإقليمي والدولي</div>
+    <div class="body-text">
+      تعمل صناعة البناء اليوم في بيئة أكثر تعقيداً من أي وقت مضى: تزايد حجم المشاريع، تنوّع مصادر التمويل، ارتفاع متطلبات الجودة والسلامة، وتصاعد الوعي البيئي. كل ذلك يجعل من إدارة المشاريع تخصصاً محورياً لا غنى عنه لضمان نجاح المنشآت وتسليمها في الوقت المحدد وبالتكلفة المخطَّطة.
+    </div>
+
+    <div class="highlight-box">
+      <h4>💼 موقعك بعد التخرج</h4>
+      <p>
+        سيمنحك هذا التكوين موقعاً متميزاً في سوق العمل الجزائري والعربي والدولي، سواء في المؤسسات العمومية أو الشركات الخاصة، أو حتى كمقاول مستقل صاحب مشروع.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>05</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 4. CORE TASKS & SKILLS -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">⚙️</div>
+      <h2>المهام الأساسية والمهارات المطلوبة</h2>
+      <div class="num">04</div>
+    </div>
+
+    <div class="sub-header">📋 المهام الأساسية لمدير المشروع</div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon gold">📅</div>
+        <div class="card-text"><b>التخطيط والجدولة</b>تخطيط المشروع ووضع الجدول الزمني.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon gold">💰</div>
+        <div class="card-text"><b>الميزانية والتكاليف</b>إعداد الميزانية وإدارة التكاليف.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <div class="card-text"><b>الموارد</b>إدارة الموارد البشرية والمادية.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <div class="card-text"><b>التنفيذ والجودة</b>متابعة التنفيذ وضمان الجودة.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">⚠️</div>
+        <div class="card-text"><b>المخاطر</b>إدارة المخاطر وحل المشكلات.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🤝</div>
+        <div class="card-text"><b>التواصل</b>التنسيق بين جميع الأطراف المعنية.</div>
+      </div>
+    </div>
+
+    <div class="sub-header">🌟 المهارات المطلوبة</div>
+
+    <ul class="styled-list">
+      <li>مهارات تنظيم وتخطيط عالية</li>
+      <li>القدرة على اتخاذ القرار وحل المشكلات في وقت قصير</li>
+      <li>التواصل الفعّال والعمل الجماعي داخل فرق متعددة التخصصات</li>
+      <li>معرفة بالبرامج الهندسية والإدارية (MS Project, AutoCAD, ...)</li>
+      <li>المرونة والتكيّف مع التغيرات المستمرة في بيئة العمل</li>
+    </ul>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>06</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 5. PROGRAM INFO -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">📊</div>
+      <h2>معلومات البرنامج الأساسية</h2>
+      <div class="num">05</div>
+    </div>
+
+    <table class="info-table">
+      <thead>
+        <tr><th style="width: 40%;">البند</th><th>التفاصيل</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الدرجة الممنوحة</td><td>ليسانس مهني في إدارة مشاريع البناء <b>(MPC)</b></td></tr>
+        <tr><td>المدة الدراسية</td><td>3 سنوات — 6 فصول دراسية</td></tr>
+        <tr><td>الأرصدة (Crédits)</td><td>180 رصيد</td></tr>
+        <tr><td>إجمالي ساعات الاتصال</td><td>2,295 ساعة</td></tr>
+        <tr><td>لغة التدريس</td><td>العربية / الفرنسية / الإنجليزية</td></tr>
+        <tr><td>الحد الأقصى للقبول</td><td>60 طالباً سنوياً</td></tr>
+        <tr><td>النظام البيداغوجي</td><td>نظام LMD (ليسانس - ماستر - دكتوراه)</td></tr>
+        <tr><td>الوصاية</td><td>وزارة التعليم العالي والبحث العلمي</td></tr>
+        <tr><td>المؤسسة</td><td>جامعة محمد بوضياف — المسيلة</td></tr>
+        <tr><td>المعهد المستضيف</td><td>معهد تسيير التقنيات الحضرية (GTU)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <h4>🎓 التطوّر المهني بعد الليسانس</h4>
+      <p>
+        بعد إتمام الليسانس المهني، يمكنك الالتحاق بـ <b>الماستر (Master 1 &amp; Master 2)</b> ضمن نفس المؤسسة، لتعميق تكوينك في العمران، وإدارة المشاريع الكبرى، وتكنولوجيا المعلومات، والذكاء الاصطناعي في البناء.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>07</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 6. UE STRUCTURE -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🧩</div>
+      <h2>هيكل وحدات التدريس</h2>
+      <div class="num">06</div>
+    </div>
+
+    <div class="body-text">
+      يتكوّن كل فصل دراسي من <b>ثلاثة أنواع</b> من وحدات التدريس، تتكامل فيما بينها لضمان تكوين شامل ومتوازن يجمع بين المعرفة النظرية والمهارة التطبيقية والانفتاح الأكاديمي:
+    </div>
+
+    <div class="cards-grid" style="grid-template-columns: 1fr;">
+      <div class="card" style="border-right: 5px solid #D4A017;">
+        <div class="card-icon gold" style="width: 52px; height: 52px; font-size: 22px;">UEF</div>
+        <div class="card-text">
+          <b style="font-size: 15px;">الوحدات الأساسية (Unités d'Enseignement Fondamentales)</b>
+          تشكّل <b>61.7%</b> من إجمالي البرنامج، وتضم المواد التخصّصية الجوهرية التي تُبنى عليها كفاءة مدير مشروع البناء.
+        </div>
+      </div>
+      <div class="card" style="border-right: 5px solid #1E3A5F;">
+        <div class="card-icon" style="width: 52px; height: 52px; font-size: 22px;">UEM</div>
+        <div class="card-text">
+          <b style="font-size: 15px;">الوحدات المنهجية (Unités d'Enseignement Méthodologiques)</b>
+          هي المكوّن العملي والتطبيقي: ورشات، مشاريع، دراسات حالة، وبرمجيات هندسية، تُنمّي الجانب الميداني والتقني للطالب.
+        </div>
+      </div>
+      <div class="card" style="border-right: 5px solid #556B2F;">
+        <div class="card-icon green" style="width: 52px; height: 52px; font-size: 22px;">UET</div>
+        <div class="card-text">
+          <b style="font-size: 15px;">الوحدات العرضية (Unités d'Enseignement Transversales)</b>
+          تهدف لجعل الطالب <b>محترفاً متكاملاً</b> عبر اللغات، الاتصال، الاقتصاد، السوسيولوجيا، وتاريخ العمارة والحضارات.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>08</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 7. LICENCE 1 -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">1️⃣</div>
+      <h2>برنامج التكوين — ليسانس 1 (LICENCE 1)</h2>
+      <div class="num">07</div>
+    </div>
+
+    <div class="semesters-row">
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الأول</span>
+          <span class="semester-badge">Semestre 1</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">مواد البناء</td><td class="fr-cell">Construction Materials</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">الفيزياء</td><td class="fr-cell">Physics</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">مدخل إلى الإدارة</td><td class="fr-cell">Intro to Management</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">الرياضيات</td><td class="fr-cell">Mathematics</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">الهندسة الوصفية والمنظورية</td><td class="fr-cell">Descriptive Geometry</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">الإعلام الآلي</td><td class="fr-cell">Informatics</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">مشروع الورشة 1</td><td class="fr-cell">Workshop Project 1</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">تاريخ العمارة</td><td class="fr-cell">History of Architecture</td></tr>
+          <tr><td class="num-cell">9</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">English</td></tr>
+        </table>
+      </div>
+
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الثاني</span>
+          <span class="semester-badge">Semestre 2</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">الفيزياء</td><td class="fr-cell">Physics</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">الإنشاءات</td><td class="fr-cell">Construction</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">تجهيزات البناء</td><td class="fr-cell">Construction Equipment</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">الهندسة الوصفية والمنظورية</td><td class="fr-cell">Descriptive Geometry</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">مقاومة المواد</td><td class="fr-cell">RDM</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">مشروع الورشة</td><td class="fr-cell">Workshop Project</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">تاريخ العمارة</td><td class="fr-cell">History of Architecture</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">English</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎯 محور السنة الأولى</h4>
+      <p>
+        تُركّز السنة الأولى على <b>بناء الأساسيات</b>: فهم مواد البناء، إتقان الرسم الهندسي، تعلّم مبادئ الإنشاءات والفيزياء، والانفتاح على تاريخ العمارة والحضارات، مع تكوين لغوي متين.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>09</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 8. LICENCE 2 -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">2️⃣</div>
+      <h2>برنامج التكوين — ليسانس 2 (LICENCE 2)</h2>
+      <div class="num">08</div>
+    </div>
+
+    <div class="semesters-row">
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الثالث</span>
+          <span class="semester-badge">Semestre 3</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">الطبوغرافيا</td><td class="fr-cell">Topography (TOPO)</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">تنظيم الورشات</td><td class="fr-cell">Organisation Chantiers</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">الإنشاءات</td><td class="fr-cell">Construction</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">التخطيط</td><td class="fr-cell">Planification</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">الإحصاء</td><td class="fr-cell">Statistics</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">مشروع الورشة</td><td class="fr-cell">Workshop Project</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">التجهيزات</td><td class="fr-cell">Equipment</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">سوسيولوجيا الاتصال</td><td class="fr-cell">Sociology of Comm.</td></tr>
+          <tr><td class="num-cell">9</td><td class="ar-cell">الاقتصاد</td><td class="fr-cell">Economics</td></tr>
+          <tr><td class="num-cell">10</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">English</td></tr>
+        </table>
+      </div>
+
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الرابع</span>
+          <span class="semester-badge">Semestre 4</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">تخطيط المشاريع</td><td class="fr-cell">Planification de projet</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">القياس والتقدير الكمي</td><td class="fr-cell">Métré et quantification</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">الإحصاء</td><td class="fr-cell">Statistiques</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">الرسم بمساعدة الحاسوب</td><td class="fr-cell">DAO</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">ورشة المشروع</td><td class="fr-cell">Atelier de projet</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">مشروع صغير لتنظيم الورشة</td><td class="fr-cell">MPSO</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">Anglais</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">الاقتصاد</td><td class="fr-cell">Économie</td></tr>
+          <tr><td class="num-cell">9</td><td class="ar-cell">سوسيولوجيا المؤسسات</td><td class="fr-cell">Sociologie entreprises</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎯 محور السنة الثانية</h4>
+      <p>
+        تتّجه السنة الثانية نحو <b>التنظيم، والجدولة، والقياس الكمي</b>: يتعلّم الطالب الطبوغرافيا، وتنظيم الورشات، والرسم بالحاسوب (AutoCAD)، ومسح الكميات (Métré)، مع تعميق الرؤية الاقتصادية والسوسيولوجية للمؤسسة.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>10</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 9. LICENCE 3 -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">3️⃣</div>
+      <h2>برنامج التكوين — ليسانس 3 (LICENCE 3)</h2>
+      <div class="num">09</div>
+    </div>
+
+    <div class="semesters-row">
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الخامس</span>
+          <span class="semester-badge">Semestre 5</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">Anglais</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">التشريع</td><td class="fr-cell">Législation</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">اقتصاد المشاريع</td><td class="fr-cell">Économie de projet</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">أدوات الجودة</td><td class="fr-cell">Outils de qualité</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">التنظيم وإدارة الوقت</td><td class="fr-cell">Ordonnancement / Temps</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">ورشة المشروع 5</td><td class="fr-cell">Projet de workshop 5</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">مقدمة في البحث الوثائقي</td><td class="fr-cell">Recherche documentaire</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">إدارة المهل</td><td class="fr-cell">Gestion des délais</td></tr>
+        </table>
+      </div>
+
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل السادس</span>
+          <span class="semester-badge">Semestre 6</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">اقتصاد الأعمال</td><td class="fr-cell">Économie d'entreprise</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">إدارة المخاطر</td><td class="fr-cell">Gestion des risques</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">مشروع نهاية الدراسة</td><td class="fr-cell">Projet de fin d'études</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">المحاكاة</td><td class="fr-cell">Simulation</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">Anglais</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">التشريع</td><td class="fr-cell">Législation</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">الإدارة</td><td class="fr-cell">Management</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎓 محور السنة الثالثة — سنة التخصص والتخرج</h4>
+      <p>
+        السنة الثالثة هي سنة <b>التخصص المتقدم</b>: يتعمّق الطالب في أدوات الجودة (PDCA, Pareto)، إدارة المخاطر، التشريعات، والمحاكاة عبر MS Project، ويتوّج تكوينه بـ <b>مشروع نهاية الدراسة</b> والتربص الميداني.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>11</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 10. MASTER -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🎓</div>
+      <h2>برنامج الماستر (Master 1 &amp; Master 2)</h2>
+      <div class="num">10</div>
+    </div>
+
+    <div class="sub-header">📘 ماستر 1 — Master 1</div>
+
+    <div class="semesters-row">
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الأول</span>
+          <span class="semester-badge">M1 · Semestre 1</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">البرمجة وإتقان إدارة المشاريع 1</td><td class="fr-cell">Programmation / MOE 1</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">التواصل</td><td class="fr-cell">Communication</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">إدارة المشاريع</td><td class="fr-cell">Gestion de projet</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">إتقان تكنولوجيا المعلومات</td><td class="fr-cell">Maîtrise des TIC</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">العمران</td><td class="fr-cell">Urbanisme</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">التنظيم والقانون</td><td class="fr-cell">Réglementation et droit</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">مشروع الورشة</td><td class="fr-cell">Projet de workshop</td></tr>
+        </table>
+      </div>
+
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الثاني</span>
+          <span class="semester-badge">M1 · Semestre 2</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">العمران 2</td><td class="fr-cell">Urbanisme 2</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">Anglais</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">الإعلام الآلي</td><td class="fr-cell">Informatique</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">المنهجية</td><td class="fr-cell">Méthodologie</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">إدارة تكنولوجيا المعلومات</td><td class="fr-cell">Gestion des TIC</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">البرمجة</td><td class="fr-cell">Programmation</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">الإدارة</td><td class="fr-cell">Management</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">التحكم في التكاليف</td><td class="fr-cell">Contrôle des coûts</td></tr>
+          <tr><td class="num-cell">9</td><td class="ar-cell">ورشة المشروع</td><td class="fr-cell">Projet de workshop</td></tr>
+          <tr><td class="num-cell">10</td><td class="ar-cell">إدارة المشاريع</td><td class="fr-cell">Gestion de projet</td></tr>
+          <tr><td class="num-cell">11</td><td class="ar-cell">إدارة الفريق</td><td class="fr-cell">Gestion d'équipe</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="sub-header" style="margin-top: 20px;">📗 ماستر 2 — Master 2</div>
+
+    <div class="semesters-row">
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الثالث</span>
+          <span class="semester-badge">M2 · Semestre 3</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">الشركات الناشئة</td><td class="fr-cell">Startup</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">اللغة الإنجليزية</td><td class="fr-cell">Anglais</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">إدارة الموارد البشرية</td><td class="fr-cell">GRH</td></tr>
+          <tr><td class="num-cell">4</td><td class="ar-cell">إدارة الجودة</td><td class="fr-cell">Management qualité</td></tr>
+          <tr><td class="num-cell">5</td><td class="ar-cell">البناء الخاص</td><td class="fr-cell">Constructions spéciales</td></tr>
+          <tr><td class="num-cell">6</td><td class="ar-cell">تحليل البيانات</td><td class="fr-cell">Analyse des données</td></tr>
+          <tr><td class="num-cell">7</td><td class="ar-cell">الذكاء الاصطناعي</td><td class="fr-cell">Intelligence artificielle</td></tr>
+          <tr><td class="num-cell">8</td><td class="ar-cell">مشروع ومذكرة</td><td class="fr-cell">Projet et mémoire</td></tr>
+          <tr><td class="num-cell">9</td><td class="ar-cell">ندوة</td><td class="fr-cell">Séminaire</td></tr>
+        </table>
+      </div>
+
+      <div class="semester-wrap">
+        <div class="semester-title">
+          <span>الفصل الرابع</span>
+          <span class="semester-badge">M2 · Semestre 4</span>
+        </div>
+        <table class="semester-table">
+          <tr><td class="num-cell">1</td><td class="ar-cell">ندوة</td><td class="fr-cell">Séminaire</td></tr>
+          <tr><td class="num-cell">2</td><td class="ar-cell">الأطروحة</td><td class="fr-cell">Mémoire</td></tr>
+          <tr><td class="num-cell">3</td><td class="ar-cell">التربص</td><td class="fr-cell">Stage</td></tr>
+        </table>
+        <div style="padding: 12px; background: #FDF6E3; margin-top: 10px; border-radius: 6px; font-size: 12.5px; color: #1E3A5F; text-align: center;">
+          🏆 <b>مرحلة التخرج النهائي</b> بإنجاز الأطروحة والتربص المهني.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>12</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 11. SKILLS ACQUIRED -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🏆</div>
+      <h2>المهارات المكتسبة (Compétences Acquises)</h2>
+      <div class="num">11</div>
+    </div>
+
+    <div class="body-text">
+      بنهاية هذا التكوين، يمتلك الطالب مجموعة متكاملة من الكفاءات المهنية القابلة للتوظيف مباشرة في سوق العمل:
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-item">
+        <div class="skill-icon">📊</div>
+        <div class="skill-label">التخطيط</div>
+        <div class="skill-fr">Planification</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">📁</div>
+        <div class="skill-label">إدارة المشاريع</div>
+        <div class="skill-fr">Gestion de projet</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">💰</div>
+        <div class="skill-label">التحكّم في التكاليف</div>
+        <div class="skill-fr">Contrôle des coûts</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">⏰</div>
+        <div class="skill-label">إدارة الوقت</div>
+        <div class="skill-fr">Gestion du temps</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">⚠️</div>
+        <div class="skill-label">إدارة المخاطر</div>
+        <div class="skill-fr">Gestion des risques</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">✔️</div>
+        <div class="skill-label">الجودة</div>
+        <div class="skill-fr">Qualité</div>
+      </div>
+    </div>
+
+    <div class="sub-header">🎯 كفاءات مهنية تفصيلية</div>
+
+    <ul class="styled-list">
+      <li>قراءة وفهم الملفات التقنية للبناء (Plans, DCE, CCTP)</li>
+      <li>إعداد جداول زمنية للأشغال باستخدام Gantt وPERT</li>
+      <li>حساب التكاليف وإعداد الميزانيات التقديرية والتفصيلية</li>
+      <li>إدارة الموقع، والعمّال، والمقاولين من الباطن</li>
+      <li>تطبيق معايير الجودة والسلامة والبيئة (QSE)</li>
+      <li>تحديد المخاطر وتقييمها ووضع خطط الاستجابة</li>
+      <li>التواصل الفعّال مع رب العمل والمكاتب والهيئات الرقابية</li>
+    </ul>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>13</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 12. TOOLS -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🛠️</div>
+      <h2>الأدوات والبرامج المستعملة (Outils et Logiciels)</h2>
+      <div class="num">12</div>
+    </div>
+
+    <div class="body-text">
+      يعتمد التكوين على مجموعة من <b>البرمجيات المهنية المرجعية</b> في القطاع، بما يضمن تخرّج الطالب بمهارات رقمية عملية جاهزة للاستعمال في المكاتب والورشات:
+    </div>
+
+    <div class="tools-grid">
+      <div class="tool-item">
+        <div class="tool-icon">📅</div>
+        <div class="tool-name">MS Project</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">📐</div>
+        <div class="tool-name">AutoCAD</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">🏛️</div>
+        <div class="tool-name">ArchiCAD</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">📝</div>
+        <div class="tool-name">Microsoft Office</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">📊</div>
+        <div class="tool-name">Excel</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">🎞️</div>
+        <div class="tool-name">PowerPoint</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">⚙️</div>
+        <div class="tool-name">Outils simulation</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-name">IA — الذكاء الاصطناعي</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>💡 لماذا هذه الأدوات ؟</h4>
+      <p>
+        هذه البرامج هي <b>المعيار العالمي</b> في إدارة مشاريع البناء. إتقانها يمنح خريجينا ميزة تنافسية قوية في سوق العمل، ويُيسّر اندماجهم السريع في المكاتب والمؤسسات الوطنية والدولية.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>14</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 13. CAREER & EMPLOYERS -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">💼</div>
+      <h2>مجالات العمل وجهات التوظيف (Débouchés)</h2>
+      <div class="num">13</div>
+    </div>
+
+    <div class="sub-header">👤 المناصب المستهدفة</div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon gold">🏗️</div>
+        <div class="card-text"><b>مدير موقع</b>Conducteur de travaux</div>
+      </div>
+      <div class="card">
+        <div class="card-icon gold">📅</div>
+        <div class="card-text"><b>مخطط مشاريع</b>Planificateur</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📏</div>
+        <div class="card-text"><b>مساح كميات</b>Métreur</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <div class="card-text"><b>مراقب جودة</b>Contrôleur qualité</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🤝</div>
+        <div class="card-text"><b>مساعد رب عمل</b>AMO — Assistant à Maîtrise d'Ouvrage</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">💼</div>
+        <div class="card-text"><b>مقاول مستقل</b>Entrepreneur indépendant</div>
+      </div>
+    </div>
+
+    <div class="sub-header">🏢 جهات التوظيف الرئيسية</div>
+
+    <ul class="styled-list">
+      <li>مكاتب الدراسات الهندسية (BET — Bureau d'Études Techniques)</li>
+      <li>شركات الإنجاز والبناء والمقاولات (BTPH)</li>
+      <li>مكاتب إدارة ومتابعة المشاريع</li>
+      <li>مؤسسات الترقية العقارية</li>
+      <li>هيئات الرقابة التقنية (CTC — Contrôle Technique de Construction)</li>
+      <li>المؤسسات العمومية والخاصة</li>
+      <li>شركات الاستشارة في إدارة المشاريع</li>
+      <li>مديريات السكن والتجهيزات (DUC — DTP)</li>
+    </ul>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>15</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 14. EVALUATION -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">📝</div>
+      <h2>طرق التقييم</h2>
+      <div class="num">14</div>
+    </div>
+
+    <div class="body-text">
+      يتّبع البرنامج نظام <b>التقييم المزدوج</b> الذي يجمع بين الامتحان النهائي والتقييم المستمر، وذلك حسب طبيعة المادة:
+    </div>
+
+    <div class="cards-grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+      <div style="background: linear-gradient(135deg, #1E3A5F, #2C5282); color: #fff; padding: 22px; border-radius: 12px; text-align: center;">
+        <div style="font-size: 34px; color: #D4A017; margin-bottom: 10px;">📚</div>
+        <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px;">المواد النظرية</div>
+        <div style="background: rgba(212,160,23,0.2); padding: 12px; border-radius: 8px; margin: 10px 0;">
+          <div style="font-size: 22px; font-weight: 900; color: #D4A017;">50% + 50%</div>
+        </div>
+        <div style="font-size: 12.5px; color: #E5E7EB; line-height: 1.7;">
+          امتحان نهائي (50%)<br>
+          + تقييم مستمر (50%)
+        </div>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #556B2F, #7A9040); color: #fff; padding: 22px; border-radius: 12px; text-align: center;">
+        <div style="font-size: 34px; color: #FDF6E3; margin-bottom: 10px;">🔧</div>
+        <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px;">الورشات والمشاريع الميدانية</div>
+        <div style="background: rgba(255,255,255,0.15); padding: 12px; border-radius: 8px; margin: 10px 0;">
+          <div style="font-size: 22px; font-weight: 900;">100%</div>
+        </div>
+        <div style="font-size: 12.5px; color: #FDF6E3; line-height: 1.7;">
+          تقييم مستمر كامل<br>
+          (Contrôle continu)
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>📌 ملاحظة مهمّة</h4>
+      <p>
+        يعتمد التقييم المستمر على الحضور، والمشاركة، والاختبارات القصيرة، والتقارير، والعروض التقديمية. ينبغي على الطالب <b>الالتزام الكامل بالحضور</b> والمشاركة في جميع الأنشطة البيداغوجية طوال الفصل.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>16</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 15. PARTNERSHIPS & ADMISSION -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">🤝</div>
+      <h2>الشراكات وشروط القبول</h2>
+      <div class="num">15</div>
+    </div>
+
+    <div class="sub-header">🌍 شراكات دولية</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon gold">🇮🇹</div>
+        <div class="card-text"><b>جامعات إيطالية</b>تبادل أكاديمي ومشاريع بحثية مشتركة.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon gold">🇦🇪</div>
+        <div class="card-text"><b>جامعات إماراتية</b>تعاون في مجالات العمران والذكاء الاصطناعي في البناء.</div>
+      </div>
+    </div>
+
+    <div class="sub-header">🇩🇿 شراكات وطنية</div>
+    <div class="cards-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+      <div class="card"><div class="card-icon">🏛️</div><div class="card-text"><b>قسنطينة</b>Université de Constantine</div></div>
+      <div class="card"><div class="card-icon">🏛️</div><div class="card-text"><b>بسكرة</b>Université de Biskra</div></div>
+      <div class="card"><div class="card-icon">🏛️</div><div class="card-text"><b>باتنة</b>Université de Batna</div></div>
+    </div>
+
+    <div class="sub-header">🏗️ شراكات مهنية</div>
+    <div class="cards-grid" style="grid-template-columns: 1fr;">
+      <div class="card" style="border-right: 5px solid #D4A017;">
+        <div class="card-icon green">🏛️</div>
+        <div class="card-text">
+          <b>المجلس الوطني لهيئة المهندسين المعماريين (CLOA)</b>
+          Conseil Local de l'Ordre des Architectes — إشراف مهني وشراكة تدريبية.
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-header">📥 شروط القبول</div>
+    <div class="highlight-box">
+      <h4>✅ الشروط الأساسية</h4>
+      <p>
+        البرنامج مصمَّم وفق <b>نظام LMD</b> ويخضع لضوابط <b>وزارة التعليم العالي والبحث العلمي</b>. الحدّ الأقصى للقبول هو <b>60 طالباً سنوياً</b>، وفق ترتيب معدّلات البكالوريا وطلبات التوجيه.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>17</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- 16. CONTACTS -->
+  <!-- =========================================== -->
+  <div class="page">
+    <div class="section-header">
+      <div class="icon">📞</div>
+      <h2>معلومات الاتصال</h2>
+      <div class="num">16</div>
+    </div>
+
+    <div class="body-text">
+      لأي استفسار بيداغوجي أو إداري متعلّق بتخصص إدارة مشاريع البناء، يمكنك التواصل مع أحد المسؤولين التالين:
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-avatar">👤</div>
+      <div class="contact-info">
+        <div class="contact-role">منسّق الميدان (Coordinateur du Domaine)</div>
+        <div class="contact-name">د. نويبات إبراهيم</div>
+        <div class="contact-email">brahim.nouibat@univ-msila.dz</div>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-avatar">👤</div>
+      <div class="contact-info">
+        <div class="contact-role">منسّق القسم (Coordinateur du Département)</div>
+        <div class="contact-name">د. بن عيسى فتحي توفيق</div>
+        <div class="contact-email">fatehtoufik.benaissa@univ-msila.dz</div>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-avatar">👤</div>
+      <div class="contact-info">
+        <div class="contact-role">مسؤول التخصص (Responsable de la Spécialité)</div>
+        <div class="contact-name">د. زحاف الأمين</div>
+        <div class="contact-email">elamine.zahaf@univ-msila.dz</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎓 المؤسسة</h4>
+      <p>
+        <b>جامعة محمد بوضياف — المسيلة</b><br>
+        معهد تسيير التقنيات الحضرية (GTU)<br>
+        ولاية المسيلة — الجزائر
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>دليل الطالب — إدارة مشاريع البناء MPC</span>
+      <span class="brand-mark">🎓 جامعة محمد بوضياف — المسيلة</span>
+      <span>18</span>
+    </div>
+  </div>
+
+  <!-- =========================================== -->
+  <!-- FINAL PAGE -->
+  <!-- =========================================== -->
+  <div class="page final-page">
+    <div style="font-size: 44px; color: #D4A017; margin-bottom: 20px;">🌟</div>
+    <div class="final-slogan-ar">خطّط اليوم…<br>لبناء مستقبل أفضل</div>
+    <div class="final-slogan-fr">Planifiez aujourd'hui… Construisez un meilleur avenir</div>
+
+    <div style="width: 60%; height: 2px; background: linear-gradient(90deg, transparent, #D4A017, transparent); margin: 40px auto;"></div>
+
+    <div class="final-tagline">
+      <div class="ar">✨ وجّهني ✨</div>
+      <div class="sub">توجّهك نحو مستقبل أفضل للعمل</div>
+    </div>
+
+    <div style="margin-top: 60px; font-size: 12px; color: #B0C4DE; line-height: 1.9;">
+      © السنة الجامعية 2026 — 2027<br>
+      جامعة محمد بوضياف — المسيلة<br>
+      معهد تسيير التقنيات الحضرية (GTU)<br>
+      شهادة ليسانس مهني في إدارة مشاريع البناء (MPC)
+    </div>
+
+    <div style="margin-top: 40px; letter-spacing: 8px; color: #D4A017;">
+      ✦ ✦ ✦
+    </div>
+  </div>
+
+</div>
+
+<script>
+  if (typeof _reportHeight === 'function') {
+    setTimeout(_reportHeight, 300);
+  }
+</script></body>
+</html>
