@@ -11,6 +11,7 @@ import { useLanguage } from "./LanguageProvider";
 import siteData from "@/data/site.json";
 import specialties from "@/data/specialties.json";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const specialtyIcons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
 
@@ -67,14 +68,20 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="focus-ring flex items-center gap-2 rounded-lg">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-brand to-emerald-brand text-white ring-2 ring-gold-brand/40">
-            <MapPin size={18} />
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            IGTU <span className="gradient-text">Explorer</span>
-          </span>
-        </Link>
+        <Link href="/" className="focus-ring flex items-center gap-3 rounded-lg">
+          <Image
+            src="/images/logo.png"
+            alt="IGTU Explorer"
+            width={46}
+           height={46}
+           className="rounded-full"
+          priority
+        />
+
+           <span className="font-display text-xl font-bold tracking-tight">
+             IGTU <span className="gradient-text">Explorer</span>
+           </span>
+         </Link>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-1 lg:flex">
