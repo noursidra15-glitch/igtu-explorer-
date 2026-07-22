@@ -16,8 +16,8 @@ const guides = [
     title: "Urban Planning",
     description: "Coming Soon",
     icon: Map,
-    read: null,
-    pdf: null,
+    read: "/guides/Urban Planning/urbanisme_guide_igtu_2025_2026_reference_style(1).html",
+    pdf: "/guides/Urban Planning/urbanisme_guide_igtu_2025_2026_reference_style(1).pdf",
   },
   {
     title: "Architecture",

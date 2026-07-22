@@ -10,6 +10,8 @@ import {
   } from "lucide-react";
   
   export function WhyChoose() {
+    const { t } = useLanguage();
+    
     const items = [
       {
         icon: GraduationCap,

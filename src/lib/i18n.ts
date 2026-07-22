@@ -22,7 +22,6 @@ interface TranslationDict {
     formationOffers: string;
     studentGuides: string;
     faq: string;
-    stats: string[];
     contact: string;
   };
   search: string;
@@ -55,39 +54,54 @@ interface TranslationDict {
     title: string;
     subtitle: string;
   };
+  whyChoose: {
+    badge: string;
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+  
+    officialTitle: string;
+    officialDesc: string;
+  
+    navigationTitle: string;
+    navigationDesc: string;
+  
+    mobileTitle: string;
+    mobileDesc: string;
+  
+    freeTitle: string;
+    freeDesc: string;
+  };
+  
+  quickAccess: {
+    title: string;
+    subtitle: string;
+    description: string;
+  
+    specialtiesTitle: string;
+    specialtiesDesc: string;
+  
+    guideTitle: string;
+    guideDesc: string;
+  
+    aboutTitle: string;
+    aboutDesc: string;
+  
+    contactTitle: string;
+    contactDesc: string;
+  };
+  
+  aboutTeaser: {
+    badge: string;
+    title: string;
+    description: string;
+    button: string;
+  };
+  stats: string[];
+
   copyright: string;
 }
 
-whyChoose: {
-  badge: string;
-  title: string;
-  titleHighlight: string;
-  subtitle: string;
-
-  officialTitle: string;
-  officialDesc: string;
-
-  navigationTitle: string;
-  navigationDesc: string;
-
-  mobileTitle: string;
-  mobileDesc: string;
-
-  freeTitle: string;
-  freeDesc: string;
-};
-
-aboutTeaser: {
-  badge: string;
-  title: string;
-  description: string;
-  button: string;
-
-  specialties: string;
-  degreeLevels: string;
-  years: string;
-  club: string;
-};
 
 export const dictionary: Record<Locale, TranslationDict> = {
   en: {
@@ -133,8 +147,8 @@ export const dictionary: Record<Locale, TranslationDict> = {
       subtitle: "Access all official university platforms from one place.",
     },
         copyright: "© 2026 All Rights Reserved.\nDesigned & Developed by Urban Planner Hachemi Nour Selsabil.",
-  },
-  whyChoose: {
+    },
+     whyChoose: {
     badge: "Why IGTU Explorer",
     title: "Everything You Need in",
     titleHighlight: "One Place",
@@ -159,20 +173,22 @@ export const dictionary: Record<Locale, TranslationDict> = {
   },
   quickAccess: {
     title: "Quick Access",
-    subtitle: "Navigate to the most important sections instantly.",
+    subtitle: "Everything you need in one place.",
+    description: "Navigate to the most important sections instantly.",
   
     specialtiesTitle: "Specialties",
     specialtiesDesc: "Explore all academic programs.",
   
-    guideTitle: "Student Guides",
-    guideDesc: "Access official guides for every specialization.",
+    guideTitle: "Student Guide",
+    guideDesc: "Everything new students need.",
   
     aboutTitle: "About IGTU",
-    aboutDesc: "Learn more about the institute.",
+    aboutDesc: "Learn about the institute.",
   
     contactTitle: "Contact",
     contactDesc: "Reach us easily.",
   },
+  
   stats: [
     "Years of Excellence",
     "Students Enrolled",
@@ -269,6 +285,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
   ],
 quickAccess: {
   title: "Accès Rapide",
+  subtitle: "Tout ce dont vous avez besoin en un seul endroit.",
   subtitle: "Accédez instantanément aux sections les plus importantes.",
 
   specialtiesTitle: "Spécialités",
@@ -374,6 +391,7 @@ aboutTeaser: {
   },
   quickAccess: {
     title: "الوصول السريع",
+    subtitle: "كل ما تحتاجه في مكان واحد.",
     subtitle: "انتقل مباشرة إلى أهم أقسام الموقع.",
   
     specialtiesTitle: "التخصصات",

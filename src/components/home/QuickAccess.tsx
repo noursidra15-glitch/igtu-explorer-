@@ -9,34 +9,38 @@ import {
   Phone,
 } from "lucide-react";
 
-const cards = [
-  {
-    title: t.quickAccess.specialtiesTitle,
-    description: t.quickAccess.specialtiesDesc,
-    href: "/specialties",
-    icon: GraduationCap,
-  },
-  {
-    title: t.quickAccess.guideTitle,
-    description: t.quickAccess.guideDesc,
-    href: "/student-guides",
-    icon: BookOpen,
-  },
-  {
-    title: t.quickAccess.aboutTitle,
-    description: t.quickAccess.aboutDesc,
-    href: "/about",
-    icon: Info,
-  },
-  {
-    title: t.quickAccess.contactTitle,
-    description: t.quickAccess.contactDesc,
-    href: "/contact",
-    icon: Phone,
-  },
-];
+
 
 export function QuickAccess() {
+  const { t } = useLanguage();
+  
+  const cards = [
+    {
+      title: t.quickAccess.specialtiesTitle,
+      description: t.quickAccess.specialtiesDesc,
+      href: "/specialties",
+      icon: GraduationCap,
+    },
+    {
+      title: t.quickAccess.guideTitle,
+      description: t.quickAccess.guideDesc,
+      href: "/student-guides",
+      icon: BookOpen,
+    },
+    {
+      title: t.quickAccess.aboutTitle,
+      description: t.quickAccess.aboutDesc,
+      href: "/about",
+      icon: Info,
+    },
+    {
+      title: t.quickAccess.contactTitle,
+      description: t.quickAccess.contactDesc,
+      href: "/contact",
+      icon: Phone,
+    },
+  ];
+
   return (
     <section className="py-20">
       <div className="mx-auto max-w-7xl px-4">

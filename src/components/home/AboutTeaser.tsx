@@ -7,6 +7,8 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function AboutTeaser() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24">
       <Container className="grid items-center gap-10 lg:grid-cols-2">
