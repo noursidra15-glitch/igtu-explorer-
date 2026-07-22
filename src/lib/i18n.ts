@@ -22,6 +22,7 @@ interface TranslationDict {
     formationOffers: string;
     studentGuides: string;
     faq: string;
+    stats: string[];
     contact: string;
   };
   search: string;
@@ -44,7 +45,12 @@ interface TranslationDict {
     title: string;
     subtitle: string;
   };
-  
+  specialties: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    viewProgram: string;
+  };
   platforms: {
     title: string;
     subtitle: string;
@@ -115,7 +121,13 @@ export const dictionary: Record<Locale, TranslationDict> = {
       title: "Student Guides",
       subtitle: "Comprehensive guides for every specialization.",
     },
-    
+    specialties: {
+      eyebrow: "Academic Tracks",
+      title: "Three Specialties, One Urban Mission",
+      description:
+        "Each specialization combines academic knowledge with practical projects to prepare future urban professionals.",
+      viewProgram: "View Program",
+    },
     platforms: {
       title: "Official Student Platforms",
       subtitle: "Access all official university platforms from one place.",
@@ -161,7 +173,12 @@ export const dictionary: Record<Locale, TranslationDict> = {
     contactTitle: "Contact",
     contactDesc: "Reach us easily.",
   },
-
+  stats: [
+    "Years of Excellence",
+    "Students Enrolled",
+    "Graduates",
+    "Partner Institutions",
+  ],
   aboutTeaser: {
     badge: "About the Institute",
     title: "Training Urban Leaders Since Day One",
@@ -208,7 +225,13 @@ export const dictionary: Record<Locale, TranslationDict> = {
       title: "Guides Étudiants",
       subtitle: "Guides complets pour chaque spécialité.",
     },
-    
+    specialties: {
+      eyebrow: "Parcours Académiques",
+      title: "Trois spécialités, une seule mission urbaine",
+      description:
+        "Chaque spécialité combine la théorie académique et la pratique professionnelle afin de former les futurs experts urbains.",
+      viewProgram: "Voir le programme",
+    },
     platforms: {
       title: "Plateformes Étudiantes",
       subtitle: "Accédez à toutes les plateformes officielles.",
@@ -238,6 +261,12 @@ export const dictionary: Record<Locale, TranslationDict> = {
     freeDesc:
       "Disponible à tout moment sans inscription.",
   },
+  stats: [
+    "Années d'excellence",
+    "Étudiants inscrits",
+    "Diplômés",
+    "Institutions partenaires",
+  ],
 quickAccess: {
   title: "Accès Rapide",
   subtitle: "Accédez instantanément aux sections les plus importantes.",
@@ -301,7 +330,19 @@ aboutTeaser: {
       title: "أدلة الطلبة",
       subtitle: "أدلة شاملة لجميع التخصصات.",
     },
-    
+    specialties: {
+      eyebrow: "المسارات الأكاديمية",
+      title: "ثلاثة تخصصات... ورسالة حضرية واحدة",
+      description:
+        "يجمع كل تخصص بين الدراسة الأكاديمية والتطبيق العملي لإعداد جيل جديد من المختصين في المجال الحضري.",
+      viewProgram: "عرض التخصص",
+    },
+    stats: [
+      "سنوات من التميز",
+      "طالب مسجل",
+      "خريج",
+      "شريك أكاديمي",
+    ],
     platforms: {
       title: "المنصات الرسمية للطلبة",
       subtitle: "الوصول إلى جميع المنصات الجامعية الرسمية من مكان واحد.",

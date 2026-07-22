@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>دليل طالب تخصص العمران | Printable Reference Style | IGTU M'Sila 2025–2026</title>
+<meta name="description" content="نسخة HTML مطبوعة واحترافية لدليل طالب تخصص العمران بجامعة محمد بوضياف بالمسيلة، مستوحاة في أسلوبها من المرجع المرفوع، مع الحفاظ على معطيات الليسانس والماستر الرسمية.">
+<style>
+:root {
+  --color-brand-primary:#1E3A5F;--color-brand-secondary:#2C5282;--color-accent:#D4A017;--color-accent-2:#F0D48C;
+  --color-bg-page:#F3F4F6;--color-bg-surface:#FFFFFF;--color-bg-subtle:#F8FAFC;--color-bg-warm:#FDF6E3;
+  --color-text-primary:#1F2937;--color-text-secondary:#4B5563;--color-text-soft:#64748B;--color-border:#E5E7EB;--color-border-strong:#D1D5DB;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.06);--shadow-md:0 6px 18px rgba(0,0,0,.10);--radius:8px;
+}
+html[data-theme="dark"] {
+  --color-bg-page:#111827;--color-bg-surface:#1F2937;--color-bg-subtle:#273244;--color-bg-warm:#3B3320;
+  --color-text-primary:#F9FAFB;--color-text-secondary:#D1D5DB;--color-text-soft:#9CA3AF;--color-border:#374151;--color-border-strong:#4B5563;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.25);--shadow-md:0 8px 22px rgba(0,0,0,.32)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--color-bg-page);color:var(--color-text-primary);font-family:'Cairo','Tajawal',system-ui,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.top-actions{position:sticky;top:0;z-index:1000;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;box-shadow:var(--shadow-md)}
+.top-actions .left{display:flex;align-items:center;gap:12px;font-weight:700}
+.top-actions .right{display:flex;gap:10px;flex-wrap:wrap}
+.action-btn{border:none;border-radius:6px;padding:10px 18px;font-weight:800;cursor:pointer;transition:.2s;background:#fff;color:var(--color-brand-primary)}
+.action-btn.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.action-btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.container{padding:18px 0 40px}
+.page{width:100%;max-width:758px;margin:0 auto 20px;background:var(--color-bg-surface);padding:40px 36px;position:relative;border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-sm);page-break-after:always;min-height:1000px}
+.page:last-child{page-break-after:auto}
+.cover{background:linear-gradient(135deg,var(--color-brand-primary) 0%, var(--color-brand-secondary) 60%, var(--color-brand-primary) 100%);color:#fff;text-align:center;padding:52px 30px;position:relative;overflow:hidden}
+.cover:before{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;background:radial-gradient(circle, rgba(212,160,23,.25), transparent 70%);border-radius:50%}
+.cover:after{content:'';position:absolute;bottom:-100px;right:-100px;width:320px;height:320px;background:radial-gradient(circle, rgba(212,160,23,.18), transparent 70%);border-radius:50%}
+.cover-inner{position:relative;z-index:1}
+.cover-univ{font-size:15px;letter-spacing:1px;font-weight:600;border-bottom:1px solid rgba(212,160,23,.6);padding-bottom:12px;margin-bottom:8px}
+.cover-institute{font-size:13px;color:var(--color-accent-2);margin-bottom:34px}
+.cover-icon{font-size:58px;color:var(--color-accent);margin:18px 0}
+.cover-title{font-size:50px;font-weight:900;line-height:1.2;margin:16px 0 10px;letter-spacing:1px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.cover-subtitle{font-size:22px;font-weight:700;color:var(--color-accent);margin-bottom:8px}
+.cover-degree{font-size:15px;color:#E5E7EB;margin-bottom:34px;background:rgba(255,255,255,.08);padding:10px 20px;display:inline-block;border-radius:30px;border:1px solid rgba(212,160,23,.4)}
+.cover-slogan{background:rgba(212,160,23,.12);border-right:4px solid var(--color-accent);padding:18px 24px;margin:28px auto;max-width:500px;text-align:right}
+.cover-slogan .ar{font-size:20px;font-weight:700;color:#fff}
+.cover-slogan .fr{font-size:13px;color:var(--color-accent-2);font-style:italic;margin-top:6px;direction:ltr;text-align:left}
+.cover-year{margin-top:28px;padding:12px 30px;background:var(--color-accent);color:var(--color-brand-primary);display:inline-block;font-size:18px;font-weight:900;letter-spacing:3px;border-radius:4px}
+.logo-row{display:flex;justify-content:center;gap:16px;margin-bottom:26px}
+.logo-box{width:72px;height:72px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);font-weight:900}
+.section-header{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:14px 20px;margin:24px 0 18px;border-right:6px solid var(--color-accent);border-radius:4px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 6px rgba(30,58,95,.15)}
+.section-header .icon{font-size:22px;background:var(--color-accent);color:var(--color-brand-primary);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0}
+.section-header h2{margin:0;font-size:20px;font-weight:800}
+.section-header .num{background:#fff;color:var(--color-brand-primary);padding:2px 10px;border-radius:4px;font-size:13px;font-weight:700;margin-right:auto}
+.sub-header{color:var(--color-brand-primary);font-size:17px;font-weight:700;padding:8px 14px;margin:18px 0 12px;background:linear-gradient(90deg, rgba(212,160,23,.15), transparent);border-right:4px solid var(--color-accent);border-radius:3px}
+.body-text{font-size:14.5px;line-height:1.95;color:var(--color-text-primary);text-align:justify;margin-bottom:12px}
+.lead-text{font-size:15px;line-height:2;color:var(--color-brand-primary);text-align:justify;background:var(--color-bg-warm);padding:18px 22px;border-radius:8px;border-right:4px solid var(--color-accent);margin:14px 0}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+.card-icon{font-size:20px;color:#fff;background:var(--color-brand-primary);min-width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:8px;flex-shrink:0}
+.card-icon.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.card-icon.green{background:#556B2F}
+.card-icon.purple{background:#5B4DB3}
+.card-text{font-size:13.5px;line-height:1.65;color:var(--color-text-primary)}
+.card-text b{color:var(--color-brand-primary);display:block;margin-bottom:4px;font-size:14px}
+.info-table{width:100%;border-collapse:collapse;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.06);border-radius:6px;overflow:hidden}
+.info-table thead{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff}
+.info-table th{padding:12px 14px;text-align:right;font-size:14px;font-weight:700;border-left:1px solid rgba(255,255,255,.15)}
+.info-table td{padding:11px 14px;font-size:13.5px;border-bottom:1px solid var(--color-border);color:var(--color-text-primary)}
+.info-table tbody tr:nth-child(even){background:var(--color-bg-subtle)}
+.info-table td:first-child{font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.06);width:40%}
+.stats-band{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 20px}
+.stat{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-top:3px solid var(--color-accent);border-radius:8px;padding:16px 10px;text-align:center}
+.stat .num{font-size:28px;font-weight:900;color:var(--color-brand-primary);line-height:1}
+.stat .label{font-size:13px;color:var(--color-text-secondary);margin-top:6px}
+.semesters-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.semester-wrap{margin:0}
+.semester-title{background:var(--color-accent);color:var(--color-brand-primary);padding:8px 16px;font-size:15px;font-weight:800;border-radius:6px 6px 0 0;display:flex;justify-content:space-between;align-items:center}
+.semester-badge{background:var(--color-brand-primary);color:var(--color-accent);padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.semester-table{width:100%;border-collapse:collapse;border:1px solid var(--color-accent);border-top:none;overflow:hidden}
+.semester-table td{padding:8px 12px;font-size:13px;border-bottom:1px solid #EDE7D3}
+.semester-table tr:last-child td{border-bottom:none}
+.semester-table tr:nth-child(even){background:#FDF9EE}
+.num-cell{width:34px;text-align:center;font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.15)}
+.ar-cell{font-weight:600;color:var(--color-brand-primary)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.skill-item{background:#fff;border:1.5px solid var(--color-border);border-radius:10px;padding:14px 10px;text-align:center}
+.skill-icon{font-size:26px;color:var(--color-accent);margin-bottom:8px;background:rgba(212,160,23,.12);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-inline:auto}
+.skill-label{font-size:13px;font-weight:700;color:var(--color-brand-primary)}
+.skill-fr{font-size:11px;color:var(--color-text-soft);margin-top:3px;direction:ltr}
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+.tool-card{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-radius:10px;padding:14px}
+.tool-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.tool-badge{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.tool-title{font-size:14px;font-weight:800;color:var(--color-brand-primary)}
+.tool-track{font-size:12px;color:var(--color-text-soft)}
+.tool-desc{font-size:13px;line-height:1.7;color:var(--color-text-primary)}
+.styled-list{list-style:none;padding:0;margin:12px 0}
+.styled-list li{padding:9px 42px 9px 14px;margin:6px 0;background:var(--color-bg-subtle);border-radius:6px;position:relative;font-size:13.5px;color:var(--color-text-primary);border-right:3px solid var(--color-accent)}
+.styled-list li:before{content:'✓';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--color-accent);font-weight:900;font-size:15px}
+.roadmap{display:grid;gap:10px;margin-top:14px}
+.road-step{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:12px}
+.road-n{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--color-brand-primary);color:var(--color-accent);font-weight:900}
+.road-title{font-size:14px;font-weight:800;color:var(--color-brand-primary);margin-bottom:4px}
+.road-desc{font-size:13.5px;color:var(--color-text-primary)}
+.resource-links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.resource-link{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;font-size:13.5px;font-weight:700;color:var(--color-brand-primary)}
+.faq-item{border:1px solid var(--color-border);border-radius:8px;overflow:hidden;margin:8px 0;background:var(--color-bg-subtle)}
+.faq-q{width:100%;border:none;background:none;text-align:right;padding:14px 16px;font-weight:800;color:var(--color-brand-primary);cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.faq-a{display:none;padding:0 16px 16px;color:var(--color-text-primary);font-size:13.5px;line-height:1.8}
+.faq-item.open .faq-a{display:block}
+.contact-card{background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:20px;border-radius:10px;margin:12px 0;border-right:5px solid var(--color-accent);display:flex;align-items:center;gap:16px}
+.contact-avatar{width:60px;height:60px;background:var(--color-accent);color:var(--color-brand-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.contact-role{font-size:12px;color:var(--color-accent-2);margin-bottom:3px}
+.contact-name{font-size:16px;font-weight:800;margin-bottom:4px}
+.contact-email{font-size:13px;color:#E5E7EB;direction:ltr;text-align:right}
+.qr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.qr-card{padding:16px;text-align:center}
+.qr-box{width:150px;height:150px;background:#fff;border:1px solid #E5E7EB;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:900;color:#111827;letter-spacing:.16em}
+.image-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.figure-card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}.figure-card img{width:100%;height:220px;object-fit:cover;display:block}.figure-card .caption{padding:10px 12px;font-size:11.5px;line-height:1.7;color:var(--color-text-secondary)}.figure-card .caption a{color:var(--color-brand-primary);text-decoration:underline}.figure-card .caption strong{display:block;color:var(--color-brand-primary);font-size:12.5px;margin-bottom:4px}.footer-note{margin-top:24px;padding-top:18px;border-top:1px solid var(--color-border);color:var(--color-text-soft);font-size:12.5px;text-align:center}.copyright-note{margin-top:10px;padding:14px 16px;background:rgba(212,160,23,.10);border:1px solid rgba(212,160,23,.35);border-radius:10px;color:var(--color-brand-primary);font-size:13px;font-weight:700;line-height:1.9;text-align:center}.page-no{position:absolute;bottom:14px;left:18px;font-size:11px;color:var(--color-text-soft)}
+@media (max-width:860px){.page{max-width:100%;margin:0 10px 18px;padding:26px 20px;min-height:auto}.cards-grid,.semesters-row,.skills-grid,.tools-grid,.resource-links,.qr-grid,.stats-band,.image-grid{grid-template-columns:1fr}.top-actions{padding:12px;flex-direction:column;align-items:stretch}.top-actions .right{justify-content:stretch}.action-btn{width:100%}.figure-card img{height:210px}}
+@media print{body{background:#fff}.top-actions{display:none!important}.page{box-shadow:none;margin:0 auto;border:1px solid #E5E7EB;page-break-after:always}.page:last-child{page-break-after:auto}a{text-decoration:none;color:inherit}}
+</style>
+</head>
+<body>
+<div class="top-actions">
+  <div class="left"><span>دليل طالب تخصص العمران — نسخة HTML مطبوعة</span></div>
+  <div class="right">
+    <button class="action-btn gold" onclick="window.print()">طباعة / PDF</button>
+    <button class="action-btn" id="themeBtn">الوضع الليلي</button>
+    <button class="action-btn ghost" id="copyBtn">نسخ رابط الملف</button>
+  </div>
+</div>
+<div class="container mpc-guide">
+
+  <section class="page cover" id="page-1">
+    <div class="cover-inner">
+      <div class="logo-row"><div class="logo-box">UMB</div><div class="logo-box">IGTU</div></div>
+      <div class="cover-univ">UNIVERSITÉ MOHAMED BOUDIAF — M'SILA</div>
+      <div class="cover-institute">معهد تسيير التقنيات الحضرية | Institute of Urban Techniques Management</div>
+      <div class="cover-icon">🏙️</div>
+      <div class="cover-title">دليل طالب تخصص العمران</div>
+      <div class="cover-subtitle">Urban Planning Student Guide</div>
+      <div class="cover-degree">Licence + Master · 2025–2026 · LMD</div>
+      <div class="cover-slogan"><div class="ar">من ورشة العمران إلى المشروع الحضري: مسار أكاديمي ومهني متكامل</div><div class="fr">De l’atelier d’urbanisme au projet urbain : un parcours académique et professionnel intégré</div></div>
+      <div class="cover-year">2025–2026</div>
+    </div>
+    <div class="page-no">01</div>
+  </section>
+
+  <section class="page" id="page-2">
+    <div class="section-header"><div class="icon">✦</div><h2>الترحيب: عن التخصص، الرؤية، والرسالة</h2><div class="num">02</div></div>
+    <div class="lead-text">العمران ليس مجرد دراسة للمباني أو الطرق، بل هو فهم متكامل للمدينة باعتبارها فضاءً اجتماعيا واقتصاديا وقانونيا وتقنيا وبيئيا. وتضع وثائق التكوين الرسمية ورشة العمران في قلب المسار، باعتبارها الفضاء الذي يدمج المعارف النظرية بالأدوات التطبيقية والعمل الميداني.</div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🏛️</div><div class="card-text"><b>عن التخصص</b>يتدرج التكوين من مقاييس القرب والحيّ والشارع إلى المدينة والإقليم، مع التركيز على التشخيص، البرمجة، التصميم، والتتبع الميداني.</div></div>
+      <div class="card"><div class="card-icon gold">👁️</div><div class="card-text"><b>الرؤية</b>تكوين مخططين عمرانيين عامّين ووكلاء تنمية ترابية قادرين على فهم التحولات الحضرية السريعة والتدخل فيها ضمن منطق الاستدامة والجودة.</div></div>
+      <div class="card"><div class="card-icon green">🎯</div><div class="card-text"><b>الرسالة</b>الربط بين التاريخ الحضري والسوسيولوجيا والقانون والجيوماتيك والورشات التطبيقية من أجل طالب قادر على التحليل والاقتراح والتواصل المهني.</div></div>
+      <div class="card"><div class="card-icon purple">🌍</div><div class="card-text"><b>أهمية التخصص</b>قضايا السكن والنقل والتوسع العمراني والعقار والحوكمة المحلية والبيئة تحتاج إلى كفاءات تفهم المدينة باعتبارها نظامًا مترابطًا.</div></div>
+    </div>
+    <div class="stats-band">
+      <div class="stat"><div class="num">3</div><div class="label">سنوات الليسانس</div></div>
+      <div class="stat"><div class="num">2</div><div class="label">سنوات الماستر</div></div>
+      <div class="stat"><div class="num">300</div><div class="label">إجمالي الأرصدة</div></div>
+      <div class="stat"><div class="num">11</div><div class="label">محطات الدليل</div></div>
+    </div>
+    <div class="sub-header">ملخص بصري سريع</div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🗺️</div><div class="card-text"><b>ورشة ومشروع</b>الورشة هي المحور الناظم للتكوين في الليسانس والماستر.</div></div>
+      <div class="card"><div class="card-icon gold">⚖️</div><div class="card-text"><b>قانون وعقار</b>التكوين يدمج التشريع العمراني وأدوات التخطيط والتدبير العقاري.</div></div>
+      <div class="card"><div class="card-icon green">📍</div><div class="card-text"><b>GIS / SIG</b>الخرائط والجيوماتيك والبيانات المكانية جزء أساسي من التشخيص والتحليل.</div></div>
+      <div class="card"><div class="card-icon purple">♻️</div><div class="card-text"><b>استدامة ومرونة</b>المدينة المرنة والمستدامة والذكاء الاصطناعي تتعزز أكثر في مسار الماستر.</div></div>
+    </div>
+    <div class="sub-header">صور ملهمة مرتبطة بالتخصص</div>
+    <div class="image-grid">
+      <figure class="figure-card">
+        <img src="https://sspark.genspark.ai/cfimages?u1=THK2NW28RQEH0ZqKc5A0jHnYBSjG8Ptj5scSi2lptEhD8kLEaMdOIgxxJQCMt6PW6dhAf2xn8MS5fXmPzwpeZQLFp4O9jSx3S2gi&u2=JUPPuFWkVxr%2Fm2Yt&width=2560" alt="GIS and mapping in urban planning">
+        <figcaption class="caption"><strong>الخرائط وGIS في التخطيط العمراني</strong>صورة توضيحية تعكس أهمية التحليل المجالي والبيانات المكانية في التخصص. <a href="https://commons.wikimedia.org/wiki/File:Gis.jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+      </figure>
+      <figure class="figure-card">
+        <img src="https://sspark.genspark.ai/cfimages?u1=EWtjRdUlc3LSzRrgtXYsZ6w3I60Hx%2BMkuoWeHFeRFMipBIEpMth7JzBNp0BcLnm9rFv3fmzjWG0H059TcGkbjN9vC883%2FcS3ElLAyvSYWcwVGtFwCtHE3i6rUbA%3D&u2=aU2Seua6A850xwsv&width=2560" alt="Sustainable urban development example">
+        <figcaption class="caption"><strong>نموذج لمدينة مستدامة</strong>صورة مناسبة لفكرة الاستدامة وجودة الإطار المعيشي التي يشتغل عليها المخطط العمراني. <a href="https://en.wikipedia.org/wiki/File:Sharjah_sustainable_city.jpeg" target="_blank" rel="noopener">المصدر</a></figcaption>
+      </figure>
+    </div>
+    <div class="page-no">02</div>
+  </section>
+
+  <section class="page" id="page-3">
+    <div class="section-header"><div class="icon">★</div><h2>لماذا تختار تخصص العمران؟</h2><div class="num">03</div></div>
+    <p class="body-text">يعطي هذا التخصص للطالب قدرة على قراءة المجال الحضري بمختلف مكوناته، من البنية والعمران والسكن إلى النقل والحوكمة والبيئة. كما يسمح ببناء شخصية مهنية تجمع بين التحليل والتصور والاقتراح والتواصل.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🏙️</div><div class="card-text"><b>العمران</b>فهم تكوين المدينة وتطورها وعلاقات الشكل الحضري بالوظيفة والاستعمال.</div></div>
+      <div class="card"><div class="card-icon gold">🚌</div><div class="card-text"><b>النقل والتنقل</b>تحليل الشبكات والبنية التحتية والعلاقة بين الحركة والتوسع العمراني.</div></div>
+      <div class="card"><div class="card-icon green">🌿</div><div class="card-text"><b>البيئة والاستدامة</b>إدماج المناخ والمخاطر واعتبارات الجودة الحضرية في المشروع.</div></div>
+      <div class="card"><div class="card-icon purple">🏠</div><div class="card-text"><b>السكن</b>معالجة الأنسجة الحضرية وقضايا السكن والتهيئة وإعادة التأهيل.</div></div>
+      <div class="card"><div class="card-icon">🗺️</div><div class="card-text"><b>GIS</b>استعمال الخرائط الرقمية والجيوماتيك وقواعد البيانات المكانية.</div></div>
+      <div class="card"><div class="card-icon gold">🧭</div><div class="card-text"><b>التخطيط الترابي</b>الانتقال من الحي إلى المدينة ثم إلى الإقليم ضمن مقاييس متدرجة.</div></div>
+      <div class="card"><div class="card-icon green">💡</div><div class="card-text"><b>المدينة الذكية</b>في الماستر تتعزز البرمجة والذكاء الاصطناعي والتحليل التطبيقي.</div></div>
+      <div class="card"><div class="card-icon purple">🏛️</div><div class="card-text"><b>الحوكمة</b>فهم الفاعلين والقانون والاقتصاد الحضري وإدارة المشاريع والبرامج.</div></div>
+    </div>
+    <div class="page-no">03</div>
+  </section>
+
+  <section class="page" id="page-4">
+    <div class="section-header"><div class="icon">📘</div><h2>نظرة عامة على البرنامج: نظام LMD</h2><div class="num">04</div></div>
+    <table class="info-table">
+      <thead><tr><th>العنصر</th><th>المعطيات الرسمية</th></tr></thead>
+      <tbody>
+        <tr><td>هيكلة الدراسة</td><td>Licence – Master – Doctorat</td></tr>
+        <tr><td>الليسانس</td><td>3 سنوات، 6 سداسيات، 180 ECTS، 30 رصيدًا لكل سداسي</td></tr>
+        <tr><td>الماستر</td><td>سنتان، 4 سداسيات، 120 ECTS، 30 رصيدًا لكل سداسي</td></tr>
+        <tr><td>توزيع أرصدة الليسانس</td><td>UEF 117، UEM 46، UED 11، UET 6</td></tr>
+        <tr><td>توزيع أرصدة الماستر</td><td>UEF 76، UEM 33، UED/UET 11</td></tr>
+        <tr><td>الورشات</td><td>مركزية في التكوين وتعتمد على التقييم المستمر الكامل</td></tr>
+        <tr><td>المشروع النهائي</td><td>في الليسانس Atelier 6 / PFE، وفي الماستر PFE + Mémoire + Stage</td></tr>
+      </tbody>
+    </table>
+    <div class="sub-header">التدرج الزمني</div>
+    <ul class="styled-list">
+      <li>السنة الأولى: تمهيد نظري، تاريخ المدينة، طبوغرافيا، إحصاء، ديموغرافيا، خرائط وVRD.</li>
+      <li>السنة الثانية: بنية المجال، القانون، أدوات التحليل، DAO، العقار، أدوات التخطيط، SIG، التنقل.</li>
+      <li>السنة الثالثة: المشروع الحضري، التتبع، الاقتصاد الحضري، البرمجيات المفتوحة، المدينة المرنة، ثم PFE.</li>
+      <li>الماستر 1: المشروع الحضري، الفاعلون، البحث، البرمجة الرقمية، الذكاء الاصطناعي، التدبير الحضري.</li>
+      <li>الماستر 2: atelier thématique، الجيوماتيك التطبيقية، الإحصاء التطبيقي، التنظيم، التنقل، ثم مشروع التخرج والمذكرة والتربص.</li>
+    </ul>
+    <div class="page-no">04</div>
+  </section>
+
+  <section class="page" id="page-5">
+    <div class="section-header"><div class="icon">🎓</div><h2>برنامج الليسانس — السداسيات الستة</h2><div class="num">05</div></div>
+    <p class="lead-text">يمتد تكوين الليسانس على ستة سداسيات بمجموع 180 رصيدًا، وتبقى ورشة العمران الخيط الناظم بين المقاييس النظرية والتقنية والميدانية إلى غاية مشروع نهاية الدراسة.</p>
+    <div class='semesters-row'>
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 1</span><span class="semester-badge">S1</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 1</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Initiation à la théorie de l'urbanisme 1</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Histoire de la ville 1</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Topographie</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Statistique</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Démographie</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Communication et expression écrite 1</td></tr></tbody></table>
+    </div>
+    
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 2</span><span class="semester-badge">S2</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 2</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Initiation à la théorie de l'urbanisme 2</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Histoire de la ville 2</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Paysage et sitologie</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Cartographie</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>VRD</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Communication et expression écrite 2</td></tr></tbody></table>
+    </div>
+    </div><div class='semesters-row'>
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 3</span><span class="semester-badge">S3</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 3</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Structure du territoire</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie de la conception urbaine</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Droit de l'urbanisme</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Outils d'analyse urbaine</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>DAO</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Infrastructures / VRD</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Géographie urbaine</td></tr></tbody></table>
+    </div>
+    
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 4</span><span class="semester-badge">S4</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 4</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Le foncier</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Planification urbaine et instruments</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Programmation urbaine</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>SIG 1</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Sociologie urbaine</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Stage d'immersion professionnelle</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Mobilité et réseaux de transport</td></tr></tbody></table>
+    </div>
+    </div><div class='semesters-row'>
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 5</span><span class="semester-badge">S5</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 5</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Initiation au projet urbain</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Conduite et suivi des projets d'aménagement</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Économie urbaine et développement local</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Logiciels Open source</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Stage d'immersion professionnelle</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Ville résiliente et intelligente</td></tr></tbody></table>
+    </div>
+    
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 6</span><span class="semester-badge">S6</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier d'urbanisme 6 / PFE</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Métiers de la ville</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Éthique et déontologie</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Entrepreneuriat</td></tr></tbody></table>
+    </div>
+    </div>
+    <div class="page-no">05</div>
+  </section>
+
+  <section class="page" id="page-6">
+    <div class="section-header"><div class="icon">🧪</div><h2>برنامج الماستر — المشروع، البحث، والتخصص</h2><div class="num">06</div></div>
+    <p class="lead-text">يتجه الماستر نحو التعمق في المشروع الحضري والتسيير والبحث العلمي والتحولات الرقمية، مع سداسي نهائي يجمع بين مشروع التخرج والمذكرة والتربص المهني.</p>
+    <div class='semesters-row'>
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 1</span><span class="semester-badge">S1</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier 1 — Dynamiques des espaces publics urbains</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Projet urbain 1</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Planification et programmation</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Acteurs et métiers</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Initiation à la recherche 1</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Programmation numérique</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Sociologie urbaine</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Économie urbaine</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Langue étrangère</td></tr></tbody></table>
+    </div>
+    
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 2</span><span class="semester-badge">S2</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier 2 — Projet urbain</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Projet urbain 2</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Maîtrise d'œuvre et d'ouvrage</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Initiation à la recherche 2</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Management et marketing urbains</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Intelligence artificielle</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Problèmes sociaux et politiques</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Gestion du patrimoine foncier</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Langue étrangère</td></tr></tbody></table>
+    </div>
+    </div><div class='semesters-row'>
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 3</span><span class="semester-badge">S3</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier thématique</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Option 1 — Cadre de vie et durabilité</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Option 2 — Patrimoine urbain</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Option 3 — Gouvernance et projets urbains</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Séminaires</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Géomatique appliquée</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Statistique appliquée</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Réglementation</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Mobilité et transport urbain</td></tr><tr><td class='num-cell'>10</td><td class='ar-cell'>Langue étrangère</td></tr></tbody></table>
+    </div>
+    
+    <div class="semester-wrap">
+      <div class="semester-title"><span>سداسي 4</span><span class="semester-badge">S4</span></div>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Projet de Fin d'Étude — 14 ECTS</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Mémoire — 9 ECTS</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Stage professionnel — 90 heures / 6 ECTS</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Langue étrangère / Elevator pitch — 1 ECTS</td></tr></tbody></table>
+    </div>
+    </div>
+    <div class="sub-header">محاور التخصص في السداسي الثالث</div>
+    <ul class="styled-list">
+      <li>Cadre de vie et durabilité</li>
+      <li>Patrimoine urbain</li>
+      <li>Gouvernance et projets urbains</li>
+    </ul>
+    <div class="page-no">06</div>
+  </section>
+
+  <section class="page" id="page-7">
+    <div class="section-header"><div class="icon">🛠️</div><h2>المهارات والكفاءات</h2><div class="num">07</div></div>
+    <p class="body-text">المسار يبني كفاءات تجمع بين التحليل الحضري والأدوات الرقمية وإدارة المشروع والقانون والبحث والتواصل، مع ربط دائم بين التشخيص والعمل الميداني والمخرجات البصرية.</p>
+    <div class="skills-grid">
+      <div class="skill-item"><div class="skill-icon">🧭</div><div class="skill-label">التخطيط العمراني</div><div class="skill-fr">Urban Planning</div></div>
+      <div class="skill-item"><div class="skill-icon">🔎</div><div class="skill-label">التحليل الحضري</div><div class="skill-fr">Urban Analysis</div></div>
+      <div class="skill-item"><div class="skill-icon">🗺️</div><div class="skill-label">GIS والخرائط</div><div class="skill-fr">GIS / Mapping</div></div>
+      <div class="skill-item"><div class="skill-icon">📐</div><div class="skill-label">التصميم والمشروع</div><div class="skill-fr">Design / Project</div></div>
+      <div class="skill-item"><div class="skill-icon">💻</div><div class="skill-label">الأدوات الرقمية</div><div class="skill-fr">Digital Tools</div></div>
+      <div class="skill-item"><div class="skill-icon">⚖️</div><div class="skill-label">القانون والعقار</div><div class="skill-fr">Law / Land</div></div>
+      <div class="skill-item"><div class="skill-icon">🧠</div><div class="skill-label">البحث العلمي</div><div class="skill-fr">Research</div></div>
+      <div class="skill-item"><div class="skill-icon">🗣️</div><div class="skill-label">التواصل والعرض</div><div class="skill-fr">Communication</div></div>
+      <div class="skill-item"><div class="skill-icon">🤝</div><div class="skill-label">العمل الجماعي</div><div class="skill-fr">Teamwork</div></div>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">📍</div><div class="card-text"><b>في الليسانس</b>تظهر مهارات التشخيص، الخرائط، القانون، البنية الحضرية، والمشروع التدريجي.</div></div>
+      <div class="card"><div class="card-icon gold">🤖</div><div class="card-text"><b>في الماستر</b>تتعزز البرمجة الرقمية والذكاء الاصطناعي والجيوماتيك التطبيقية والمنهجية البحثية.</div></div>
+    </div>
+    <div class="page-no">07</div>
+  </section>
+
+  <section class="page" id="page-8">
+    <div class="section-header"><div class="icon">💻</div><h2>البرمجيات والأدوات الرقمية</h2><div class="num">08</div></div>
+    <p class="body-text">هذه الأدوات مذكورة صراحة في وثائق التكوين الرسمية، وهي جزء من البعد المهني والتطبيقي للمسار في الليسانس والماستر.</p>
+    <div class="tools-grid"><div class='tool-card'><div class='tool-top'><div class='tool-badge'>QG</div><div><div class='tool-title'>QGIS</div><div class='tool-track'>مركزي</div></div></div><div class='tool-desc'>GIS مفتوح المصدر للتحليل المجالي وإعداد الخرائط.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>AR</div><div><div class='tool-title'>ArcGIS / ArcPy</div><div class='tool-track'>متقدم</div></div></div><div class='tool-desc'>للجيوماتيك والأتمتة والتحليل التطبيقي المتقدم.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>AU</div><div><div class='tool-title'>AutoCAD</div><div class='tool-track'>أساسي</div></div></div><div class='tool-desc'>للرسم التقني وDAO والتمثيل الدقيق للمخططات.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>SK</div><div><div class='tool-title'>SketchUp</div><div class='tool-track'>تطبيقي</div></div></div><div class='tool-desc'>للتمثيل ثلاثي الأبعاد ودعم الورشة والعرض البصري.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>BL</div><div><div class='tool-title'>Blender</div><div class='tool-track'>داعم</div></div></div><div class='tool-desc'>للإخراج البصري والتصور المجسم مفتوح المصدر.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>SP</div><div><div class='tool-title'>SPSS</div><div class='tool-track'>تحليلي</div></div></div><div class='tool-desc'>للتحليل الإحصائي والاستبيانات والمعطيات الكمية.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>PY</div><div><div class='tool-title'>Python Ecosystem</div><div class='tool-track'>متقدم</div></div></div><div class='tool-desc'>للبرمجة والتحليل والذكاء الاصطناعي في الماستر.</div></div><div class='tool-card'><div class='tool-top'><div class='tool-badge'>PO</div><div><div class='tool-title'>PowerPoint</div><div class='tool-track'>تواصلي</div></div></div><div class='tool-desc'>للعرض الشفهي وتقديم النتائج والدفاع.</div></div></div>
+    <div class="sub-header">أدوات وردت في الملفين ضمن السياقات التقنية</div>
+    <div class="image-grid">
+      <figure class="figure-card">
+        <img src="https://sspark.genspark.ai/cfimages?u1=d4TDe2T5r4E3f1jSf1F7Nm3F8igDju8XpZfbCryxtQavLVwgAUtTaqDyKN1EAosiYyOkNfD5wFbiNklRfsj4%2Bt9lBqdUrmS%2FIzKSkUeM2r%2BbfPnjlGuPxbsbJO3cSeri2uzz2AiLfgBp5R1hNvMAVJphLJw%3D&u2=tj0aFnLbWLCV4nsK&width=2560" alt="Urban map plan illustration">
+        <figcaption class="caption"><strong>الخريطة كأداة تحليل وقرار</strong>التمثيل الخرائطي جزء أساسي من تعلم التشخيص الحضري والقراءة الميدانية. <a href="https://pxhere.com/en/photo/166862" target="_blank" rel="noopener">المصدر</a></figcaption>
+      </figure>
+      <figure class="figure-card">
+        <img src="https://sspark.genspark.ai/cfimages?u1=0Uvx%2BcWASkWMnV2mP7ewZCNAOn%2BC97cW9ip9%2BkUqjnzJaoLZle55fuy03Y5fWao7Z4r%2Bml2hQPCtR1pv0WkYkoAjOP3uaHw9JSLyKPjiXyaJwg%3D%3D&u2=hNtVu3C%2BEQB10MVU&width=2560" alt="Green roof and sustainable architecture">
+        <figcaption class="caption"><strong>الاستدامة في الفضاء المبني</strong>مثال بصري يربط بين التهيئة الحضرية والوعي البيئي داخل المشروع العمراني. <a href="https://commons.wikimedia.org/wiki/File:Green_roof.jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+      </figure>
+    </div>
+    <ul class="styled-list">
+      <li>QGIS، GRASS، PostGIS، gvSIG، GeoServer، MapServer، OpenLayers، Leaflet.</li>
+      <li>AutoCAD، FreeCAD، SketchUp، Blender.</li>
+      <li>Python، Jupyter، VS Code، Google Colab، NumPy، pandas، Matplotlib، Plotly، scikit-learn، NetworkX، GeoPandas، OSMnx، Folium، PySAL، UrbanPy.</li>
+      <li>SPSS، MS Project، PowerPoint، وأدوات مفتوحة المصدر مرتبطة بـ OpenStreetMap.</li>
+    </ul>
+    <div class="page-no">08</div>
+  </section>
+
+  <section class="page" id="page-9">
+    <div class="section-header"><div class="icon">🚀</div><h2>الآفاق المهنية</h2><div class="num">09</div></div>
+    <p class="lead-text">يبين المسار أن التكوين يفتح الباب نحو الإدماج المهني ومتابعة الدراسات في الماستر ثم الدكتوراه، والعمل داخل الهيئات العمومية والقطاع الخاص ومحيط البحث والاستشارة.</p>
+    <div class="roadmap">
+      <div class="road-step"><div class="road-n">1</div><div><div class="road-title">طالب</div><div class="road-desc">يبني الأساس في الورشات والتحليل والخرائط والقانون وأدوات التمثيل والبحث.</div></div></div>
+      <div class="road-step"><div class="road-n">2</div><div><div class="road-title">متخرج من الليسانس</div><div class="road-desc">يستطيع متابعة الماستر أو الالتحاق بمهام أولية مرتبطة بالتشخيص والدعم الترابي.</div></div></div>
+      <div class="road-step"><div class="road-n">3</div><div><div class="road-title">Urban Planner</div><div class="road-desc">يتجه نحو التشخيص والبرمجة وإعداد المشاريع والمتابعة أو المرافقة التقنية والإدارية.</div></div></div>
+      <div class="road-step"><div class="road-n">4</div><div><div class="road-title">محيط التوظيف</div><div class="road-desc">الإدارات والهيئات العمومية، مكاتب الدراسات والتصميم، الوكالات الحضرية، البلديات، مؤسسات السكن والعقار، وهيئات التنمية المحلية.</div></div></div>
+      <div class="road-step"><div class="road-n">5</div><div><div class="road-title">الماستر ثم الدكتوراه</div><div class="road-desc">يشكل الماستر معبرًا نحو Cycle 3 مع دعم واضح للبحث العلمي والمنهجية والرقمنة.</div></div></div>
+      <div class="road-step"><div class="road-n">6</div><div><div class="road-title">الاستشارة والبحث</div><div class="road-desc">إمكانات داخل مراكز البحث، الاستشارة، والدعم الترابي ضمن فرق متعددة التخصصات.</div></div></div>
+    </div>
+    <div class="page-no">09</div>
+  </section>
+
+  <section class="page" id="page-10">
+    <div class="section-header"><div class="icon">📚</div><h2>دليل نجاح الطالب</h2><div class="num">10</div></div>
+    <div class="sub-header">نصائح عملية</div>
+    <ul class="styled-list">
+      <li>اعتبر الورشة مشروعًا مستمرًا وليس تمرينًا مؤقتًا.</li>
+      <li>ابنِ أرشيفًا شخصيًا للخرائط والصور والمراجع والملاحظات الميدانية.</li>
+      <li>اربط دائمًا بين الميدان والنص القانوني والتمثيل البصري.</li>
+      <li>استفد من التربصات لبناء شبكة مهنية مبكرة.</li>
+      <li>تعلّم عرض مشروعك شفهيًا بوضوح، خاصة مع لغة أجنبية مهنية في المسار.</li>
+    </ul>
+    <div class="sub-header">موارد وروابط مفيدة</div>
+    <div class="resource-links"><a class='resource-link' href='https://www.univ-msila.dz/' target='_blank' rel='noopener'><span>Official University</span><span>↗</span></a><a class='resource-link' href='https://elearning.univ-msila.dz/moodle/' target='_blank' rel='noopener'><span>Moodle</span><span>↗</span></a><a class='resource-link' href='https://repository.univ-msila.dz/' target='_blank' rel='noopener'><span>DSpace / Repository</span><span>↗</span></a><a class='resource-link' href='https://www.univ-msila.dz/site/gtu/' target='_blank' rel='noopener'><span>IGTU Page</span><span>↗</span></a><a class='resource-link' href='https://igtu-explorer-v2.netlify.app/' target='_blank' rel='noopener'><span>IGTU Explorer</span><span>↗</span></a><a class='resource-link' href='https://t.me/urban_planner20' target='_blank' rel='noopener'><span>Telegram Channel</span><span>↗</span></a></div>
+    <div class="sub-header">FAQ</div>
+    <div class="faq-item open"><button class="faq-q">ما الفرق بين الليسانس والماستر؟ <span>▾</span></button><div class="faq-a">الليسانس يبني الأساس النظري والتقني والورشي عبر ستة سداسيات، بينما يعمق الماستر المشروع الحضري والبحث والإدارة والأدوات الرقمية والتخصص الموضوعاتي.</div></div>
+    <div class="faq-item"><button class="faq-q">هل الورشة عنصر أساسي؟ <span>▾</span></button><div class="faq-a">نعم. الوثائق الرسمية تضع Atelier في مركز التكوين، وهو الفضاء الأكثر دمجًا بين التحليل والمشروع والعرض.</div></div>
+    <div class="faq-item"><button class="faq-q">هل توجد تربصات مهنية؟ <span>▾</span></button><div class="faq-a">في الليسانس توجد تربصات انغماس مهني، وفي الماستر يوجد تربص مهني في السداسي الرابع مدعوم بتقرير ومخرجات مرتبطة بالمشروع والمذكرة.</div></div>
+    <div class="faq-item"><button class="faq-q">هل يمكن متابعة الدكتوراه بعد الماستر؟ <span>▾</span></button><div class="faq-a">نعم، يصرح ملف الماستر بأنه مسار مؤهل نحو Cycle 3 مع دعم واضح للبحث العلمي والمنهجية.</div></div>
+    <div class="page-no">10</div>
+  </section>
+
+  <section class="page" id="page-11">
+    <div class="section-header"><div class="icon">✉</div><h2>الختام والتواصل</h2><div class="num">11</div></div>
+    <div class="lead-text">صُممت هذه النسخة بأسلوب مطبوع واحترافي قريب من المرجع الذي قدمتهِ، مع الحفاظ على المعطيات الأكاديمية المستخرجة من ملفي الليسانس والماستر الرسميين دون إضافة مقررات أو معطيات أكاديمية خارج المصدر.</div>
+    <div class="contact-card">
+      <div class="contact-avatar">🏫</div>
+      <div>
+        <div class="contact-role">Institution</div>
+        <div class="contact-name">Université Mohamed Boudiaf — M'Sila / IGTU</div>
+        <div class="contact-email">https://www.univ-msila.dz/</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar">✈️</div>
+      <div>
+        <div class="contact-role">Telegram</div>
+        <div class="contact-name">قناة التلغرام الخاصة بالدليل</div>
+        <div class="contact-email">https://t.me/urban_planner20</div>
+      </div>
+    </div>
+    <div class="sub-header">معلومات الاتصال الرسمية</div>
+    <div class="contact-card">
+      <div class="contact-avatar">👨‍🏫</div>
+      <div>
+        <div class="contact-role">رئيس القسم</div>
+        <div class="contact-name">د. دكمة عبد العالي</div>
+        <div class="contact-email">abdellali.dokma@univ-msila.dz</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar">🎓</div>
+      <div>
+        <div class="contact-role">مسؤول التخصص ليسانس</div>
+        <div class="contact-name">د. قادري الدراجي</div>
+        <div class="contact-email">derradji.kadri@univ-msila.dz</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar">📘</div>
+      <div>
+        <div class="contact-role">مسؤول التخصص ماستر</div>
+        <div class="contact-name">د. حجاب المداني</div>
+        <div class="contact-email">madani.hadjab@univ-msila.dz</div>
+      </div>
+    </div>
+    <div class="body-text" style="text-align:center;font-weight:700;color:var(--color-brand-primary)">"العمران ليس مجرد تنظيم للمكان، بل هو فنّ توجيه حياة المدينة نحو التوازن والوضوح والكرامة."</div>
+    <div class="footer-note">دليل HTML تفاعلي قابل للطباعة · Urban Planning Student Guide · IGTU M'Sila · 2025–2026</div>
+    <div class="copyright-note">© 2025–2026 جميع حقوق هذا الدليل محفوظة لصاحبة هذا العمل. أُعدّ هذا الملف للطباعة والتوزيع على الطلبة الجدد المهتمين بتخصص العمران، ولا يُسمح بإعادة نشره أو نسخه أو التعديل عليه كليًا أو جزئيًا دون إذن مسبق من مالكة الدليل.</div>
+    <div class="page-no">11</div>
+  </section>
+
+</div>
+<script>
+const root=document.documentElement;
+const themeBtn=document.getElementById('themeBtn');
+const copyBtn=document.getElementById('copyBtn');
+themeBtn.addEventListener('click',()=>{
+  const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+  root.setAttribute('data-theme',next);
+  themeBtn.textContent=next==='dark'?'الوضع النهاري':'الوضع الليلي';
+});
+copyBtn.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(location.href);copyBtn.textContent='تم النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}
+  catch(e){copyBtn.textContent='تعذر النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}
+});
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

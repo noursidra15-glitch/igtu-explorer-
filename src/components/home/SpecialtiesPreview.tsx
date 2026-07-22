@@ -1,3 +1,6 @@
+"use client";
+
+import { useLanguage } from "@/components/layout/LanguageProvider";
 import Link from "next/link";
 import { Building2, Landmark, HardHat, ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -8,13 +11,14 @@ import specialties from "@/data/specialties.json";
 const icons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
 
 export function SpecialtiesPreview() {
+  const { t } = useLanguage();
   return (
     <section className="bg-surface-muted py-24">
       <Container>
         <SectionHeading
-          eyebrow="Academic Tracks"
-          title="Three specialties, one urban mission"
-          description="Each track pairs classroom theory with real studio work on M'Sila's own streets, networks and neighborhoods."
+          eyebrow={t.specialties.eyebrow}
+          title={t.specialties.title}
+          description={t.specialties.description}
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -37,7 +41,7 @@ export function SpecialtiesPreview() {
                   <p className="mt-1 text-sm font-medium text-emerald-brand">{s.nameEn}</p>
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/60">{s.tagline}</p>
                   <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-foreground/80 transition-colors group-hover:text-emerald-brand">
-                    View program
+                  {t.specialties.viewProgram}
                     <ArrowUpRight size={15} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
                 </Link>

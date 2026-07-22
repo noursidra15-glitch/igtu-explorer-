@@ -123,7 +123,7 @@ export function StudentGuides() {
           })}
         </div>
 
-      </div>
+      
     </section>
   );
 }

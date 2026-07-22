@@ -15,15 +15,15 @@ import { cn } from "@/lib/utils";
 const specialtyIcons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
 
 // Maps a nav href to its i18n key in dictionary.nav, since site.json labels stay English-only.
-const navKeyByHref: const navKeyByHref: Record<
-string,
-"home" | "about" | "programs" | "formationOffers" | "studentGuides" | "faq" | "contact"
+const navKeyByHref: Record<
+  string,
+  "home" | "about" | "programs" | "formationOffers" | "studentGuides" | "faq" | "contact"
 > = {
   "/": "home",
   "/about": "about",
-  "/student-guides": "studentGuides",
   "/specialties": "programs",
   "/resources": "formationOffers",
+  "/student-guide": "studentGuides",
   "/faq": "faq",
   "/contact": "contact",
 };
