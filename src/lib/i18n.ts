@@ -96,7 +96,13 @@ interface TranslationDict {
     title: string;
     description: string;
     button: string;
+  
+    specialties: string;
+    degreeLevels: string;
+    years: string;
+    club: string;
   };
+
   stats: string[];
 
   copyright: string;
@@ -353,8 +359,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
     
       copyright:
         "© 2026 Tous droits réservés.\nConçu et développé par l'Urbaniste Hachemi Nour Selsabil.",
-    }
-    },
+     },
 
    ar: {
      nav: {
@@ -485,7 +490,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
     "شريك أكاديمي",
   ],
 
-  copyright:
+    copyright:
     "© 2026 جميع الحقوق محفوظة.\nتم التصميم والتطوير بواسطة المهندسة العمرانية هاشمي نور سلسبيل.",
-   }
- },
+  },
+};
