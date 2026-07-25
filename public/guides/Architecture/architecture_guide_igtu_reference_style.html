@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>دليل طالب تخصص الهندسة المعمارية | IGTU M'Sila</title>
+<meta name="description" content="نسخة HTML مطبوعة واحترافية لدليل طالب تخصص الهندسة المعمارية بجامعة محمد بوضياف بالمسيلة، مبنية على عرض التكوين الرسمي لمهندس معماري.">
+<style>
+:root {
+  --color-brand-primary:#1E3A5F;--color-brand-secondary:#2C5282;--color-accent:#D4A017;--color-accent-2:#F0D48C;
+  --color-bg-page:#F3F4F6;--color-bg-surface:#FFFFFF;--color-bg-subtle:#F8FAFC;--color-bg-warm:#FDF6E3;
+  --color-text-primary:#1F2937;--color-text-secondary:#4B5563;--color-text-soft:#64748B;--color-border:#E5E7EB;--color-border-strong:#D1D5DB;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.06);--shadow-md:0 6px 18px rgba(0,0,0,.10);--radius:8px;
+}
+html[data-theme="dark"] {
+  --color-bg-page:#111827;--color-bg-surface:#1F2937;--color-bg-subtle:#273244;--color-bg-warm:#3B3320;
+  --color-text-primary:#F9FAFB;--color-text-secondary:#D1D5DB;--color-text-soft:#9CA3AF;--color-border:#374151;--color-border-strong:#4B5563;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.25);--shadow-md:0 8px 22px rgba(0,0,0,.32)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--color-bg-page);color:var(--color-text-primary);font-family:'Cairo','Tajawal',system-ui,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.top-actions{position:sticky;top:0;z-index:1000;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;box-shadow:var(--shadow-md)}
+.top-actions .left{display:flex;align-items:center;gap:12px;font-weight:700}
+.top-actions .right{display:flex;gap:10px;flex-wrap:wrap}
+.action-btn{border:none;border-radius:6px;padding:10px 18px;font-weight:800;cursor:pointer;transition:.2s;background:#fff;color:var(--color-brand-primary)}
+.action-btn.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.action-btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.container{padding:18px 0 40px}
+.page{width:100%;max-width:758px;margin:0 auto 20px;background:var(--color-bg-surface);padding:40px 36px;position:relative;border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-sm);page-break-after:always;min-height:1000px}
+.page:last-child{page-break-after:auto}
+.cover{background:linear-gradient(135deg,var(--color-brand-primary) 0%, var(--color-brand-secondary) 60%, var(--color-brand-primary) 100%);color:#fff;text-align:center;padding:52px 30px;position:relative;overflow:hidden}
+.cover:before{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;background:radial-gradient(circle, rgba(212,160,23,.25), transparent 70%);border-radius:50%}
+.cover:after{content:'';position:absolute;bottom:-100px;right:-100px;width:320px;height:320px;background:radial-gradient(circle, rgba(212,160,23,.18), transparent 70%);border-radius:50%}
+.cover-inner{position:relative;z-index:1}
+.cover-univ{font-size:15px;letter-spacing:1px;font-weight:600;border-bottom:1px solid rgba(212,160,23,.6);padding-bottom:12px;margin-bottom:8px}
+.cover-institute{font-size:13px;color:var(--color-accent-2);margin-bottom:34px}
+.cover-icon{font-size:58px;color:var(--color-accent);margin:18px 0}
+.cover-title{font-size:50px;font-weight:900;line-height:1.2;margin:16px 0 10px;letter-spacing:1px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.cover-subtitle{font-size:22px;font-weight:700;color:var(--color-accent);margin-bottom:8px}
+.cover-degree{font-size:15px;color:#E5E7EB;margin-bottom:34px;background:rgba(255,255,255,.08);padding:10px 20px;display:inline-block;border-radius:30px;border:1px solid rgba(212,160,23,.4)}
+.cover-slogan{background:rgba(212,160,23,.12);border-right:4px solid var(--color-accent);padding:18px 24px;margin:28px auto;max-width:500px;text-align:right}
+.cover-slogan .ar{font-size:20px;font-weight:700;color:#fff}
+.cover-slogan .fr{font-size:13px;color:var(--color-accent-2);font-style:italic;margin-top:6px;direction:ltr;text-align:left}
+.cover-year{margin-top:28px;padding:12px 30px;background:var(--color-accent);color:var(--color-brand-primary);display:inline-block;font-size:18px;font-weight:900;letter-spacing:3px;border-radius:4px}
+.logo-row{display:flex;justify-content:center;gap:16px;margin-bottom:26px}
+.logo-box{width:72px;height:72px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);font-weight:900}
+.section-header{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:14px 20px;margin:24px 0 18px;border-right:6px solid var(--color-accent);border-radius:4px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 6px rgba(30,58,95,.15)}
+.section-header .icon{font-size:22px;background:var(--color-accent);color:var(--color-brand-primary);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0}
+.section-header h2{margin:0;font-size:20px;font-weight:800}
+.section-header .num{background:#fff;color:var(--color-brand-primary);padding:2px 10px;border-radius:4px;font-size:13px;font-weight:700;margin-right:auto}
+.sub-header{color:var(--color-brand-primary);font-size:17px;font-weight:700;padding:8px 14px;margin:18px 0 12px;background:linear-gradient(90deg, rgba(212,160,23,.15), transparent);border-right:4px solid var(--color-accent);border-radius:3px}
+.body-text{font-size:14.5px;line-height:1.95;color:var(--color-text-primary);text-align:justify;margin-bottom:12px}
+.lead-text{font-size:15px;line-height:2;color:var(--color-brand-primary);text-align:justify;background:var(--color-bg-warm);padding:18px 22px;border-radius:8px;border-right:4px solid var(--color-accent);margin:14px 0}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+.card-icon{font-size:20px;color:#fff;background:var(--color-brand-primary);min-width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:8px;flex-shrink:0}
+.card-icon.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.card-icon.green{background:#556B2F}
+.card-icon.purple{background:#5B4DB3}
+.card-text{font-size:13.5px;line-height:1.65;color:var(--color-text-primary)}
+.card-text b{color:var(--color-brand-primary);display:block;margin-bottom:4px;font-size:14px}
+.info-table{width:100%;border-collapse:collapse;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.06);border-radius:6px;overflow:hidden}
+.info-table thead{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff}
+.info-table th{padding:12px 14px;text-align:right;font-size:14px;font-weight:700;border-left:1px solid rgba(255,255,255,.15)}
+.info-table td{padding:11px 14px;font-size:13.5px;border-bottom:1px solid var(--color-border);color:var(--color-text-primary)}
+.info-table tbody tr:nth-child(even){background:var(--color-bg-subtle)}
+.info-table td:first-child{font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.06);width:40%}
+.stats-band{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 20px}
+.stat{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-top:3px solid var(--color-accent);border-radius:8px;padding:16px 10px;text-align:center}
+.stat .num{font-size:28px;font-weight:900;color:var(--color-brand-primary);line-height:1}
+.stat .label{font-size:13px;color:var(--color-text-secondary);margin-top:6px}
+.semesters-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.semester-wrap{margin:0}
+.semester-title{background:var(--color-accent);color:var(--color-brand-primary);padding:8px 16px;font-size:15px;font-weight:800;border-radius:6px 6px 0 0;display:flex;justify-content:space-between;align-items:center}
+.semester-badge{background:var(--color-brand-primary);color:var(--color-accent);padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.semester-table{width:100%;border-collapse:collapse;border:1px solid var(--color-accent);border-top:none;overflow:hidden}
+.semester-table td{padding:8px 12px;font-size:13px;border-bottom:1px solid #EDE7D3}
+.semester-table tr:last-child td{border-bottom:none}
+.semester-table tr:nth-child(even){background:#FDF9EE}
+.num-cell{width:34px;text-align:center;font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.15)}
+.ar-cell{font-weight:600;color:var(--color-brand-primary)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.skill-item{background:#fff;border:1.5px solid var(--color-border);border-radius:10px;padding:14px 10px;text-align:center}
+.skill-icon{font-size:26px;color:var(--color-accent);margin-bottom:8px;background:rgba(212,160,23,.12);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-inline:auto}
+.skill-label{font-size:13px;font-weight:700;color:var(--color-brand-primary)}
+.skill-fr{font-size:11px;color:var(--color-text-soft);margin-top:3px;direction:ltr}
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+.tool-card{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-radius:10px;padding:14px}
+.tool-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.tool-badge{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.tool-title{font-size:14px;font-weight:800;color:var(--color-brand-primary)}
+.tool-track{font-size:12px;color:var(--color-text-soft)}
+.tool-desc{font-size:13px;line-height:1.7;color:var(--color-text-primary)}
+.styled-list{list-style:none;padding:0;margin:12px 0}
+.styled-list li{padding:9px 42px 9px 14px;margin:6px 0;background:var(--color-bg-subtle);border-radius:6px;position:relative;font-size:13.5px;color:var(--color-text-primary);border-right:3px solid var(--color-accent)}
+.styled-list li:before{content:'✓';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--color-accent);font-weight:900;font-size:15px}
+.roadmap{display:grid;gap:10px;margin-top:14px}
+.road-step{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:12px}
+.road-n{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--color-brand-primary);color:var(--color-accent);font-weight:900}
+.road-title{font-size:14px;font-weight:800;color:var(--color-brand-primary);margin-bottom:4px}
+.road-desc{font-size:13.5px;color:var(--color-text-primary)}
+.resource-links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.resource-link{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;font-size:13.5px;font-weight:700;color:var(--color-brand-primary)}
+.faq-item{border:1px solid var(--color-border);border-radius:8px;overflow:hidden;margin:8px 0;background:var(--color-bg-subtle)}
+.faq-q{width:100%;border:none;background:none;text-align:right;padding:14px 16px;font-weight:800;color:var(--color-brand-primary);cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.faq-a{display:none;padding:0 16px 16px;color:var(--color-text-primary);font-size:13.5px;line-height:1.8}
+.faq-item.open .faq-a{display:block}
+.contact-card{background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:20px;border-radius:10px;margin:12px 0;border-right:5px solid var(--color-accent);display:flex;align-items:center;gap:16px}
+.contact-avatar{width:60px;height:60px;background:var(--color-accent);color:var(--color-brand-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.contact-role{font-size:12px;color:var(--color-accent-2);margin-bottom:3px}
+.contact-name{font-size:16px;font-weight:800;margin-bottom:4px}
+.contact-email{font-size:13px;color:#E5E7EB;direction:ltr;text-align:right}
+.qr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.qr-card{padding:16px;text-align:center}
+.qr-box{width:150px;height:150px;background:#fff;border:1px solid #E5E7EB;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:900;color:#111827;letter-spacing:.16em}
+.image-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.figure-card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}.figure-card img{width:100%;height:220px;object-fit:cover;display:block}.figure-card .caption{padding:10px 12px;font-size:11.5px;line-height:1.7;color:var(--color-text-secondary)}.figure-card .caption a{color:var(--color-brand-primary);text-decoration:underline}.figure-card .caption strong{display:block;color:var(--color-brand-primary);font-size:12.5px;margin-bottom:4px}.footer-note{margin-top:24px;padding-top:18px;border-top:1px solid var(--color-border);color:var(--color-text-soft);font-size:12.5px;text-align:center}.copyright-note{margin-top:10px;padding:14px 16px;background:rgba(212,160,23,.10);border:1px solid rgba(212,160,23,.35);border-radius:10px;color:var(--color-brand-primary);font-size:13px;font-weight:700;line-height:1.9;text-align:center}.page-no{position:absolute;bottom:14px;left:18px;font-size:11px;color:var(--color-text-soft)}
+@media (max-width:860px){.page{max-width:100%;margin:0 10px 18px;padding:26px 20px;min-height:auto}.cards-grid,.semesters-row,.skills-grid,.tools-grid,.resource-links,.qr-grid,.stats-band,.image-grid{grid-template-columns:1fr}.top-actions{padding:12px;flex-direction:column;align-items:stretch}.top-actions .right{justify-content:stretch}.action-btn{width:100%}.figure-card img{height:210px}}
+@media print{body{background:#fff}.top-actions{display:none!important}.page{box-shadow:none;margin:0 auto;border:1px solid #E5E7EB;page-break-after:always}.page:last-child{page-break-after:auto}a{text-decoration:none;color:inherit}}
+
+.year-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}.year-card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:10px;padding:16px}.year-card h3{margin:0 0 10px;color:var(--color-brand-primary);font-size:16px}.mini-note{font-size:12px;color:var(--color-text-soft);margin-top:8px}.badge-line{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.mini-badge{background:rgba(212,160,23,.16);color:var(--color-brand-primary);border:1px solid rgba(212,160,23,.35);padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800}.wide-card{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:14px 0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.quote-box{background:var(--color-bg-warm);border-right:4px solid var(--color-accent);border-radius:10px;padding:18px 20px;color:var(--color-brand-primary);font-size:15px;line-height:2;margin:16px 0}.fineprint{font-size:11.5px;color:var(--color-text-soft)}@media (max-width:860px){.year-grid,.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top-actions">
+  <div class="left"><span>دليل طالب تخصص الهندسة المعمارية — نسخة HTML مطبوعة</span></div>
+  <div class="right">
+    <button class="action-btn gold" onclick="window.print()">طباعة / PDF</button>
+    <button class="action-btn" id="themeBtn">الوضع الليلي</button>
+    <button class="action-btn ghost" id="copyBtn">نسخ رابط الملف</button>
+  </div>
+</div>
+<div class="container mpc-guide">
+
+<section class="page cover" id="page-1">
+  <div class="cover-inner">
+    <div class="logo-row"><div class="logo-box">UMB</div><div class="logo-box">IGTU</div></div>
+    <div class="cover-univ">UNIVERSITÉ MOHAMED BOUDIAF — M'SILA</div>
+    <div class="cover-institute">معهد تسيير التقنيات الحضرية | قسم الهندسة المعمارية</div>
+    <div class="cover-icon">🏛️</div>
+    <div class="cover-title">دليل طالب تخصص الهندسة المعمارية</div>
+    <div class="cover-subtitle">Architecture Student Guide</div>
+    <div class="cover-degree">Ingéniorat en Architecte · 5 Years · 10 Semesters</div>
+    <div class="cover-slogan"><div class="ar">من التمثيل المعماري إلى مشروع التخرج: مسار مهندس معماري بين الإبداع، التقنية، والميدان</div><div class="fr">De la représentation architecturale au projet de fin d’études : un parcours d’architecte entre création, technique et terrain</div></div>
+    <div class="cover-year">OFFRE DE FORMATION 2023–2024</div>
+  </div>
+  <div class="page-no">01</div>
+</section>
+
+<section class="page" id="page-2">
+  <div class="section-header"><div class="icon">✦</div><h2>عن التخصص، أهدافه، وكفاءاته</h2><div class="num">02</div></div>
+  <div class="lead-text">يعِدّ هذا المسار الطالب لنيل شهادة مهندس معماري ضمن ميدان "Architecture, Urbanisme et Métiers de la Ville" بجامعة محمد بوضياف بالمسيلة. ويهدف إلى تكوين خريج قادر على فهم الفضاء المعماري، تصميم المشاريع، التحكم في الجوانب التقنية والقانونية، والاندماج المهني في مكاتب الدراسات والهيئات العمومية وقطاع البناء.</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">🎯</div><div class="card-text"><b>الهدف العام</b>تكوين مهندس معماري يمتلك ثقافة معمارية، أدوات تمثيل، وقدرة على التصميم والإنجاز والتأطير.</div></div>
+    <div class="card"><div class="card-icon gold">🧠</div><div class="card-text"><b>الكفاءات</b>التحليل، الإسقاط المعماري، إدارة المشروع، ضبط الحلول التقنية، وإدماج المشروع في سياقه الحضري والبيئي.</div></div>
+    <div class="card"><div class="card-icon green">🏗️</div><div class="card-text"><b>البعد التطبيقي</b>ورشة المشروع هي العمود الفقري للتكوين، مدعومة بالتربصات والاستوديوهات والملفات التنفيذية.</div></div>
+    <div class="card"><div class="card-icon purple">🌿</div><div class="card-text"><b>الرهانات المعاصرة</b>الاستدامة، الأداء الطاقوي، الرقمنة، BIM، GIS، والحساسية للتراث والمدينة.</div></div>
+  </div>
+  <div class="stats-band">
+    <div class="stat"><div class="num">5</div><div class="label">سنوات التكوين</div></div>
+    <div class="stat"><div class="num">10</div><div class="label">سداسيات</div></div>
+    <div class="stat"><div class="num">4185</div><div class="label">ساعة إجمالية</div></div>
+    <div class="stat"><div class="num">100</div><div class="label">طالب تقريبًا سنويًا</div></div>
+  </div>
+  <div class="sub-header">صور ملهمة مرتبطة بالهندسة المعمارية</div>
+  <div class="image-grid">
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=9Um1MdFdZ1ndxr%2Bbp5gF73qRvvNIR9smK8drobONF5ATHwzHW8rRYW4l743Vk5Szww6UfAlyEC1CmxTqLgLzYCU4zxW9Gr4NR8LiuvL4nGA2RZfwg9Zo9noR1wAbGnKxYW6bY%2BeIhKbhl6LZwi2XVu9NmCM6aubad1P8WAoosJ4LEbm6oaw9IFkO&u2=3g%2FGZ2KtTo2HNFlB&width=2560" alt="Architecture studio classroom">
+      <figcaption class="caption"><strong>فضاء الاستوديو المعماري</strong>يعكس طبيعة التكوين التي تتمحور حول الورشات والعمل الجماعي والنقد المعماري. <a href="https://commons.wikimedia.org/wiki/File:Architecture_Classroom_in_the_Carnegie_Mellon_College_of_Fine_Arts.jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=%2BDLwnpOjbbPct%2FKDvkST4Ozcy7kfNLOT11xfzbJGnRGAJBo%2BPP8ggK8h7ocuJ8gguLiuKSPCmKCzQ%2BUrrfDoyGvEMNc3CXcLr%2BV%2FI64njAZl1Coo5MD%2F9pggye7yv1ceHNXHuujgC8GRKxNAql8aNo1C%2F4k%3D&u2=yVs1tNHOOnPWZyh%2B&width=2560" alt="Sustainable architecture facade">
+      <figcaption class="caption"><strong>واجهة معمارية مستدامة</strong>صورة مناسبة لفكرة الجمع بين التصميم، التقنية، والوعي البيئي في العمارة المعاصرة. <a href="https://commons.wikimedia.org/wiki/File:60L_Green_Building_Melbourne_original_facade.JPG" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+  </div>
+  <div class="page-no">02</div>
+</section>
+
+<section class="page" id="page-3">
+  <div class="section-header"><div class="icon">★</div><h2>لماذا تختار تخصص الهندسة المعمارية؟</h2><div class="num">03</div></div>
+  <p class="body-text">هذا التخصص لا يكتفي برسم المباني، بل يبني شخصية مهنية قادرة على التفكير في الإنسان والفضاء والمدينة والهيكل والبيئة والقانون والتقنية في مشروع واحد متكامل.</p>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">✏️</div><div class="card-text"><b>التصميم</b>بناء الفكرة المعمارية وتحويلها إلى مشروع قابل للعرض والتنفيذ.</div></div>
+    <div class="card"><div class="card-icon gold">📐</div><div class="card-text"><b>التمثيل</b>هندسة الفضاء، الرسم، المنظور، الرفع، والتمثيل اليدوي والرقمي.</div></div>
+    <div class="card"><div class="card-icon green">🧱</div><div class="card-text"><b>الإنشاء والمواد</b>فهم المواد، أنظمة البناء، RDM، والهياكل المختلفة.</div></div>
+    <div class="card"><div class="card-icon purple">🏙️</div><div class="card-text"><b>السياق الحضري</b>إدماج المشروع في محيطه العمراني والبيئي والثقافي.</div></div>
+    <div class="card"><div class="card-icon">💻</div><div class="card-text"><b>الأدوات الرقمية</b>DAO، CAO، AutoCAD، BIM، GIS، وأدوات المحاكاة.</div></div>
+    <div class="card"><div class="card-icon gold">⚖️</div><div class="card-text"><b>القانون والأخلاقيات</b>قانون البناء والعمران، أخلاقيات المهنة، ومسؤولية المهندس.</div></div>
+    <div class="card"><div class="card-icon green">🌍</div><div class="card-text"><b>الاستدامة</b>الأداء الطاقوي، المدينة المستدامة، والوعي بالمناخ والموارد.</div></div>
+    <div class="card"><div class="card-icon purple">🚀</div><div class="card-text"><b>الاندماج المهني</b>تربصات واستوديوهات وملفات تنفيذية تقرّب الطالب من الميدان مبكرًا.</div></div>
+  </div>
+  <div class="page-no">03</div>
+</section>
+
+<section class="page" id="page-4">
+  <div class="section-header"><div class="icon">📘</div><h2>نظرة عامة على الهيكلة البيداغوجية</h2><div class="num">04</div></div>
+  <table class="info-table">
+    <thead><tr><th>العنصر</th><th>المعطيات الأساسية</th></tr></thead>
+    <tbody>
+      <tr><td>الاسم الرسمي</td><td>Offre de formation Ingéniorat en Architecte</td></tr>
+      <tr><td>المؤسسة</td><td>Université Mohamed Boudiaf – M'Sila</td></tr>
+      <tr><td>المعهد</td><td>Institut de Gestion des Techniques Urbaines</td></tr>
+      <tr><td>القسم</td><td>Département Architecture</td></tr>
+      <tr><td>الميدان</td><td>Architecture, Urbanisme et Métiers de la Ville (D14 AUMV)</td></tr>
+      <tr><td>مدة التكوين</td><td>5 سنوات، 10 سداسيات</td></tr>
+      <tr><td>مرحلتا التكوين</td><td>مرحلة الاكتشاف والمبادرة ثم مرحلة التصميم والتمكن</td></tr>
+      <tr><td>المادة المحورية</td><td>Atelier de projet في كل المسار تقريبًا من S1 إلى S9 ثم PFE في S10</td></tr>
+    </tbody>
+  </table>
+  <div class="year-grid">
+    <div class="year-card">
+      <h3>المرحلة 1 — الاكتشاف والمبادرة</h3>
+      <ul class="styled-list">
+        <li>تشمل السنتين الأولى والثانية (S1 إلى S4).</li>
+        <li>تركز على لغة العمارة، التمثيل، تاريخ العمارة، والعلوم الأساسية للبناء.</li>
+        <li>تدعمها تربصات اكتشاف ومقاييس تدرّج الطالب نحو أولى المشاريع السكنية.</li>
+      </ul>
+    </div>
+    <div class="year-card">
+      <h3>المرحلة 2 — التصميم والتمكن</h3>
+      <ul class="styled-list">
+        <li>تشمل السنوات الثالثة إلى الخامسة (S5 إلى S10).</li>
+        <li>تتعمق في التجهيزات، الهياكل، BIM، GIS، VRD، إدارة المشروع، والبحث.</li>
+        <li>تنتهي بالتربص المهني ثم مشروع نهاية الدراسة والمذكرة.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="quote-box">معلومة مهمة للطالب الجديد: الورشة ليست مادة عادية، بل هي فضاء تركيب لكل ما تتعلمه في التاريخ، النظرية، الإنشاء، القانون، والتمثيل. كما أن التقييم فيها مستمر بالكامل، والعلامة الإقصائية فيها 10/20.</div>
+  <div class="page-no">04</div>
+</section>
+
+<section class="page" id="page-5">
+  <div class="section-header"><div class="icon">🎓</div><h2>السنتان الأولى والثانية — S1 إلى S4</h2><div class="num">05</div></div>
+  <p class="lead-text">في هذه المرحلة يبني الطالب اللغة الأولى للمشروع المعماري: التكوين، التمثيل، التاريخ، المواد، الفيزياء، والملاحظة الميدانية. ثم ينتقل تدريجيًا إلى السكن، التحليل، DAO، وعلوم الإنشاء الأولى.</p>
+  <div class="semesters-row"><div class='semester-wrap'><div class='semester-title'><span>S1</span><span class='semester-badge'>S1</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 1</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 1</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 1</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Géométrie de l’espace 1</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Technologie des matériaux de construction 1</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Physique du bâtiment 1 (statique)</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Communication orale / expression écrite / méthodologie</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Stage découverte 1</td></tr></tbody></table></div><div class='semester-wrap'><div class='semester-title'><span>S2</span><span class='semester-badge'>S2</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 2</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 2 (architecture islamique)</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 2</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Géométrie de l’espace 2</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Technologie des matériaux 2</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Physique du bâtiment 2 (thermique, lumière, acoustique)</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Expression écrite 2</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Stage découverte 2</td></tr></tbody></table></div></div>
+  <div class="semesters-row"><div class='semester-wrap'><div class='semester-title'><span>S3</span><span class='semester-badge'>S3</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 3</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 3</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 3</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Construction 1</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>RDM 1</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>DAO</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Analyse du site et cartographie</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Sociologie / anthropologie de l’espace</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Stage découverte 3</td></tr></tbody></table></div><div class='semester-wrap'><div class='semester-title'><span>S4</span><span class='semester-badge'>S4</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 4</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 4</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 4</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Construction 2</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>RDM 2</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>CAO / AutoCAD</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Techniques de relevé architectural</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Anthropologie de l’habitat</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Stage découverte 4</td></tr></tbody></table></div></div>
+  <div class="mini-note">ملاحظة: تتكرر في هذه المرحلة ورشات المشروع، التاريخ، النظرية، والتربصات الاكتشافية، مع انتقال واضح من المبادئ العامة إلى السكن والتحليل والتصميم الرقمي.</div>
+  <div class="page-no">05</div>
+</section>
+
+<section class="page" id="page-6">
+  <div class="section-header"><div class="icon">🏗️</div><h2>السنتان الثالثة والرابعة — S5 إلى S8</h2><div class="num">06</div></div>
+  <p class="lead-text">هنا يدخل الطالب مرحلة التمكن: التجهيزات، الهياكل المعمارية، النمذجة والمحاكاة، ملفات التنفيذ، VRD، التراث، المدينة المستدامة، وأدوات دعم القرار.</p>
+  <div class="semesters-row"><div class='semester-wrap'><div class='semester-title'><span>S5</span><span class='semester-badge'>S5</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 5</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 5 (السياق الجزائري)</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 5</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Structures en architecture 1</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Équipements 1</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Modélisation / simulation 1 (BIM)</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Urban design</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Géographie urbaine et habitat</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Stage découverte 5</td></tr></tbody></table></div><div class='semester-wrap'><div class='semester-title'><span>S6</span><span class='semester-badge'>S6</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 6</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Histoire de l’architecture 6</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Théorie du projet 6</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Structures 2</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Équipements 2</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Modélisation / simulation 2</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Introduction à l’urbanisme</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Outils et méthodologie d’analyse urbaine</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Stage découverte 6</td></tr></tbody></table></div></div>
+  <div class="semesters-row"><div class='semester-wrap'><div class='semester-title'><span>S7</span><span class='semester-badge'>S7</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 7</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Programmation architecturale et urbaine</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Structures 3</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Équipements 3</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>VRD</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Architecture et ville durable</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Patrimoine architectural et urbain</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Stages pratiques 7</td></tr></tbody></table></div><div class='semester-wrap'><div class='semester-title'><span>S8</span><span class='semester-badge'>S8</span></div><table class='semester-table'><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 8 (DEX)</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Gestion de projet / maîtrise d’œuvre</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Structures 4 (RPA)</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>CES</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Méthodologie de recherche</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Outils d’aide à la décision (GIS)</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Droit de l’urbanisme et de la construction</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Déontologie</td></tr><tr><td class='num-cell'>9</td><td class='ar-cell'>Stages pratiques 8</td></tr></tbody></table></div></div>
+  <div class="image-grid">
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=7MxUPHThgaZt7PT6uthXXQRwspXyvZrd2Enh1MRPscmxAhGIwZ21P2PGMXz%2B9iIf%2B2S5AQlc4GUkmxUvtMlWr0IMCWtq%2Frjprv8%2FB8EDsicnKRXBgIXvnB%2FmzUWhQ0Y%2BVq2I33olzSXA0i8YcEktALzZL6Z9EQ%3D%3D&u2=J8Xq3kgaGnjn8meO&width=2560" alt="Architecture studio at university">
+      <figcaption class="caption"><strong>ثقافة الاستوديو المعماري</strong>الورشات تبقى الإطار الأكثر حضورًا في مسار التكوين خلال السنوات المتوسطة والمتقدمة. <a href="https://commons.wikimedia.org/wiki/File:Architecture_Studio,_Northeastern_University.jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=9Th4IvU%2FQrKnDMdPzjT388A%2Brgl1pXmz3F68GpHDw46gEZXfcnlR%2B2xYonfHPiHT6CWgC6JAambQyZml7wOekq46i%2BjBvls%2BkKOkmMPtP3AO1pxHXB7ub9a3Gh1Rvl6b%2FKvjPatbNB1xYCuJkAuipOjs%2BznrDVzgtHSQR4aeX8HXJ6A1Nb3IQoU6oeHSkl69D%2B%2BGSA%3D%3D&u2=MV9PxreaTc%2FiVdzY&width=2560" alt="Sustainable architecture landscape center">
+      <figcaption class="caption"><strong>المشروع المعماري والاستدامة</strong>ينعكس هذا البعد في مقاييس المدينة المستدامة والأداء الطاقوي والأنظمة التقنية للمباني. <a href="https://commons.wikimedia.org/wiki/File:Center_for_Sustainable_Landscapes,_Phipps_Conservatory,_2015-10-10,_02.jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+  </div>
+  <div class="page-no">06</div>
+</section>
+
+<section class="page" id="page-7">
+  <div class="section-header"><div class="icon">🧭</div><h2>السنة الخامسة — التربص المهني، المذكرة، وPFE</h2><div class="num">07</div></div>
+  <div class="two-col">
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">السداسي التاسع S9</h3>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Atelier de projet 9</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Performance énergétique des bâtiments</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Entrepreneuriat et gestion de projets</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Début du mémoire</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Séminaire sur les actualités architecturales</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Stage professionnel (90h)</td></tr></tbody></table>
+      <div class="badge-line"><span class="mini-badge">Stage professionnel</span><span class="mini-badge">Entrepreneuriat</span><span class="mini-badge">Performance énergétique</span></div>
+    </div>
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">السداسي العاشر S10</h3>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Projet de Fin d’Études (PFE)</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Mémoire de Fin d’Études</td></tr></tbody></table>
+      <div class="badge-line"><span class="mini-badge">PFE</span><span class="mini-badge">Mémoire</span><span class="mini-badge">Évaluation continue</span></div>
+    </div>
+  </div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">📝</div><div class="card-text"><b>مذكرة التخرج</b>ترافق المشروع في S10، وتُبنى على إشكالية واضحة وإطار منهجي وتحليل نظري. ورد في الملخص أن حجمها لا يتجاوز 60 صفحة دون الملاحق مع ملخص بثلاث لغات.</div></div>
+    <div class="card"><div class="card-icon gold">🏢</div><div class="card-text"><b>مشروع نهاية الدراسة</b>عمل فردي يختبر قدرة الطالب على تطوير فكرة معمارية متكاملة من التحليل إلى الحلول التقنية والتمثيل النهائي.</div></div>
+    <div class="card"><div class="card-icon green">🛠️</div><div class="card-text"><b>التربص المهني</b>في S9 بواقع 90 ساعة تقريبًا داخل مكاتب التصميم أو شركات البناء أو الهيئات المهنية.</div></div>
+    <div class="card"><div class="card-icon purple">📊</div><div class="card-text"><b>نظام التقييم</b>الورشات والتربصات تخضع للتقييم المستمر الكامل، فيما تسير المواد النظرية غالبًا على 60% امتحان و40% تقييم مستمر.</div></div>
+  </div>
+  <div class="page-no">07</div>
+</section>
+
+<section class="page" id="page-8">
+  <div class="section-header"><div class="icon">💻</div><h2>المهارات والبرمجيات والأدوات</h2><div class="num">08</div></div>
+  <div class="skills-grid">
+    <div class="skill-item"><div class="skill-icon">✍️</div><div class="skill-label">التعبير المعماري</div><div class="skill-fr">Représentation & esquisse</div></div>
+    <div class="skill-item"><div class="skill-icon">📐</div><div class="skill-label">هندسة الفضاء</div><div class="skill-fr">Géométrie de l’espace</div></div>
+    <div class="skill-item"><div class="skill-icon">🧱</div><div class="skill-label">المواد والإنشاء</div><div class="skill-fr">Construction & matériaux</div></div>
+    <div class="skill-item"><div class="skill-icon">🏗️</div><div class="skill-label">الهياكل وRDM</div><div class="skill-fr">Structures / RDM</div></div>
+    <div class="skill-item"><div class="skill-icon">🌿</div><div class="skill-label">الأداء البيئي</div><div class="skill-fr">Énergie & durabilité</div></div>
+    <div class="skill-item"><div class="skill-icon">⚖️</div><div class="skill-label">القانون والأخلاقيات</div><div class="skill-fr">Droit & déontologie</div></div>
+  </div>
+  <div class="sub-header">أدوات وردت في التكوين</div>
+  <div class="tools-grid">
+    <div class="tool-card"><div class="tool-top"><div class="tool-badge">2D</div><div><div class="tool-title">DAO / AutoCAD</div><div class="tool-track">الرسم والتصميم الرقمي</div></div></div><div class="tool-desc">يظهر في المقاييس الخاصة بـ DAO وCAO، ويستعمل للرسم ثنائي الأبعاد والتمثيل التقني والقياسات.</div></div>
+    <div class="tool-card"><div class="tool-top"><div class="tool-badge">BIM</div><div><div class="tool-title">Building Information Modelling</div><div class="tool-track">نمذجة ومحاكاة</div></div></div><div class="tool-desc">ورد ضمن modélisation / simulation ويساعد في إدارة المعلومات الرقمية للمشروع وتحسين التنسيق.</div></div>
+    <div class="tool-card"><div class="tool-top"><div class="tool-badge">GIS</div><div><div class="tool-title">ArcGIS / QGIS / MapInfo</div><div class="tool-track">أدوات دعم القرار</div></div></div><div class="tool-desc">تظهر كأدوات تحليل ومعالجة للبيانات المكانية خصوصًا في السنوات المتقدمة وأدوات دعم القرار.</div></div>
+    <div class="tool-card"><div class="tool-top"><div class="tool-badge">ENV</div><div><div class="tool-title">محاكاة بيئية</div><div class="tool-track">حرارة، ضوء، أداء</div></div></div><div class="tool-desc">ترتبط بفيزياء البناء، الإضاءة، الأداء الحراري، وتقييم جودة المشروع من منظور بيئي.</div></div>
+  </div>
+  <div class="page-no">08</div>
+</section>
+
+<section class="page" id="page-9">
+  <div class="section-header"><div class="icon">🚀</div><h2>الآفاق المهنية بعد التخرج</h2><div class="num">09</div></div>
+  <div class="roadmap">
+    <div class="road-step"><div class="road-n">1</div><div><div class="road-title">مصمم معماري</div><div class="road-desc">إعداد المشاريع المعمارية، تحليل المواقع، وتطوير الحلول التصميمية في مكاتب الدراسات أو العمل الحر.</div></div></div>
+    <div class="road-step"><div class="road-n">2</div><div><div class="road-title">مدير مشروع / Maître d’œuvre</div><div class="road-desc">المرافقة التقنية والإدارية للمشروع، متابعة الإنجاز، والتنسيق بين المتدخلين.</div></div></div>
+    <div class="road-step"><div class="road-n">3</div><div><div class="road-title">القطاع العمومي</div><div class="road-desc">البلديات، مديريات التعمير والبناء، التجهيزات العمومية، الهيئات العقارية، وOPGI.</div></div></div>
+    <div class="road-step"><div class="road-n">4</div><div><div class="road-title">مكاتب الدراسات BET</div><div class="road-desc">الاندماج في القطاعين العام والخاص في التصميم، الدراسة، التأهيل، والترميم.</div></div></div>
+    <div class="road-step"><div class="road-n">5</div><div><div class="road-title">الاعتماد والعمل الحر</div><div class="road-desc">إمكانية التوجه نحو الاعتماد المهني بعد استكمال المسار المطلوب والتسجيل في الهيئة المهنية.</div></div></div>
+    <div class="road-step"><div class="road-n">6</div><div><div class="road-title">البحث والتراث</div><div class="road-desc">إمكانات في البحث الأكاديمي، حماية التراث، والاستشارات المرتبطة بالعمران والمبني.</div></div></div>
+  </div>
+  <div class="page-no">09</div>
+</section>
+
+<section class="page" id="page-10">
+  <div class="section-header"><div class="icon">📚</div><h2>دليل النجاح للطالب الجديد</h2><div class="num">10</div></div>
+  <div class="sub-header">نصائح عملية</div>
+  <ul class="styled-list">
+    <li>أعطِ الورشة الأولوية القصوى منذ البداية لأنها المادة الأكثر تركيبًا وتأثيرًا في مسارك.</li>
+    <li>كوّن أرشيفًا شخصيًا للسكيتشات، الصور، المراجع، والملفات الرقمية منذ السنة الأولى.</li>
+    <li>لا تفصل بين التمثيل والفكرة: كل خط أو مخطط يجب أن يخدم تصورًا معماريًا واضحًا.</li>
+    <li>تعلم AutoCAD والتمثيل الرقمي مبكرًا، ثم انتقل تدريجيًا إلى BIM وأدوات المحاكاة.</li>
+    <li>استثمر التربصات في بناء شبكة مهنية وفهم الواقع الحقيقي لمكاتب الدراسات والورشات.</li>
+  </ul>
+  <div class="sub-header">تنبيهات بيداغوجية مهمة</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">⚠️</div><div class="card-text"><b>علامة إقصائية في الورشة</b>أقل من 10/20 في Atelier تعد نقطة حساسة جدًا حسب الملخص المستخرج من الوثيقة.</div></div>
+    <div class="card"><div class="card-icon gold">📄</div><div class="card-text"><b>مذكرة التخرج</b>يجب بناؤها بمنهجية واضحة وتخدم المشروع، مع احترام صياغة أكاديمية مختصرة ومنظمة.</div></div>
+    <div class="card"><div class="card-icon green">🏛️</div><div class="card-text"><b>التربصات</b>ليست شكلية؛ هي جزء أساسي من التكوين واكتشاف بيئات العمل الحقيقية.</div></div>
+    <div class="card"><div class="card-icon purple">🧠</div><div class="card-text"><b>التوازن المطلوب</b>المعماري الناجح يجمع بين الحس الفني، التفكير التقني، والقدرة على التواصل والعرض.</div></div>
+  </div>
+  <div class="sub-header">روابط مفيدة</div>
+  <div class="resource-links"><a class='resource-link' href='https://www.univ-msila.dz/' target='_blank' rel='noopener'><span>Official University</span><span>↗</span></a><a class='resource-link' href='https://moodle.univ-msila.dz/moodle/course/index.php?categoryid=5#' target='_blank' rel='noopener'><span>Moodle</span><span>↗</span></a><a class='resource-link' href='https://www.univ-msila.dz/site/gtu-ar/' target='_blank' rel='noopener'><span>Official IGTU Website</span><span>↗</span></a><a class='resource-link' href='https://igtu-explorer-v2.netlify.app/' target='_blank' rel='noopener'><span>IGTU Explorer</span><span>↗</span></a><a class='resource-link' href='https://t.me/urban_planner20' target='_blank' rel='noopener'><span>Telegram Channel</span><span>↗</span></a></div>
+  <div class="sub-header">FAQ</div>
+  <div class="faq-item open"><button class="faq-q">ما الفرق بين السنوات الأولى والسنوات الأخيرة؟ <span>▾</span></button><div class="faq-a">السنوات الأولى تبني اللغة الأساسية للعمارة والتمثيل والمواد، بينما تتجه السنوات الأخيرة إلى التحكم، ملفات التنفيذ، التربصات المهنية، وPFE.</div></div>
+  <div class="faq-item"><button class="faq-q">هل التكوين يعتمد كثيرًا على الورشات؟ <span>▾</span></button><div class="faq-a">نعم، الورشة هي المحور المركزي للتكوين من البداية إلى ما قبل مشروع التخرج، وتدمج معظم المعارف الأخرى.</div></div>
+  <div class="faq-item"><button class="faq-q">هل توجد فرص مهنية متنوعة بعد التخرج؟ <span>▾</span></button><div class="faq-a">نعم، من مكاتب الدراسات والقطاع العمومي إلى العمل الحر، الترميم، والبحث الأكاديمي.</div></div>
+  <div class="page-no">10</div>
+</section>
+
+<section class="page" id="page-11">
+  <div class="section-header"><div class="icon">✉</div><h2>التواصل والمرجعية</h2><div class="num">11</div></div>
+  <div class="lead-text">أُنجز هذا الدليل بصيغة HTML مطبوعة وبأسلوب قريب من الملف المرجعي الذي اعتمدتِه سابقًا، مع إعادة بناء المحتوى هذه المرة انطلاقًا من عرض التكوين الرسمي لتخصص مهندس معماري في جامعة محمد بوضياف بالمسيلة.</div>
+  <div class="contact-card">
+    <div class="contact-avatar">🏫</div>
+    <div>
+      <div class="contact-role">Institution</div>
+      <div class="contact-name">Université Mohamed Boudiaf — M'Sila / IGTU / Département Architecture</div>
+      <div class="contact-email">https://www.univ-msila.dz/</div>
+    </div>
+  </div>
+  <div class="contact-card">
+    <div class="contact-avatar">👨‍🏫</div>
+    <div>
+      <div class="contact-role">اسم بيداغوجي وارد في الوثيقة</div>
+      <div class="contact-name">د. محمد ميلي</div>
+      <div class="contact-email">milimohamed2@gmail.com</div>
+    </div>
+  </div>
+  <div class="contact-card">
+    <div class="contact-avatar">📧</div>
+    <div>
+      <div class="contact-role">اسم بيداغوجي وارد في الوثيقة</div>
+      <div class="contact-name">د. لحسن فلوسية</div>
+      <div class="contact-email">lahcene.feloussia@univ-msila.dz</div>
+    </div>
+  </div>
+  <div class="body-text" style="text-align:center;font-weight:700;color:var(--color-brand-primary)">"الهندسة المعمارية ليست شكلاً جميلًا فقط، بل مسؤولية تجاه الإنسان والمكان والمدينة والمستقبل."</div>
+  <div class="footer-note">Architecture Student Guide · IGTU M'Sila · Printable HTML version</div>
+  <div class="copyright-note">© جميع حقوق هذا الدليل محفوظة لصاحبة هذا العمل. أُعد هذا الملف ليستعمل كدليل مطبوع لفائدة الطلبة الجدد المهتمين بتخصص الهندسة المعمارية، مع الحفاظ على مرجعيته الأكاديمية المستخرجة من عرض التكوين الرسمي.</div>
+  <div class="fineprint">المحتوى الأكاديمي مبني على الوثيقة الرسمية: OFFRE DE FORMATION INGENIORAT EN ARCHITECTE 2023–2024، إضافة إلى روابط مؤسساتية مذكورة في موقع IGTU Explorer.</div>
+  <div class="page-no">11</div>
+</section>
+
+</div>
+<script>
+const root=document.documentElement;
+const themeBtn=document.getElementById('themeBtn');
+const copyBtn=document.getElementById('copyBtn');
+themeBtn.addEventListener('click',()=>{
+  const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+  root.setAttribute('data-theme',next);
+  themeBtn.textContent=next==='dark'?'الوضع النهاري':'الوضع الليلي';
+});
+copyBtn.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(location.href);copyBtn.textContent='تم النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}
+  catch(e){copyBtn.textContent='تعذر النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}
+});
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>

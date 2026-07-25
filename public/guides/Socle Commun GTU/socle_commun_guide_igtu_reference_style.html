@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>دليل طالب القاعدة المشتركة | IGTU M'Sila</title>
+<meta name="description" content="نسخة HTML مطبوعة واحترافية لدليل طالب القاعدة المشتركة بمعهد تسيير التقنيات الحضرية بجامعة محمد بوضياف بالمسيلة، مبنية على وثيقة socle commun الرسمية.">
+<style>
+:root {
+  --color-brand-primary:#1E3A5F;--color-brand-secondary:#2C5282;--color-accent:#D4A017;--color-accent-2:#F0D48C;
+  --color-bg-page:#F3F4F6;--color-bg-surface:#FFFFFF;--color-bg-subtle:#F8FAFC;--color-bg-warm:#FDF6E3;
+  --color-text-primary:#1F2937;--color-text-secondary:#4B5563;--color-text-soft:#64748B;--color-border:#E5E7EB;--color-border-strong:#D1D5DB;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.06);--shadow-md:0 6px 18px rgba(0,0,0,.10);--radius:8px;
+}
+html[data-theme="dark"] {
+  --color-bg-page:#111827;--color-bg-surface:#1F2937;--color-bg-subtle:#273244;--color-bg-warm:#3B3320;
+  --color-text-primary:#F9FAFB;--color-text-secondary:#D1D5DB;--color-text-soft:#9CA3AF;--color-border:#374151;--color-border-strong:#4B5563;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.25);--shadow-md:0 8px 22px rgba(0,0,0,.32)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--color-bg-page);color:var(--color-text-primary);font-family:'Cairo','Tajawal',system-ui,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.top-actions{position:sticky;top:0;z-index:1000;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;box-shadow:var(--shadow-md)}
+.top-actions .left{display:flex;align-items:center;gap:12px;font-weight:700}
+.top-actions .right{display:flex;gap:10px;flex-wrap:wrap}
+.action-btn{border:none;border-radius:6px;padding:10px 18px;font-weight:800;cursor:pointer;transition:.2s;background:#fff;color:var(--color-brand-primary)}
+.action-btn.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.action-btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.container{padding:18px 0 40px}
+.page{width:100%;max-width:758px;margin:0 auto 20px;background:var(--color-bg-surface);padding:40px 36px;position:relative;border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-sm);page-break-after:always;min-height:1000px}
+.page:last-child{page-break-after:auto}
+.cover{background:linear-gradient(135deg,var(--color-brand-primary) 0%, var(--color-brand-secondary) 60%, var(--color-brand-primary) 100%);color:#fff;text-align:center;padding:52px 30px;position:relative;overflow:hidden}
+.cover:before{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;background:radial-gradient(circle, rgba(212,160,23,.25), transparent 70%);border-radius:50%}
+.cover:after{content:'';position:absolute;bottom:-100px;right:-100px;width:320px;height:320px;background:radial-gradient(circle, rgba(212,160,23,.18), transparent 70%);border-radius:50%}
+.cover-inner{position:relative;z-index:1}
+.cover-univ{font-size:15px;letter-spacing:1px;font-weight:600;border-bottom:1px solid rgba(212,160,23,.6);padding-bottom:12px;margin-bottom:8px}
+.cover-institute{font-size:13px;color:var(--color-accent-2);margin-bottom:34px}
+.cover-icon{font-size:58px;color:var(--color-accent);margin:18px 0}
+.cover-title{font-size:50px;font-weight:900;line-height:1.2;margin:16px 0 10px;letter-spacing:1px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.cover-subtitle{font-size:22px;font-weight:700;color:var(--color-accent);margin-bottom:8px}
+.cover-degree{font-size:15px;color:#E5E7EB;margin-bottom:34px;background:rgba(255,255,255,.08);padding:10px 20px;display:inline-block;border-radius:30px;border:1px solid rgba(212,160,23,.4)}
+.cover-slogan{background:rgba(212,160,23,.12);border-right:4px solid var(--color-accent);padding:18px 24px;margin:28px auto;max-width:500px;text-align:right}
+.cover-slogan .ar{font-size:20px;font-weight:700;color:#fff}
+.cover-slogan .fr{font-size:13px;color:var(--color-accent-2);font-style:italic;margin-top:6px;direction:ltr;text-align:left}
+.cover-year{margin-top:28px;padding:12px 30px;background:var(--color-accent);color:var(--color-brand-primary);display:inline-block;font-size:18px;font-weight:900;letter-spacing:3px;border-radius:4px}
+.logo-row{display:flex;justify-content:center;gap:16px;margin-bottom:26px}
+.logo-box{width:72px;height:72px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);font-weight:900}
+.section-header{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:14px 20px;margin:24px 0 18px;border-right:6px solid var(--color-accent);border-radius:4px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 6px rgba(30,58,95,.15)}
+.section-header .icon{font-size:22px;background:var(--color-accent);color:var(--color-brand-primary);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0}
+.section-header h2{margin:0;font-size:20px;font-weight:800}
+.section-header .num{background:#fff;color:var(--color-brand-primary);padding:2px 10px;border-radius:4px;font-size:13px;font-weight:700;margin-right:auto}
+.sub-header{color:var(--color-brand-primary);font-size:17px;font-weight:700;padding:8px 14px;margin:18px 0 12px;background:linear-gradient(90deg, rgba(212,160,23,.15), transparent);border-right:4px solid var(--color-accent);border-radius:3px}
+.body-text{font-size:14.5px;line-height:1.95;color:var(--color-text-primary);text-align:justify;margin-bottom:12px}
+.lead-text{font-size:15px;line-height:2;color:var(--color-brand-primary);text-align:justify;background:var(--color-bg-warm);padding:18px 22px;border-radius:8px;border-right:4px solid var(--color-accent);margin:14px 0}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+.card-icon{font-size:20px;color:#fff;background:var(--color-brand-primary);min-width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:8px;flex-shrink:0}
+.card-icon.gold{background:var(--color-accent);color:var(--color-brand-primary)}
+.card-icon.green{background:#556B2F}
+.card-icon.purple{background:#5B4DB3}
+.card-text{font-size:13.5px;line-height:1.65;color:var(--color-text-primary)}
+.card-text b{color:var(--color-brand-primary);display:block;margin-bottom:4px;font-size:14px}
+.info-table{width:100%;border-collapse:collapse;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.06);border-radius:6px;overflow:hidden}
+.info-table thead{background:linear-gradient(90deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff}
+.info-table th{padding:12px 14px;text-align:right;font-size:14px;font-weight:700;border-left:1px solid rgba(255,255,255,.15)}
+.info-table td{padding:11px 14px;font-size:13.5px;border-bottom:1px solid var(--color-border);color:var(--color-text-primary)}
+.info-table tbody tr:nth-child(even){background:var(--color-bg-subtle)}
+.info-table td:first-child{font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.06);width:40%}
+.stats-band{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 20px}
+.stat{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-top:3px solid var(--color-accent);border-radius:8px;padding:16px 10px;text-align:center}
+.stat .num{font-size:28px;font-weight:900;color:var(--color-brand-primary);line-height:1}
+.stat .label{font-size:13px;color:var(--color-text-secondary);margin-top:6px}
+.semesters-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.semester-wrap{margin:0}
+.semester-title{background:var(--color-accent);color:var(--color-brand-primary);padding:8px 16px;font-size:15px;font-weight:800;border-radius:6px 6px 0 0;display:flex;justify-content:space-between;align-items:center}
+.semester-badge{background:var(--color-brand-primary);color:var(--color-accent);padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.semester-table{width:100%;border-collapse:collapse;border:1px solid var(--color-accent);border-top:none;overflow:hidden}
+.semester-table td{padding:8px 12px;font-size:13px;border-bottom:1px solid #EDE7D3}
+.semester-table tr:last-child td{border-bottom:none}
+.semester-table tr:nth-child(even){background:#FDF9EE}
+.num-cell{width:34px;text-align:center;font-weight:700;color:var(--color-brand-primary);background:rgba(212,160,23,.15)}
+.ar-cell{font-weight:600;color:var(--color-brand-primary)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.skill-item{background:#fff;border:1.5px solid var(--color-border);border-radius:10px;padding:14px 10px;text-align:center}
+.skill-icon{font-size:26px;color:var(--color-accent);margin-bottom:8px;background:rgba(212,160,23,.12);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin-inline:auto}
+.skill-label{font-size:13px;font-weight:700;color:var(--color-brand-primary)}
+.skill-fr{font-size:11px;color:var(--color-text-soft);margin-top:3px;direction:ltr}
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+.tool-card{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-radius:10px;padding:14px}
+.tool-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.tool-badge{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.tool-title{font-size:14px;font-weight:800;color:var(--color-brand-primary)}
+.tool-track{font-size:12px;color:var(--color-text-soft)}
+.tool-desc{font-size:13px;line-height:1.7;color:var(--color-text-primary)}
+.styled-list{list-style:none;padding:0;margin:12px 0}
+.styled-list li{padding:9px 42px 9px 14px;margin:6px 0;background:var(--color-bg-subtle);border-radius:6px;position:relative;font-size:13.5px;color:var(--color-text-primary);border-right:3px solid var(--color-accent)}
+.styled-list li:before{content:'✓';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--color-accent);font-weight:900;font-size:15px}
+.roadmap{display:grid;gap:10px;margin-top:14px}
+.road-step{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;padding:12px}
+.road-n{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--color-brand-primary);color:var(--color-accent);font-weight:900}
+.road-title{font-size:14px;font-weight:800;color:var(--color-brand-primary);margin-bottom:4px}
+.road-desc{font-size:13.5px;color:var(--color-text-primary)}
+.resource-links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.resource-link{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:8px;font-size:13.5px;font-weight:700;color:var(--color-brand-primary)}
+.faq-item{border:1px solid var(--color-border);border-radius:8px;overflow:hidden;margin:8px 0;background:var(--color-bg-subtle)}
+.faq-q{width:100%;border:none;background:none;text-align:right;padding:14px 16px;font-weight:800;color:var(--color-brand-primary);cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.faq-a{display:none;padding:0 16px 16px;color:var(--color-text-primary);font-size:13.5px;line-height:1.8}
+.faq-item.open .faq-a{display:block}
+.contact-card{background:linear-gradient(135deg,var(--color-brand-primary),var(--color-brand-secondary));color:#fff;padding:20px;border-radius:10px;margin:12px 0;border-right:5px solid var(--color-accent);display:flex;align-items:center;gap:16px}
+.contact-avatar{width:60px;height:60px;background:var(--color-accent);color:var(--color-brand-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.contact-role{font-size:12px;color:var(--color-accent-2);margin-bottom:3px}
+.contact-name{font-size:16px;font-weight:800;margin-bottom:4px}
+.contact-email{font-size:13px;color:#E5E7EB;direction:ltr;text-align:right}
+.qr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.qr-card{padding:16px;text-align:center}
+.qr-box{width:150px;height:150px;background:#fff;border:1px solid #E5E7EB;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:900;color:#111827;letter-spacing:.16em}
+.image-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.figure-card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}.figure-card img{width:100%;height:220px;object-fit:cover;display:block}.figure-card .caption{padding:10px 12px;font-size:11.5px;line-height:1.7;color:var(--color-text-secondary)}.figure-card .caption a{color:var(--color-brand-primary);text-decoration:underline}.figure-card .caption strong{display:block;color:var(--color-brand-primary);font-size:12.5px;margin-bottom:4px}.footer-note{margin-top:24px;padding-top:18px;border-top:1px solid var(--color-border);color:var(--color-text-soft);font-size:12.5px;text-align:center}.copyright-note{margin-top:10px;padding:14px 16px;background:rgba(212,160,23,.10);border:1px solid rgba(212,160,23,.35);border-radius:10px;color:var(--color-brand-primary);font-size:13px;font-weight:700;line-height:1.9;text-align:center}.page-no{position:absolute;bottom:14px;left:18px;font-size:11px;color:var(--color-text-soft)}
+@media (max-width:860px){.page{max-width:100%;margin:0 10px 18px;padding:26px 20px;min-height:auto}.cards-grid,.semesters-row,.skills-grid,.tools-grid,.resource-links,.qr-grid,.stats-band,.image-grid{grid-template-columns:1fr}.top-actions{padding:12px;flex-direction:column;align-items:stretch}.top-actions .right{justify-content:stretch}.action-btn{width:100%}.figure-card img{height:210px}}
+@media print{body{background:#fff}.top-actions{display:none!important}.page{box-shadow:none;margin:0 auto;border:1px solid #E5E7EB;page-break-after:always}.page:last-child{page-break-after:auto}a{text-decoration:none;color:inherit}}
+
+.year-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.year-card{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:10px;padding:16px}
+.year-card h3{margin:0 0 10px;color:var(--color-brand-primary);font-size:16px}
+.quote-box{background:var(--color-bg-warm);border-right:4px solid var(--color-accent);border-radius:10px;padding:18px 20px;color:var(--color-brand-primary);font-size:15px;line-height:2;margin:16px 0}
+.mini-note{font-size:12px;color:var(--color-text-soft);margin-top:8px}
+.fineprint{font-size:11.5px;color:var(--color-text-soft)}
+.badge-line{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.mini-badge{background:rgba(212,160,23,.16);color:var(--color-brand-primary);border:1px solid rgba(212,160,23,.35);padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.wide-card{background:linear-gradient(180deg,#fff,var(--color-bg-subtle));border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:14px 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:860px){.year-grid,.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top-actions">
+  <div class="left"><span>دليل طالب القاعدة المشتركة — نسخة HTML مطبوعة</span></div>
+  <div class="right">
+    <button class="action-btn gold" onclick="window.print()">طباعة / PDF</button>
+    <button class="action-btn" id="themeBtn">الوضع الليلي</button>
+    <button class="action-btn ghost" id="copyBtn">نسخ رابط الملف</button>
+  </div>
+</div>
+<div class="container mpc-guide">
+
+<section class="page cover" id="page-1">
+  <div class="cover-inner">
+    <div class="logo-row"><div class="logo-box">UMB</div><div class="logo-box">IGTU</div></div>
+    <div class="cover-univ">UNIVERSITÉ MOHAMED BOUDIAF — M'SILA</div>
+    <div class="cover-institute">معهد تسيير التقنيات الحضرية | القاعدة المشتركة</div>
+    <div class="cover-icon">📘</div>
+    <div class="cover-title">دليل طالب القاعدة المشتركة</div>
+    <div class="cover-subtitle">Socle Commun Student Guide</div>
+    <div class="cover-degree">First Year · 2 Semesters · 60 Credits · AUMV</div>
+    <div class="cover-slogan"><div class="ar">الانطلاقة الأولى نحو تسيير المدينة والهندسة الحضرية من خلال أساسيات العمران، الرسم التقني، التهيئة، والعلوم المساندة</div><div class="fr">Première année de base vers Gestion de la Ville et Génie Urbain</div></div>
+    <div class="cover-year">CANEVAS OFFICIEL 2017–2018</div>
+  </div>
+  <div class="page-no">01</div>
+</section>
+
+<section class="page" id="page-2">
+  <div class="section-header"><div class="icon">✦</div><h2>هوية التكوين وأهدافه</h2><div class="num">02</div></div>
+  <div class="lead-text">القاعدة المشتركة هي سنة أولى ضمن ميدان Architecture, Urbanisme et Métiers de la Ville (AUMV) في شعبة Gestion des Techniques Urbaines بجامعة محمد بوضياف بالمسيلة. دورها هو تزويد الطالب بأساس معرفي وتقني يمهّده لاحقًا للتوجيه نحو تخصصي تسيير المدينة أو الهندسة الحضرية.</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">🎯</div><div class="card-text"><b>الهدف العام</b>بناء قاعدة صلبة في العمران، التهيئة، التمثيل التقني، والقوانين الأساسية المرتبطة بالمدينة.</div></div>
+    <div class="card"><div class="card-icon gold">🧠</div><div class="card-text"><b>الكفاءات المنتظرة</b>فهم أولي للمدينة، أدوات الرسم، أساسيات التهيئة، والتعامل مع مفاهيم تقنية وقانونية أولى.</div></div>
+    <div class="card"><div class="card-icon green">🛠️</div><div class="card-text"><b>البعد التطبيقي</b>ورشات تقنية في الرسم والسكن وملف البناء، مع حضور قوي للتقييم المستمر.</div></div>
+    <div class="card"><div class="card-icon purple">🧭</div><div class="card-text"><b>الآفاق بعد الجذع</b>يتجه الطالب بعد هذه المرحلة إلى: تسيير المدينة أو الهندسة الحضرية.</div></div>
+  </div>
+  <div class="stats-band">
+    <div class="stat"><div class="num">1</div><div class="label">سنة تكوين</div></div>
+    <div class="stat"><div class="num">2</div><div class="label">سداسيان</div></div>
+    <div class="stat"><div class="num">60</div><div class="label">رصيدًا</div></div>
+    <div class="stat"><div class="num">382.5</div><div class="label">ساعة / سداسي</div></div>
+  </div>
+  <div class="sub-header">صور ملهمة مرتبطة بالمجال</div>
+  <div class="image-grid">
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=AvcLWHff3aY3G%2BUdmOR7CIuCYrZWiS3YH4Rnfkr%2BRJur9MY7tKtkzo8Pw6%2Fw3Zi%2BHQ0xJmzY3jDftu8aTMFrv5p5zaV0Tehqvkdg6I0tOwyB5rM7iMRklhxJplM5MVaVUWRZIFLvQimuM66alWcKINuB8tq3%2FtYx4w%3D%3D&u2=HawroiIEw%2F%2FlEp4S&width=2560" alt="School of architecture and urban planning">
+      <figcaption class="caption"><strong>بيئة الدراسة في مجالات العمران والتخطيط</strong>صورة تعكس الطابع الأكاديمي والبيداغوجي للمجال الذي تنتمي إليه القاعدة المشتركة. <a href="https://commons.wikimedia.org/wiki/File:School_of_Architecture_and_Urban_Planning_(3).jpg" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+    <figure class="figure-card">
+      <img src="https://sspark.genspark.ai/cfimages?u1=YzHrIEtOrwoFq2AkDgCxZwmluu%2Bd8i7U0%2BDQpFQfDVxdW4%2BEh3u%2FBuyfY7Cces%2BmQcUAI72neiKn0%2BWdgFHXG2ITcTWEWkKR265rb3h%2FZbkERVV2BFnVvakw6IUnv%2BRsG7MQ3SFXEI7LoaYTItBgE7ELTUeIyD8%3D&u2=i6hZzt2FgVtoJ%2FM3&width=2560" alt="Campus and neighborhood map">
+      <figcaption class="caption"><strong>الخريطة كأداة أولية للفهم الحضري</strong>تمثل القراءة المكانية والخرائط مدخلًا مهمًا في تكوين الطالب منذ السنة الأولى. <a href="https://commons.wikimedia.org/wiki/File:Georgetown_campus_and_neighborhood_map_from_osm.svg" target="_blank" rel="noopener">المصدر</a></figcaption>
+    </figure>
+  </div>
+  <div class="page-no">02</div>
+</section>
+
+<section class="page" id="page-3">
+  <div class="section-header"><div class="icon">★</div><h2>لماذا القاعدة المشتركة مهمة؟</h2><div class="num">03</div></div>
+  <p class="body-text">هذه المرحلة ليست سنة تمهيدية عابرة فقط، بل هي الأساس الذي يحدد مدى جاهزيتك للتخصص لاحقًا. فيها ستتعرّف على مفاهيم العمران، وتكتسب مهارات الرسم التقني، وتفهم المبادئ الأولى للتهيئة والتشريع الحضري، إضافة إلى العلوم المساندة التي سترافقك في المراحل المقبلة.</p>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">🏙️</div><div class="card-text"><b>مدخل للعمران</b>بناء فهم أولي للمدينة وتطورها ومفاهيمها الأساسية.</div></div>
+    <div class="card"><div class="card-icon gold">✏️</div><div class="card-text"><b>الرسم التقني</b>اكتساب مهارات تمثيل المشروع والخطوط والواجهات والمقاطع.</div></div>
+    <div class="card"><div class="card-icon green">📐</div><div class="card-text"><b>التهيئة</b>فهم أول لمبادئ تنظيم المجال وأدوات التهيئة.</div></div>
+    <div class="card"><div class="card-icon purple">⚖️</div><div class="card-text"><b>التشريع الحضري</b>التعرف على القوانين والأدوات المنظمة للمدينة والعقار.</div></div>
+    <div class="card"><div class="card-icon">🔢</div><div class="card-text"><b>الرياضيات</b>تقوية القاعدة التحليلية والمنهجية للطالب.</div></div>
+    <div class="card"><div class="card-icon gold">💧</div><div class="card-text"><b>كيمياء المياه</b>مدخل علمي لفهم جانب من التقنيات الحضرية.</div></div>
+    <div class="card"><div class="card-icon green">💻</div><div class="card-text"><b>الإعلام الآلي</b>التعامل مع الحاسوب والبرامج الأساسية ومدخل AutoCAD 2D.</div></div>
+    <div class="card"><div class="card-icon purple">🗣️</div><div class="card-text"><b>التواصل واللغة</b>تقنيات العرض والبحث والتمكن من المصطلحات التقنية.</div></div>
+  </div>
+  <div class="page-no">03</div>
+</section>
+
+<section class="page" id="page-4">
+  <div class="section-header"><div class="icon">📘</div><h2>نظام الدراسة في السنة الأولى</h2><div class="num">04</div></div>
+  <table class="info-table">
+    <thead><tr><th>العنصر</th><th>المعطيات الأساسية</th></tr></thead>
+    <tbody>
+      <tr><td>التكوين</td><td>Socle Commun ضمن شعبة Gestion des Techniques Urbaines</td></tr>
+      <tr><td>الميدان</td><td>Architecture, Urbanisme et Métiers de la Ville (AUMV)</td></tr>
+      <tr><td>عدد السداسيات</td><td>سداسيان: S1 و S2</td></tr>
+      <tr><td>مجموع الأرصدة</td><td>60 رصيدًا (30 لكل سداسي)</td></tr>
+      <tr><td>التوزيع البيداغوجي</td><td>UEF + UEM + UED + UET</td></tr>
+      <tr><td>التوجيه بعد السنة</td><td>تسيير المدينة أو الهندسة الحضرية</td></tr>
+    </tbody>
+  </table>
+  <div class="year-grid">
+    <div class="year-card">
+      <h3>السداسي الأول S1</h3>
+      <ul class="styled-list">
+        <li>الانطلاق من مبادئ العمران والرسم التقني.</li>
+        <li>بناء قاعدة علمية ومنهجية عبر الرياضيات وكيمياء المياه والتواصل.</li>
+        <li>التعرف على التشريع الحضري واللغة التقنية الأولى.</li>
+      </ul>
+    </div>
+    <div class="year-card">
+      <h3>السداسي الثاني S2</h3>
+      <ul class="styled-list">
+        <li>الانتقال إلى السكن وملف البناء داخل الورشة.</li>
+        <li>الاستمرار في التهيئة والعمران مع مواد البناء والإعلام الآلي.</li>
+        <li>تعزيز التشريع الحضري واللغة التقنية الثانية.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="quote-box">أهم نقطة للطالب الجديد: الورشة هي المادة الأثقل في الأرصدة والمعامل، وتعتمد بالكامل على التقييم المستمر، لذلك تحتاج حضورًا ومتابعةً يومية.</div>
+  <div class="page-no">04</div>
+</section>
+
+<section class="page" id="page-5">
+  <div class="section-header"><div class="icon">🎓</div><h2>السداسي الأول S1</h2><div class="num">05</div></div>
+  <p class="lead-text">يبني السداسي الأول قاعدة الطالب في فهم المدينة والتمثيل التقني والتنظيم الأولي للمعرفة العلمية والبيداغوجية.</p>
+  <div class="two-col">
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">الوحدات والمقاييس</h3>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Initiation à l’urbanisme 1</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Atelier 1: Initiation au dessin technique</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Aménagement 1</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Mathématiques 1</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Chimie des eaux</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Techniques de communication</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Législation urbaine 1</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Langue 1 (Français / Anglais)</td></tr></tbody></table>
+    </div>
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">توزيع الوحدات</h3>
+      <ul class="styled-list">
+        <li><b>UEF:</b> Initiation à l’urbanisme 1 + Atelier 1 + Aménagement 1</li>
+        <li><b>UEM:</b> Mathématiques 1 + Chimie des eaux + Techniques de communication</li>
+        <li><b>UED:</b> Législation urbaine 1</li>
+        <li><b>UET:</b> Langue 1</li>
+      </ul>
+      <div class="badge-line"><span class="mini-badge">30 Crédits</span><span class="mini-badge">17 Coefficients</span><span class="mini-badge">382.5 h</span></div>
+    </div>
+  </div>
+  <div class="page-no">05</div>
+</section>
+
+<section class="page" id="page-6">
+  <div class="section-header"><div class="icon">🏗️</div><h2>السداسي الثاني S2</h2><div class="num">06</div></div>
+  <p class="lead-text">في السداسي الثاني ينتقل الطالب من المبادئ العامة إلى وضعيات أكثر تطبيقًا، خاصة في الورشة المرتبطة بالسكن وملف البناء.</p>
+  <div class="two-col">
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">الوحدات والمقاييس</h3>
+      <table class="semester-table"><tbody><tr><td class='num-cell'>1</td><td class='ar-cell'>Initiation à l’urbanisme 2</td></tr><tr><td class='num-cell'>2</td><td class='ar-cell'>Atelier 2: Habitat et dossier de construction</td></tr><tr><td class='num-cell'>3</td><td class='ar-cell'>Aménagement 2</td></tr><tr><td class='num-cell'>4</td><td class='ar-cell'>Mathématiques 2</td></tr><tr><td class='num-cell'>5</td><td class='ar-cell'>Matériaux de construction</td></tr><tr><td class='num-cell'>6</td><td class='ar-cell'>Informatique</td></tr><tr><td class='num-cell'>7</td><td class='ar-cell'>Législation urbaine 2</td></tr><tr><td class='num-cell'>8</td><td class='ar-cell'>Langue 2 (Français / Anglais)</td></tr></tbody></table>
+    </div>
+    <div class="wide-card">
+      <h3 style="margin-top:0;color:var(--color-brand-primary)">توزيع الوحدات</h3>
+      <ul class="styled-list">
+        <li><b>UEF:</b> Initiation à l’urbanisme 2 + Atelier 2 + Aménagement 2</li>
+        <li><b>UEM:</b> Mathématiques 2 + Matériaux de construction + Informatique</li>
+        <li><b>UED:</b> Législation urbaine 2</li>
+        <li><b>UET:</b> Langue 2</li>
+      </ul>
+      <div class="badge-line"><span class="mini-badge">30 Crédits</span><span class="mini-badge">17 Coefficients</span><span class="mini-badge">382.5 h</span></div>
+    </div>
+  </div>
+  <div class="mini-note">المادة التطبيقية الأبرز هنا هي Atelier 2: Habitat et dossier de construction، وهي مرحلة انتقالية مهمة نحو التخصصات اللاحقة.</div>
+  <div class="page-no">06</div>
+</section>
+
+<section class="page" id="page-7">
+  <div class="section-header"><div class="icon">💻</div><h2>المهارات والأدوات التطبيقية في القاعدة المشتركة</h2><div class="num">07</div></div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">📏</div><div class="card-text"><b>الرسم التقني</b>المساقط، المقاطع، الواجهات، والتمثيل المنظوري.</div></div>
+    <div class="card"><div class="card-icon gold">🏠</div><div class="card-text"><b>السكن وملف البناء</b>فهم أولي لسيرورة المشروع المعماري والحضري.</div></div>
+    <div class="card"><div class="card-icon green">🧱</div><div class="card-text"><b>مواد البناء</b>التعرف على المواد التقليدية والحديثة وخصائصها.</div></div>
+    <div class="card"><div class="card-icon purple">💻</div><div class="card-text"><b>الإعلام الآلي</b>Word وExcel ومدخل إلى AutoCAD 2D.</div></div>
+    <div class="card"><div class="card-icon">⚖️</div><div class="card-text"><b>التشريع الحضري</b>فهم أدوات التعمير مثل PDAU وPOS والإطار العقاري.</div></div>
+    <div class="card"><div class="card-icon gold">🗣️</div><div class="card-text"><b>تقنيات التواصل</b>البحث عن المعلومة، العرض، والإلقاء.</div></div>
+    <div class="card"><div class="card-icon green">🌍</div><div class="card-text"><b>اللغة التقنية</b>الفرنسية/الإنجليزية مع مصطلحات المجال.</div></div>
+    <div class="card"><div class="card-icon purple">🧮</div><div class="card-text"><b>الرياضيات</b>الدوال، الاشتقاق، التكامل، والمصفوفات كقاعدة للتحليل.</div></div>
+  </div>
+  <div class="page-no">07</div>
+</section>
+
+<section class="page" id="page-8">
+  <div class="section-header"><div class="icon">🚀</div><h2>ماذا بعد القاعدة المشتركة؟</h2><div class="num">08</div></div>
+  <div class="roadmap">
+    <div class="road-step"><div class="road-n">1</div><div><div class="road-title">الانطلاق من الأساس</div><div class="road-desc">فهم العمران، التهيئة، والرسم والتشريع في السنة الأولى.</div></div></div>
+    <div class="road-step"><div class="road-n">2</div><div><div class="road-title">بناء الميول</div><div class="road-desc">يبدأ الطالب في اكتشاف اهتمامه أكثر: هل يميل إلى التسيير الحضري أم إلى الهندسة التقنية؟</div></div></div>
+    <div class="road-step"><div class="road-n">3</div><div><div class="road-title">التوجيه نحو تسيير المدينة</div><div class="road-desc">لمن يميل أكثر إلى الحوكمة، أدوات التعمير، التسيير، والمجال الحضري.</div></div></div>
+    <div class="road-step"><div class="road-n">4</div><div><div class="road-title">التوجيه نحو الهندسة الحضرية</div><div class="road-desc">لمن يميل أكثر إلى الشبكات، VRD، البنية التقنية، والجانب الهندسي.</div></div></div>
+    <div class="road-step"><div class="road-n">5</div><div><div class="road-title">التدرج نحو الليسانس</div><div class="road-desc">بعد النجاح في الجذع المشترك يبدأ التخصص الفعلي عبر السداسيات اللاحقة.</div></div></div>
+    <div class="road-step"><div class="road-n">6</div><div><div class="road-title">بناء مشروعك الشخصي</div><div class="road-desc">هذه السنة فرصة لتحديد مسارك المهني المبكر داخل معهد GTU.</div></div></div>
+  </div>
+  <div class="page-no">08</div>
+</section>
+
+<section class="page" id="page-9">
+  <div class="section-header"><div class="icon">📚</div><h2>دليل النجاح للطالب الجديد</h2><div class="num">09</div></div>
+  <ul class="styled-list">
+    <li>أعطِ الورشة وقتًا يوميًا لأنها تمثل أعلى رصيد ومعامل وتحتاج متابعة مستمرة.</li>
+    <li>تعلم الرسم اليدوي والدقة في الإخراج قبل التركيز فقط على الحاسوب.</li>
+    <li>ابنِ مفكرة شخصية للمصطلحات التقنية بالعربية والفرنسية والإنجليزية.</li>
+    <li>لا تُهمل المواد العلمية مثل الرياضيات وكيمياء المياه لأنها جزء من منطق المجال.</li>
+    <li>استثمر هذه السنة لاكتشاف ميولك بين تسيير المدينة والهندسة الحضرية.</li>
+  </ul>
+  <div class="sub-header">ملاحظات تنظيمية مهمة</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">🧪</div><div class="card-text"><b>التقييم</b>الورشات 100% تقييم مستمر، بينما كثير من المواد النظرية تسير على 50% مراقبة و50% امتحان.</div></div>
+    <div class="card"><div class="card-icon gold">📐</div><div class="card-text"><b>الورشات</b>Atelier 1 للرسم التقني وAtelier 2 للسكن وملف البناء هما قلب التكوين التطبيقي.</div></div>
+    <div class="card"><div class="card-icon green">🚫</div><div class="card-text"><b>التربص</b>الوثيقة لا تذكر تربصًا ميدانيًا إجباريًا في هذه السنة الأولى.</div></div>
+    <div class="card"><div class="card-icon purple">🗂️</div><div class="card-text"><b>الوحدات</b>كل سداسي موزع إلى UEF وUEM وUED وUET بشكل منظم وواضح.</div></div>
+  </div>
+  <div class="page-no">09</div>
+</section>
+
+<section class="page" id="page-10">
+  <div class="section-header"><div class="icon">👥</div><h2>الهياكل البيداغوجية والأسماء المذكورة</h2><div class="num">10</div></div>
+  <div class="contact-card"><div class="contact-avatar">🏫</div><div><div class="contact-role">Institution</div><div class="contact-name">Université Mohamed Boudiaf — M'Sila / Institut Gestion des Techniques Urbaines</div><div class="contact-email">https://www.univ-msila.dz/</div></div></div>
+  <div class='contact-card'><div class='contact-avatar'>👤</div><div><div class='contact-role'>مسؤول ميدان التكوين</div><div class='contact-name'>د. حجاب مخلوفي</div></div></div><div class='contact-card'><div class='contact-avatar'>👤</div><div><div class='contact-role'>مسؤول الجذع المشترك</div><div class='contact-name'>بركات زين العابدين</div></div></div><div class='contact-card'><div class='contact-avatar'>👤</div><div><div class='contact-role'>فريق التكوين</div><div class='contact-name'>بلخير إسماعيل</div></div></div>
+  <div class="sub-header">أسماء تدريسية واردة في الوثيقة</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">👨‍🏫</div><div class="card-text"><b>د. خضور مالك</b>تخصص تهيئة</div></div>
+    <div class="card"><div class="card-icon gold">👨‍🏫</div><div class="card-text"><b>د. فلوسية لحسن</b>تسيير تقنيات حضرية</div></div>
+    <div class="card"><div class="card-icon green">👨‍🏫</div><div class="card-text"><b>أ. بن خالد الحاج</b>تسيير تقنيات حضرية</div></div>
+    <div class="card"><div class="card-icon purple">👨‍🏫</div><div class="card-text"><b>أ. عاشور خالد</b>رياضيات</div></div>
+  </div>
+  <div class="mini-note">الوثيقة لا تتضمن أرقام هواتف أو بريدًا إلكترونيًا مباشرًا لهؤلاء المسؤولين داخل الصفحات المفهرسة التي تم استخراجها.</div>
+  <div class="page-no">10</div>
+</section>
+
+<section class="page" id="page-11">
+  <div class="section-header"><div class="icon">✉</div><h2>الختام والمرجعية</h2><div class="num">11</div></div>
+  <div class="lead-text">أُنجز هذا الدليل انطلاقًا من وثيقة القاعدة المشتركة الرسمية لمعهد GTU، مع إعادة تنظيم المحتوى في صيغة HTML مطبوعة تساعد الطالب الجديد على فهم السنة الأولى ومساراته المحتملة بعد ذلك.</div>
+  <div class="body-text" style="text-align:center;font-weight:700;color:var(--color-brand-primary)">"القاعدة المشتركة هي سنة بناء الأساس: كل ما تتقنه هنا سيظهر أثره لاحقًا في التخصص."</div>
+  <div class="footer-note">Socle Commun Student Guide · IGTU M'Sila · Printable HTML version</div>
+  <div class="copyright-note">© جميع حقوق هذا الدليل محفوظة لصاحبة هذا العمل. أُعد هذا الملف ليستعمل كدليل مطبوع لفائدة الطلبة الجدد المهتمين بالقاعدة المشتركة داخل معهد تسيير التقنيات الحضرية.</div>
+  <div class="fineprint">المحتوى الأكاديمي مبني على الوثيقة الرسمية: SOCLE-COMMUN-CANEVAS-GTU-1.pdf.</div>
+  <div class="page-no">11</div>
+</section>
+
+</div>
+<script>
+const root=document.documentElement;
+const themeBtn=document.getElementById('themeBtn');
+const copyBtn=document.getElementById('copyBtn');
+themeBtn.addEventListener('click',()=>{
+  const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+  root.setAttribute('data-theme',next);
+  themeBtn.textContent=next==='dark'?'الوضع النهاري':'الوضع الليلي';
+});
+copyBtn.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(location.href);copyBtn.textContent='تم النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}catch(e){copyBtn.textContent='تعذر النسخ';setTimeout(()=>copyBtn.textContent='نسخ رابط الملف',1400);}
+});
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
