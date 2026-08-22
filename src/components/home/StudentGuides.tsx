@@ -61,15 +61,7 @@ export function StudentGuides() {
   return (
     <section className="py-24">
       <div className="mb-12 text-center">
-
-      <div className="mx-auto mt-10 max-w-xl">
-        <input
-          type="text"
-          placeholder="🔍 Search a guide..."
-          className="w-full rounded-2xl border border-gray-200 bg-white px-6 py-4 text-lg shadow-sm transition focus:border-emerald-500 focus:outline-none focus:ring-4 focus:ring-emerald-100"
-        />
-      </div>
-      
+   
         <h2 className="text-4xl font-bold">
           Available Guides
         </h2>
