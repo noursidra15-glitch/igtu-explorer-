@@ -152,7 +152,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
     
       specialties: {
         eyebrow: "Academic Tracks",
-        title: "Three Specialties, One Urban Mission",
+        title: "Explore Our Academic Tracks",
         description:
           "Each specialization combines academic knowledge with practical projects to prepare future urban professionals.",
         viewProgram: "View Program",
@@ -275,7 +275,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
     
       specialties: {
         eyebrow: "Parcours Académiques",
-        title: "Trois spécialités, une seule mission urbaine",
+        title: "Découvrez nos parcours académiques",
         description:
           "Chaque spécialité combine la théorie académique et la pratique professionnelle afin de former les futurs experts urbains.",
         viewProgram: "Voir le programme",
@@ -451,7 +451,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
 
     specialtiesTitle: "التخصصات",
     specialtiesDesc:
-      "استكشف جميع التخصصات الأكاديمية.",
+      "اكتشف مساراتنا الأكاديمية.",
 
     guideTitle: "أدلة الطلبة",
     guideDesc:
