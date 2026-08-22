@@ -18,13 +18,14 @@ const specialtyIcons: Record<string, React.ElementType> = { Building2, Landmark,
 // Maps a nav href to its i18n key in dictionary.nav, since site.json labels stay English-only.
 const navKeyByHref: Record<
   string,
-  "home" | "about" | "programs" | "formationOffers" | "studentGuides" | "faq" | "contact"
+  "home" | "about" | "programs" | "formationOffers" | "studentGuides" | "departmentHeads" | "faq" | "contact"
 > = {
   "/": "home",
   "/about": "about",
   "/specialties": "programs",
   "/resources": "formationOffers",
   "/student-guide": "studentGuides",
+  "/department-heads": "departmentHeads",
   "/faq": "faq",
   "/contact": "contact",
 };
@@ -223,7 +224,7 @@ export function Navbar() {
             <div className="flex flex-col gap-1 px-4 py-4">
             {[
                 ...siteData.nav,
-               { href: "/student-guides", label: "Student Guides" },
+               { href: "/department-heads", label: "Department Heads" },
             ].map((item) => (
                 <Link
                   key={item.href}

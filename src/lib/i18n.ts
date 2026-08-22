@@ -21,6 +21,7 @@ interface TranslationDict {
     programs: string;
     formationOffers: string;
     studentGuides: string;
+    departmentHeads: string;
     faq: string;
     contact: string;
   };
@@ -117,6 +118,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
         programs: "Programs",
         formationOffers: "Formation Offers",
         studentGuides: "Student Guides",
+        departmentHeads: "Department Heads",
         faq: "FAQ",
         contact: "Contact",
       },
@@ -239,6 +241,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
         programs: "Programmes",
         formationOffers: "Offres de Formation",
         studentGuides: "Guides Étudiants",
+        departmentHeads: "Responsables des départements",
         faq: "FAQ",
         contact: "Contact",
       },
@@ -368,6 +371,7 @@ export const dictionary: Record<Locale, TranslationDict> = {
     programs: "التخصصات",
     formationOffers: "عروض التكوين",
     studentGuides: "أدلة الطلبة",
+    departmentHeads: "رؤساء الأقسام",
     faq: "الأسئلة الشائعة",
     contact: "اتصل بنا",
   },
