@@ -38,7 +38,7 @@ const leadership = {
       image: "/images/department-heads/urban-engineering.jpg",
     },
     {
-      name: "Dr. Walid Aarab",
+      name: "Dr. Benaissa FATEH TOUFIK ",
       department: "Construction Project Management",
       role: "Head of Construction Project Management Department",
       image: "/images/department-heads/construction-management.jpg",
