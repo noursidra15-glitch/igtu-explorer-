@@ -41,7 +41,7 @@ const leadership = {
       name: "Dr. Benaissa FATEH TOUFIK ",
       department: "Construction Project Management",
       role: "Head of Construction Project Management Department",
-      image: "/images/department-heads/construction-management.jpg",
+      image: "/images/department-heads/construction-management.png",
     },
     {
       name: "Dr. Bachir Fayed",
