@@ -88,7 +88,8 @@ export function Navbar() {
         <div className="hidden items-center gap-1 lg:flex">
         {[
            ...siteData.nav,
-           ].map((item) => {
+              { href: "/department-heads", label: "Department Heads" },
+            ].map((item) => {
             const isPrograms = item.href === "/specialties";
             const isActive = pathname === item.href;
             const label = t.nav[navKeyByHref[item.href] ?? "home"];
