@@ -11,8 +11,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Reveal } from "@/components/ui/Reveal";
 import { Accordion } from "@/components/ui/Accordion";
-import specialties from "@/data/specialties.json";
-import resources from "@/data/resources.json";
+import { specialties } from "@/data/specialties.json";
+
 
 const icons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
 
@@ -36,7 +36,6 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
   if (!specialty) notFound();
 
   const Icon = icons[specialty.icon] ?? Building2;
-  const relatedResources = resources.filter((r) => r.specialty === specialty.name).slice(0, 4);
 
   type StudyPlanItem = {
     year: string;
@@ -362,31 +361,4 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
     ))}
   </div>
 </section>
-        {/* Related resources */}
-        {relatedResources.length > 0 && (
-          <section className="mt-20">
-            <div className="flex items-center justify-between">
-              <SectionHeading eyebrow="Keep Learning" title="Related resources" align="left" className="mx-0 text-left" />
-              <Link href="/resources" className="focus-ring hidden items-center gap-1.5 text-sm font-semibold text-emerald-brand sm:inline-flex">
-                All resources <ArrowRight size={14} />
-              </Link>
-            </div>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {relatedResources.map((r) => (
-                <div key={r.id} className="flex items-center gap-4 rounded-xl border border-border-soft bg-surface p-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-brand/10 text-emerald-brand">
-                    <FileText size={17} />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="truncate text-sm font-medium">{r.title}</p>
-                    <p className="text-xs text-foreground/50">{r.category} · {r.size}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-      </Container>
-    </div>
-  );
-}
+       
