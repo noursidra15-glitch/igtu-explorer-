@@ -34,7 +34,7 @@ export function AboutTeaser() {
             <div className="topo-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden />
             <div className="relative grid grid-cols-2 gap-6 text-center">
               <div>
-                <p className="font-display text-2xl font-bold text-blue-brand">3</p>
+                <p className="font-display text-2xl font-bold text-blue-brand">6</p>
                 <p className="mt-1 text-xs text-foreground/60">Specialties</p>
               </div>
               <div>
