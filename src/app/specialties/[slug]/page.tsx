@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Reveal } from "@/components/ui/Reveal";
 import { Accordion } from "@/components/ui/Accordion";
-import { specialties } from "@/data/specialties.json";
+import  specialties  from "@/data/specialties.json";
 
 
 const icons: Record<string, React.ElementType> = { Building2, Landmark, HardHat };
