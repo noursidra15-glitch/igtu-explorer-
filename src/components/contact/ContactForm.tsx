@@ -53,19 +53,30 @@ export function ContactForm() {
         className="flex h-full flex-col items-center justify-center gap-3 rounded-2xl border border-border-soft bg-surface p-10 text-center"
       >
         <CheckCircle2 className="text-emerald-brand" size={36} />
-
+  
         <p className="text-base font-semibold">
           Message sent successfully
         </p>
-
+  
         <p className="text-sm text-foreground/60">
           Thank you for contacting IGTU Explorer. We will get back to you soon.
         </p>
-
+  
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com/ns_designer20/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-[1.02]"
+        >
+          📸 Contact us on Instagram
+        </a>
+  
+        {/* Send another message */}
         <button
           type="button"
           onClick={() => setSubmitted(false)}
-          className="mt-2 text-sm font-medium text-emerald-brand hover:underline"
+          className="text-sm font-medium text-emerald-brand hover:underline"
         >
           Send another message
         </button>
