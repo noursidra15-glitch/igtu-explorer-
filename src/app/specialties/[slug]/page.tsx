@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   Building2, Landmark, HardHat, Clock, BookOpen, Sparkles, Monitor, Briefcase,
-  ArrowRight, FileText,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -37,17 +35,7 @@ export default async function SpecialtyPage({ params }: { params: Promise<{ slug
 
   const Icon = icons[specialty.icon] ?? Building2;
 
-  type StudyPlanItem = {
-    year: string;
-    focus: string;
-  };
-  
-  const studyPlan =
-    "studyPlan" in specialty
-      ? (specialty.studyPlan as StudyPlanItem[])
-      : [];
-
-  return (
+    return (
     <div className="pb-24 pt-32">
       <Container>
         <Breadcrumbs items={[{ label: "Specialties", href: "/specialties" }, { label: specialty.name }]} />
