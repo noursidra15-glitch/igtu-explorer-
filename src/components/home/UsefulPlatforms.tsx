@@ -16,7 +16,7 @@ const platforms = [
     title: "Moodle",
     description:
       "Access your online courses and learning materials.",
-    href: "https://moodle.univ-msila.dz/moodle/course/index.php?categoryid=5#",
+    href: "https://moodle.univ-msila.dz//",
     icon: GraduationCap,
     button: "Open Moodle",
   },
